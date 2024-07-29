@@ -12,15 +12,13 @@ const announcementBar = JSON.parse(fs.readFileSync("./announcement.json"))
 const config = {
   title: "InBzar",
   tagline: "Explore and learn how to use InBzar",
-  url: "https://docs.medusajs.com",
+  url: "https://docs.inbzar.com",
   baseUrl: "/",
-  onBrokenLinks: "ignore",
-  onBrokenMarkdownLinks: "ignore",
-  // onBrokenLinks: "throw",
-  // onBrokenMarkdownLinks: "throw",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
   favicon: "img/favicon.ico",
-  organizationName: "medusajs",
-  projectName: "medusajs/www",
+  organizationName: "inbzar",
+  projectName: "inbzar/docs",
   markdown: {
     mdx1Compat: {
       comments: true,
@@ -122,24 +120,12 @@ const config = {
           label: "User Guide",
         },
         {
-          value: "admin",
-          label: "Admin API",
+          value: "recipes",
+          label: "Recipes",
         },
         {
-          value: "store",
-          label: "Store API",
-        },
-        {
-          value: "plugins",
-          label: "Plugins",
-        },
-        {
-          value: "reference",
-          label: "References",
-        },
-        {
-          value: "ui",
-          label: "UI",
+          value: "features",
+          label: "Features",
         },
       ],
       defaultFiltersByPath: [
@@ -148,12 +134,12 @@ const config = {
           filters: ["user-guide"],
         },
         {
-          path: "/references",
-          filters: ["reference"],
+          path: "/recipes",
+          filters: ["recipes"],
         },
         {
-          path: "/plugins",
-          filters: ["plugins"],
+          path: "/features",
+          filters: ["features"],
         },
       ],
       defaultFilters: ["docs"],
@@ -205,27 +191,6 @@ const config = {
           position: "left",
         },
         {
-          href: `${process.env.API_URL}/api/store`,
-          label: "Store API",
-          prependBaseUrlToHref: true,
-          target: "_blank",
-          position: "left",
-        },
-        {
-          href: `${process.env.API_URL}/api/admin`,
-          label: "Admin API",
-          prependBaseUrlToHref: true,
-          target: "_blank",
-          position: "left",
-        },
-        {
-          href: `${process.env.API_URL}/ui`,
-          label: "UI",
-          prependBaseUrlToHref: true,
-          target: "_blank",
-          position: "left",
-        },
-        {
           type: "search",
           position: "right",
         },
@@ -236,7 +201,7 @@ const config = {
         type: "button",
         label: "Report an Issue",
         className: "max-[1014px]:hidden",
-        href: "https://github.com/medusajs/medusa/issues/new?assignees=&labels=type%3A+docs&template=docs.yml",
+        href: "https://tawk.to/chat/66a4d7d832dca6db2cb67ebc/1i3pum9kb",
       },
     ],
     mobileLogo: {
@@ -252,26 +217,21 @@ const config = {
     socialLinks: [
       {
         type: "discord",
-        href: "https://discord.gg/medusajs",
+        href: "#",
       },
       {
         type: "twitter",
-        href: "https://twitter.com/medusajs",
+        href: "#",
       },
       {
         type: "linkedin",
-        href: "https://www.linkedin.com/company/medusajs",
+        href: "#",
       },
       {
         type: "github",
-        href: "https://github.com/medusajs/medusa",
+        href: "#",
       },
     ],
-    reportCodeLinkPrefix:
-      "https://github.com/medusajs/medusa/issues/new?assignees=&labels=type%3A+docs&template=docs.yml",
-    footerFeedback: {
-      event: "survey",
-    },
     docs: {
       sidebar: {
         hideable: true,
@@ -294,12 +254,8 @@ const config = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/medusajs/medusa/edit/v1.x/www/apps/docs",
           path: "content",
           routeBasePath: "/",
-          remarkPlugins: [
-            [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
-          ],
           showLastUpdateTime: true,
           // breadcrumbs: false,
           async sidebarItemsGenerator({
@@ -315,12 +271,6 @@ const config = {
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
-        },
-        gtag: {
-          trackingID: "G-S7G7X3JYS3",
-        },
-        sitemap: {
-          filename: "sitemap-docs.xml",
         },
       },
     ],
