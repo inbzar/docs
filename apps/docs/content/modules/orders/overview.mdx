@@ -11,7 +11,7 @@ Customers place orders to purchase products from an ecommerce business. This ove
 
 :::note
 
-Not a developer? Check out the [Orders user guide](../../user-guide/orders/index.md).
+Looking guide? Check out the [Orders user guide](../../user-guide/orders/index.md).
 
 :::
 
@@ -24,15 +24,6 @@ Admins can manage orders placed by customers, including capturing payment and fu
 Customers can view their previous orders.
 
 <DocCardList colSize={4} items={[
-  {
-    type: 'link',
-    href: '/modules/orders/admin/manage-orders',
-    label: 'Admin: Manage Orders',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: 'Learn how to manage orders using Admin APIs.',
-    }
-  },
   {
     type: 'link',
     href: '/user-guide/orders/manage',
@@ -72,15 +63,6 @@ Customers can view their previous orders.
       description: 'Manage an order\'s fulfillment in InBzar Admin.'
     }
   },
-  {
-    type: 'link',
-    href: '/modules/orders/storefront/retrieve-order-details',
-    label: 'Storefront: Retrieve Order Details',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: "Learn the different ways to retrieve an order's details",
-    }
-  },
 ]} />
 
 ### Edit Orders
@@ -92,29 +74,11 @@ Customers can review order edit requests and authorize additional payments if ne
 <DocCardList colSize={4} items={[
   {
     type: 'link',
-    href: '/modules/orders/admin/edit-order',
-    label: 'Admin: Edit an Order',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: 'Learn how to edit an order using Admin APIs.'
-    }
-  },
-  {
-    type: 'link',
     href: '/user-guide/orders/edit',
     label: 'User Guide: Edit Order',
     customProps: {
       icon: Icons['users-solid'],
       description: 'Edit an order in InBzar Admin.'
-    }
-  },
-  {
-    type: 'link',
-    href: '/modules/orders/storefront/handle-order-edits',
-    label: 'Storefront: Order Edits',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: 'Handle order edits in a storefront.'
     }
   },
 ]} />
@@ -126,29 +90,11 @@ Admins can create draft orders that don’t require involvement from a customer.
 <DocCardList colSize={4} items={[
   {
     type: 'link',
-    href: '/modules/orders/admin/manage-draft-orders',
-    label: 'Admin: Manage Draft Orders',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: 'Learn how to manage draft orders using Admin APIs.',
-    }
-  },
-  {
-    type: 'link',
     href: '/user-guide/orders/edit',
     label: 'User Guide: Draft Orders',
     customProps: {
       icon: Icons['users-solid'],
       description: 'Manage draft orders in InBzar Admin.'
-    }
-  },
-  {
-    type: 'link',
-    href: 'https://docs.medusajs.com/api/admin#draft-orders_getdraftorders',
-    label: 'Admin APIs: Draft Orders',
-    customProps: {
-      icon: Icons['server-solid'],
-      description: 'Check available Admin REST APIs for Draft Orders.'
     }
   },
 ]} />
@@ -160,33 +106,6 @@ Admins can return order items, or create swaps to return an item to be replaced 
 Customers can also request to return or swap items. This allows for implementing an automated Return Merchandise Authorization (RMA) flow.
 
 <DocCardList colSize={4} items={[
-  {
-    type: 'link',
-    href: '/modules/orders/admin/manage-returns',
-    label: 'Admin: Manage Returns',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: 'Learn how to manage returns using Admin APIs.',
-    }
-  },
-  {
-    type: 'link',
-    href: '/modules/orders/admin/manage-swaps',
-    label: 'Admin: Manage Swaps',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: 'Learn how to manage swaps using Admin APIs.',
-    }
-  },
-  {
-    type: 'link',
-    href: '/modules/orders/admin/manage-claims',
-    label: 'Admin: Manage Claims',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: 'Learn how to manage claims using Admin APIs.',
-    }
-  },
   {
     type: 'link',
     href: '/user-guide/orders/returns',
@@ -214,103 +133,13 @@ Customers can also request to return or swap items. This allows for implementing
       description: 'Manage order claims in InBzar Admin.'
     }
   },
-  {
-    type: 'link',
-    href: '/modules/orders/storefront/create-return',
-    label: 'Storefront: Create a Return',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a return as a customer.',
-    }
-  },
-  {
-    type: 'link',
-    href: '/modules/orders/storefront/create-swap',
-    label: 'Storefront: Create a Swap',
-    customProps: {
-      icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a swap as a customer.',
-    }
-  },
-  {
-    type: 'link',
-    href: 'https://docs.medusajs.com/api/store#returns',
-    label: 'Storefront APIs: Returns',
-    customProps: {
-      icon: Icons['server-solid'],
-      description: 'Check available Storefront REST APIs for Returns.'
-    }
-  },
 ]} />
 
 ---
 
-## Understand the Architecture
+## Related Features
 
-Learn how order-related entities are built, their relation to other modules, and more.
-
-<DocCardList colSize={4} items={[
-  {
-    type: 'link',
-    href: '/modules/orders',
-    label: 'Architecture: Order',
-    customProps: {
-      icon: Icons['circle-stack-solid'],
-      description: 'Learn about the Order architecture.',
-    }
-  },
-  {
-    type: 'link',
-    href: '/modules/orders/swaps',
-    label: 'Architecture: Swap',
-    customProps: {
-      icon: Icons['circle-stack-solid'],
-      description: 'Learn about the Swap architecture.',
-    }
-  },
-  {
-    type: 'link',
-    href: '/modules/orders/returns',
-    label: 'Architecture: Return',
-    customProps: {
-      icon: Icons['circle-stack-solid'],
-      description: 'Learn about the Return architecture.',
-    }
-  },
-  {
-    type: 'link',
-    href: '/modules/orders/claims',
-    label: 'Architecture: Claim',
-    customProps: {
-      icon: Icons['circle-stack-solid'],
-      description: 'Learn about the Claim architecture.',
-    }
-  },
-  {
-    type: 'link',
-    href: '/modules/orders/draft-orders',
-    label: 'Architecture: Draft Order',
-    customProps: {
-      icon: Icons['circle-stack-solid'],
-      description: 'Learn about the Draft Order architecture.',
-    }
-  },
-  {
-    type: 'link',
-    href: '/modules/orders/fulfillments',
-    label: 'Architecture: Fulfillment',
-    customProps: {
-      icon: Icons['circle-stack-solid'],
-      description: 'Learn about the Fulfillment architecture.',
-    }
-  },
-]} />
-
----
-
-## Related Modules
-
-Discover Order’s relation to other modules in InBzar
+Discover Order’s relation to other features in InBzar
 
 <DocCardList colSize={4} items={[
   {
