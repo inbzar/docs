@@ -68,228 +68,113 @@ module.exports = {
       ],
     },
     {
-      type: 'html',
-      value: 'Browse Docs',
-      customProps: {
-        sidebar_is_group_divider: true,
+      type: 'category',
+      label: 'Features',
+      link: {
+        type: 'doc',
+        id: 'features/index',
       },
-      className: 'homepage-sidebar-item',
-    },
-    {
-      type: 'ref',
-      id: 'modules/overview',
-      label: 'Commerce Modules',
       customProps: {
         sidebar_icon: 'puzzle',
       },
       className: 'homepage-sidebar-item',
-    },
-    {
-      type: 'doc',
-      id: 'glossary',
-      label: 'Glossary',
-      customProps: {
-        sidebar_icon: 'book-open',
-      },
-      className: 'homepage-sidebar-item',
-    },
-  ],
-  modules: [
-    {
-      type: 'ref',
-      id: 'homepage',
-      label: 'Back to home',
-      customProps: {
-        sidebar_is_back_link: true,
-        sidebar_icon: 'back-arrow',
-      },
-    },
-    {
-      type: 'doc',
-      id: 'modules/overview',
-      label: 'Commerce Modules',
-      customProps: {
-        sidebar_is_title: true,
-        sidebar_icon: 'puzzle',
-      },
-    },
-    {
-      type: 'category',
-      label: 'Regions and Currencies',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
       items: [
         {
           type: 'doc',
-          id: 'modules/regions-and-currencies/overview',
-          label: 'Overview',
-        }
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Customers',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
-        {
-          type: 'doc',
-          id: 'modules/customers/overview',
-          label: 'Overview',
-        }
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Products',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
-        {
-          type: 'doc',
-          id: 'modules/products/overview',
-          label: 'Overview',
-        }
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Carts and Checkout',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
-        {
-          type: 'doc',
-          id: 'modules/carts-and-checkout/overview',
-          label: 'Overview',
-        }
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Orders',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
-        {
-          type: 'doc',
-          id: 'modules/orders/overview',
-          label: 'Overview',
+          id: 'features/regions-and-currencies',
+          label: 'Regions and Currencies',
+          customProps: {
+            iconName: 'shopping-cart',
+            exclude_from_doc_list: true,
+          },
         },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Multi-Warehouse',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
         {
           type: 'doc',
-          id: 'modules/multiwarehouse/overview',
-          label: 'Overview',
+          id: 'features/customers',
+          label: 'Customers',
+          customProps: {
+            iconName: 'building-storefront',
+          },
         },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Taxes',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
         {
           type: 'doc',
-          id: 'modules/taxes/overview',
-          label: 'Overview',
+          id: 'features/products',
+          label: 'Products',
+          customProps: {
+            iconName: 'building-storefront',
+          },
         },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Discounts',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
         {
           type: 'doc',
-          id: 'modules/discounts/overview',
-          label: 'Overview',
+          id: 'features/carts-and-checkout',
+          label: 'Carts and Checkout',
+          customProps: {
+            iconName: 'building-storefront',
+          },
         },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Gift Cards',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
         {
           type: 'doc',
-          id: 'modules/gift-cards/overview',
-          label: 'Overview',
+          id: 'features/orders',
+          label: 'Orders',
+          customProps: {
+            iconName: 'building-storefront',
+          },
         },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Price Lists',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
         {
           type: 'doc',
-          id: 'modules/price-lists/overview',
-          label: 'Overview',
+          id: 'features/multiwarehouse',
+          label: 'Multi-Warehouse',
+          customProps: {
+            iconName: 'building-storefront',
+          },
         },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Sales Channels',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
         {
           type: 'doc',
-          id: 'modules/sales-channels/overview',
-          label: 'Overview',
+          id: 'features/taxes',
+          label: 'Taxes',
+          customProps: {
+            iconName: 'building-storefront',
+          },
         },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Users',
-      collapsible: false,
-      customProps: {
-        sidebar_is_group_headline: true,
-      },
-      items: [
         {
           type: 'doc',
-          id: 'modules/users/overview',
-          label: 'Overview',
+          id: 'features/discounts',
+          label: 'Discounts',
+          customProps: {
+            iconName: 'building-storefront',
+          },
+        },
+        {
+          type: 'doc',
+          id: 'features/gift-cards',
+          label: 'Gift Cards',
+          customProps: {
+            iconName: 'building-storefront',
+          },
+        },
+        {
+          type: 'doc',
+          id: 'features/price-lists',
+          label: 'Price Lists',
+          customProps: {
+            iconName: 'building-storefront',
+          },
+        },
+        {
+          type: 'doc',
+          id: 'features/sales-channels',
+          label: 'Sales Channels',
+          customProps: {
+            iconName: 'building-storefront',
+          },
+        },
+        {
+          type: 'doc',
+          id: 'features/users',
+          label: 'Users',
+          customProps: {
+            iconName: 'building-storefront',
+          },
         },
       ],
     },
