@@ -1,0 +1,4 @@
+[2K[1G[1myarn run v1.22.22[22m
+[2K[1G[2m$ yarn clean && tsc[22m
+[2K[1G[2m$ rimraf dist[22m
+[2K[1G✨  Done in 4.44s.
