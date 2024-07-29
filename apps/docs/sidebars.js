@@ -250,51 +250,7 @@ module.exports = {
           type: 'doc',
           id: 'modules/carts-and-checkout/overview',
           label: 'Overview',
-        },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/carts-and-checkout/cart',
-          label: 'Cart',
-        },
-        {
-          type: 'doc',
-          id: 'modules/carts-and-checkout/shipping',
-          label: 'Shipping',
-        },
-        {
-          type: 'doc',
-          id: 'modules/carts-and-checkout/payment',
-          label: 'Payment',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/carts-and-checkout/backend/cart-completion-strategy',
-          label: 'Backend: Override Cart Completion',
-        },
-        {
-          type: 'doc',
-          id: 'modules/carts-and-checkout/storefront/implement-cart',
-          label: 'Storefront: Implement Cart',
-        },
-        {
-          type: 'doc',
-          id: 'modules/carts-and-checkout/storefront/implement-checkout-flow',
-          label: 'Storefront: Implement Checkout',
-        },
+        }
       ],
     },
     {
