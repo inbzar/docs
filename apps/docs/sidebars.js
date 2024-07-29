@@ -356,35 +356,6 @@ module.exports = {
           id: 'modules/sales-channels/overview',
           label: 'Overview',
         },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/sales-channels/sales-channels',
-          label: 'Sales Channels',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/sales-channels/admin/manage',
-          label: 'Admin: Manage Sales Channels',
-        },
-        {
-          type: 'doc',
-          id: 'modules/sales-channels/storefront/use-sales-channels',
-          label: 'Storefront: Use Sales Channels',
-        },
       ],
     },
     {
