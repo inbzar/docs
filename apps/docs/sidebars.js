@@ -326,40 +326,6 @@ module.exports = {
           id: 'modules/gift-cards/overview',
           label: 'Overview',
         },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/gift-cards/gift-cards',
-          label: 'Gift Cards',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/gift-cards/backend/send-gift-card-to-customer',
-          label: 'Backend: Send Gift Card Code',
-        },
-        {
-          type: 'doc',
-          id: 'modules/gift-cards/admin/manage-gift-cards',
-          label: 'Admin: Manage Gift Cards',
-        },
-        {
-          type: 'doc',
-          id: 'modules/gift-cards/storefront/use-gift-cards',
-          label: 'Storefront: Use Gift Cards',
-        },
       ],
     },
     {
