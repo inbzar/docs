@@ -113,7 +113,7 @@ With InBzar’s workflows, you can build flows with steps that may perform actio
 
 Workflows can be executed from anywhere. So, taking the workflow described in the above example, you can listen to the `product.updated` event using a [Subscriber](../development/events/subscribers.mdx) and execute the workflow whenever the event is triggered.
 
-![A flowchart of how the workflow is executed when the product.updated event is triggered](https://res.cloudinary.com/dza7lstvk/image/upload/v1701340569/InBzar%20Docs/Diagrams/workflow-recipe-example_wmwmo5.jpg)
+![A flowchart of how the workflow is executed when the product.updated event is triggered](https://res.cloudinary.com/dza7lstvk/image/upload/v1701340569/Medusa%20Docs/Diagrams/workflow-recipe-example_wmwmo5.jpg)
 
 Workflows guarantee data consistency through their compensation feature. You can provide a compensation function to steps that roll back the actions of that step. Then, if an error occurs in any step, the actions of previous steps are rolled back using the compensation function.
 

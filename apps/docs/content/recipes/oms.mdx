@@ -27,7 +27,7 @@ Recommended read: [How Siam Makro used InBzar an OMS](https://medusajs.com/blog/
 
 Orders from different sales channels in your commerce ecosystem must all route their orders into the OMS.
 
-![Routing orders into InBzar OMS](https://res.cloudinary.com/dza7lstvk/image/upload/v1695115403/InBzar%20Docs/Diagrams/oms-orders_to4yaq.jpg)
+![Routing orders into InBzar OMS](https://res.cloudinary.com/dza7lstvk/image/upload/v1695115403/Medusa%20Docs/Diagrams/oms-orders_to4yaq.jpg)
 
 InBzar's [Store REST APIs](https://docs.medusajs.com/api/store) let you integrate a checkout experience in any storefront. Alternatively, you can use InBzar's [Draft Order APIs](https://docs.medusajs.com/api/admin#draft-orders) to place an order without direct involvement from the customer, such as when placing an order through a POS.
 
@@ -73,7 +73,7 @@ You can integrate third-party fulfillment providers with InBzar by creating a fu
 
 InBzar uses the fulfillment service whenever a fulfillment action is performed, such as when a fulfillment is created for items in an order. The service's methods interact with the third-party provider to handle the desired fulfillment actions.
 
-![Fulfilling orders with InBzar OMS](https://res.cloudinary.com/dza7lstvk/image/upload/v1695115456/InBzar%20Docs/Diagrams/oms-fulfillment_kfi1iz.jpg)
+![Fulfilling orders with InBzar OMS](https://res.cloudinary.com/dza7lstvk/image/upload/v1695115456/Medusa%20Docs/Diagrams/oms-fulfillment_kfi1iz.jpg)
 
 In addition, InBzar has an event bus that allows you to listen to events and perform a task asynchronously when that event is triggered. So, you can listen to fulfillment-related events, such as the `order.fulfillment_created` event, and handle that event in the subscribed handler function.
 
