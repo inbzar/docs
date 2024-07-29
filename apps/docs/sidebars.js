@@ -220,51 +220,7 @@ module.exports = {
           type: 'doc',
           id: 'modules/customers/overview',
           label: 'Overview',
-        },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/customers/customers',
-          label: 'Customers',
-        },
-        {
-          type: 'doc',
-          id: 'modules/customers/customer-groups',
-          label: 'Customer Groups',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/customers/backend/send-confirmation',
-          label: 'Backend: Send SignUp Email',
-        },
-        {
-          type: 'doc',
-          id: 'modules/customers/admin/manage-customers',
-          label: 'Admin: Manage Customers',
-        },
-        {
-          type: 'doc',
-          id: 'modules/customers/admin/manage-customer-groups',
-          label: 'Admin: Manage Customer Groups',
-        },
-        {
-          type: 'doc',
-          id: 'modules/customers/storefront/implement-customer-profiles',
-          label: 'Storefront: Add Customer Profiles',
-        },
+        }
       ],
     },
     {
