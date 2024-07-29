@@ -205,46 +205,7 @@ module.exports = {
           type: 'doc',
           id: 'modules/regions-and-currencies/overview',
           label: 'Overview',
-        },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/regions-and-currencies/regions',
-          label: 'Regions',
-        },
-        {
-          type: 'doc',
-          id: 'modules/regions-and-currencies/currencies',
-          label: 'Currencies',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/regions-and-currencies/admin/manage-regions',
-          label: 'Admin: Manage Regions',
-        },
-        {
-          type: 'doc',
-          id: 'modules/regions-and-currencies/admin/manage-currencies',
-          label: 'Admin: Manage Currencies',
-        },
-        {
-          type: 'doc',
-          id: 'modules/regions-and-currencies/storefront/use-regions',
-          label: 'Storefront: Use Regions',
-        },
+        }
       ],
     },
     {
