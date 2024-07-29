@@ -5,7 +5,7 @@ import MobileLogo from "../../../components/MobileLogo"
 export default function NavbarLogo(): JSX.Element {
   return (
     <>
-      <Logo
+      <MobileLogo
         className="navbar__brand hidden lg:block"
         imageClassName="navbar__logo"
         titleClassName="navbar__title text--truncate"
