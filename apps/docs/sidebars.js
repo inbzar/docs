@@ -281,65 +281,6 @@ module.exports = {
           id: 'modules/multiwarehouse/overview',
           label: 'Overview',
         },
-        {
-          type: 'doc',
-          id: 'modules/multiwarehouse/install-modules',
-          label: 'Install Modules',
-        },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/multiwarehouse/inventory-module',
-          label: 'Inventory Module',
-        },
-        {
-          type: 'doc',
-          id: 'modules/multiwarehouse/stock-location-module',
-          label: 'Stock Location Module',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/multiwarehouse/backend/create-inventory-service',
-          label: 'Backend: Create Inventory Service',
-        },
-        {
-          type: 'doc',
-          id: 'modules/multiwarehouse/backend/create-stock-location-service',
-          label: 'Backend: Create Stock Location Service',
-        },
-        {
-          type: 'doc',
-          id: 'modules/multiwarehouse/admin/manage-stock-locations',
-          label: 'Admin: Manage Stock Locations',
-        },
-        {
-          type: 'doc',
-          id: 'modules/multiwarehouse/admin/manage-inventory-items',
-          label: 'Admin: Manage Inventory Items',
-        },
-        {
-          type: 'doc',
-          id: 'modules/multiwarehouse/admin/manage-reservations',
-          label: 'Admin: Manage Custom Reservations',
-        },
-        {
-          type: 'doc',
-          id: 'modules/multiwarehouse/admin/manage-item-allocations-in-orders',
-          label: 'Admin: Manage Allocations in Orders',
-        },
       ],
     },
     {
