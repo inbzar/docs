@@ -311,35 +311,6 @@ module.exports = {
           id: 'modules/discounts/overview',
           label: 'Overview',
         },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/discounts/discounts',
-          label: 'Discounts',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/discounts/admin/manage-discounts',
-          label: 'Admin: Manage Discounts',
-        },
-        {
-          type: 'doc',
-          id: 'modules/discounts/storefront/use-discounts-in-checkout',
-          label: 'Storefront: Discounts in Checkout',
-        },
       ],
     },
     {
