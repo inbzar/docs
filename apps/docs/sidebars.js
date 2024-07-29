@@ -235,56 +235,7 @@ module.exports = {
           type: 'doc',
           id: 'modules/products/overview',
           label: 'Overview',
-        },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/products/products',
-          label: 'Products',
-        },
-        {
-          type: 'doc',
-          id: 'modules/products/categories',
-          label: 'Categories',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/products/admin/manage-products',
-          label: 'Admin: Manage Products',
-        },
-        {
-          type: 'doc',
-          id: 'modules/products/admin/manage-categories',
-          label: 'Admin: Manage Categories',
-        },
-        {
-          type: 'doc',
-          id: 'modules/products/admin/import-products',
-          label: 'Admin: Import Products',
-        },
-        {
-          type: 'doc',
-          id: 'modules/products/storefront/show-products',
-          label: 'Storefront: Show Products',
-        },
-        {
-          type: 'doc',
-          id: 'modules/products/storefront/use-categories',
-          label: 'Storefront: Use Categories',
-        },
+        }
       ],
     },
     {
