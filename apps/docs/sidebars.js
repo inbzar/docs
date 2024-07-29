@@ -296,45 +296,6 @@ module.exports = {
           id: 'modules/taxes/overview',
           label: 'Overview',
         },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/taxes/taxes',
-          label: 'Taxes',
-        },
-        {
-          type: 'doc',
-          id: 'modules/taxes/inclusive-pricing',
-          label: 'Tax Inclusive Pricing',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/taxes/admin/manage-tax-settings',
-          label: 'Admin: Manage Taxes',
-        },
-        {
-          type: 'doc',
-          id: 'modules/taxes/admin/manage-tax-rates',
-          label: 'Admin: Manage Tax Rates',
-        },
-        {
-          type: 'doc',
-          id: 'modules/taxes/storefront/manual-calculation',
-          label: 'Storefront: Calculate Taxes',
-        },
       ],
     },
     {
