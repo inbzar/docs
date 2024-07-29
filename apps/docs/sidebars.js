@@ -341,30 +341,6 @@ module.exports = {
           id: 'modules/price-lists/overview',
           label: 'Overview',
         },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/price-lists/price-lists',
-          label: 'Price Lists',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/price-lists/admin/manage-price-lists',
-          label: 'Admin: Manage Price Lists',
-        },
       ],
     },
     {
