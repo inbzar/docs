@@ -371,50 +371,6 @@ module.exports = {
           id: 'modules/users/overview',
           label: 'Overview',
         },
-        {
-          type: 'html',
-          value: 'Architecture',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/users/users',
-          label: 'Users and Invites',
-        },
-        {
-          type: 'html',
-          value: 'How-to',
-          customProps: {
-            sidebar_is_group_divider: true,
-          },
-        },
-        {
-          type: 'doc',
-          id: 'modules/users/backend/send-invite',
-          label: 'Backend: Send Invite',
-        },
-        {
-          type: 'doc',
-          id: 'modules/users/backend/rbac',
-          label: 'Backend: Implement RBAC',
-        },
-        {
-          type: 'doc',
-          id: 'modules/users/admin/manage-profile',
-          label: 'Admin: Implement Profiles',
-        },
-        {
-          type: 'doc',
-          id: 'modules/users/admin/manage-users',
-          label: 'Admin: Manage Users',
-        },
-        {
-          type: 'doc',
-          id: 'modules/users/admin/manage-invites',
-          label: 'Admin: Manage Invites',
-        },
       ],
     },
   ],
