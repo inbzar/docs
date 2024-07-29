@@ -28,13 +28,13 @@ module.exports = {
       className: 'homepage-sidebar-item',
     },
     {
-      type: 'doc',
-      id: 'create-medusa-app',
-      label: 'Create InBzar App',
+      type: "ref",
+      id: "user-guide",
+      label: "User guide",
       customProps: {
-        sidebar_icon: 'rocket-launch',
+        sidebar_icon: "user",
       },
-      className: 'homepage-sidebar-item',
+      className: "homepage-sidebar-item",
     },
     {
       type: 'category',
@@ -63,6 +63,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Features',
+      collapsible: false,
       link: {
         type: 'doc',
         id: 'features/index',
