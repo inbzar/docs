@@ -52,18 +52,11 @@ module.exports = {
           type: 'doc',
           id: 'recipes/ecommerce',
           label: 'Ecommerce',
-          customProps: {
-            iconName: 'shopping-cart',
-            exclude_from_doc_list: true,
-          },
         },
         {
           type: 'doc',
           id: 'recipes/marketplace',
           label: 'Marketplace',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
       ],
     },
@@ -83,98 +76,61 @@ module.exports = {
           type: 'doc',
           id: 'features/regions-and-currencies',
           label: 'Regions and Currencies',
-          customProps: {
-            iconName: 'shopping-cart',
-            exclude_from_doc_list: true,
-          },
         },
         {
           type: 'doc',
           id: 'features/customers',
           label: 'Customers',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/products',
           label: 'Products',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/carts-and-checkout',
           label: 'Carts and Checkout',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/orders',
           label: 'Orders',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/multiwarehouse',
           label: 'Multi-Warehouse',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/taxes',
           label: 'Taxes',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/discounts',
           label: 'Discounts',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/gift-cards',
           label: 'Gift Cards',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/price-lists',
           label: 'Price Lists',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/sales-channels',
           label: 'Sales Channels',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
         {
           type: 'doc',
           id: 'features/users',
           label: 'Users',
-          customProps: {
-            iconName: 'building-storefront',
-          },
         },
       ],
     },
