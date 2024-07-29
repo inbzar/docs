@@ -26,7 +26,7 @@ You want to add or use the following admin functionalities:
 
 :::info
 
-You can use Medusa’s Admin APIs to achieve more functionalities as well. Check out the [API reference](https://docs.medusajs.com/api/admin#regions) to learn more.
+You can use InBzar’s Admin APIs to achieve more functionalities as well. Check out the [API reference](https://docs.medusajs.com/api/admin#regions) to learn more.
 
 :::
 
@@ -34,21 +34,21 @@ You can use Medusa’s Admin APIs to achieve more functionalities as well. Check
 
 ## Prerequisites
 
-### Medusa Components
+### InBzar Components
 
-It is assumed that you already have a Medusa backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started.
+It is assumed that you already have a InBzar backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started.
 
 ### JS Client
 
-This guide includes code snippets to send requests to your Medusa backend using Medusa’s JS Client, among other methods.
+This guide includes code snippets to send requests to your InBzar backend using InBzar’s JS Client, among other methods.
 
-If you follow the JS Client code blocks, it’s assumed you already have [Medusa’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
+If you follow the JS Client code blocks, it’s assumed you already have [InBzar’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
 
-### Medusa React
+### InBzar React
 
-This guide also includes code snippets to send requests to your Medusa backend using Medusa React, among other methods.
+This guide also includes code snippets to send requests to your InBzar backend using InBzar React, among other methods.
 
-If you follow the Medusa React code blocks, it's assumed you already have [Medusa React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
+If you follow the InBzar React code blocks, it's assumed you already have [InBzar React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
 
 ### Authenticated Admin User
 
@@ -63,7 +63,7 @@ You can learn more about [authenticating as an admin user in the API reference](
 You can retrieve regions available on your backend using the [List Regions API Route](https://docs.medusajs.com/api/admin#regions_getregions):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.regions.list()
@@ -74,7 +74,7 @@ You can retrieve regions available on your backend using the [List Regions API R
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminRegions } from "medusa-react"
@@ -136,7 +136,7 @@ You can also pass filters and other selection query parameters to the request. C
 You can create a region by sending a request to the [Create a Region API Route](https://docs.medusajs.com/api/admin#regions_postregions):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.regions.create({
@@ -159,7 +159,7 @@ You can create a region by sending a request to the [Create a Region API Route](
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCreateRegion } from "medusa-react"
@@ -274,7 +274,7 @@ You can update any of the region’s fields and configurations. The REST APIs of
 Alternatively, you can update the details of a region using the [Update a Region API Route](https://docs.medusajs.com/api/admin#regions_postregionsregion):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.regions.update(regionId, {
@@ -289,7 +289,7 @@ Alternatively, you can update the details of a region using the [Update a Region
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminUpdateRegion } from "medusa-react"
@@ -382,7 +382,7 @@ In the example above, the list of countries replace any countries that were prev
 You can add a shipping option to a region by sending a request to the [Create Shipping Option API Route](https://docs.medusajs.com/api/admin#shipping-options_postshippingoptions):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.shippingOptions.create({
@@ -400,7 +400,7 @@ You can add a shipping option to a region by sending a request to the [Create Sh
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCreateShippingOption } from "medusa-react"
@@ -509,7 +509,7 @@ You can also manage shipping options such as list, update, and delete. You can l
 You can delete a region by sending a request to the [Delete a Region API Route](https://docs.medusajs.com/api/admin#regions_deleteregionsregion):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.regions.delete(regionId)
@@ -519,7 +519,7 @@ You can delete a region by sending a request to the [Delete a Region API Route](
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminDeleteRegion } from "medusa-react"

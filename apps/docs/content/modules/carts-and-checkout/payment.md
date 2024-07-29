@@ -1,20 +1,20 @@
 ---
-description: 'Learn about the payment architecture in the Medusa backend. The payment architecture refers to all operations in the ecommerce store related to processing payments.'
+description: 'Learn about the payment architecture in the InBzar backend. The payment architecture refers to all operations in the ecommerce store related to processing payments.'
 ---
 
 # Payment Architecture Overview
 
-In this document, you’ll learn about the payment architecture in Medusa, specifically its 3 main components and the idempotency key.
+In this document, you’ll learn about the payment architecture in InBzar, specifically its 3 main components and the idempotency key.
 
 ## Introduction
 
 The payment architecture refers to all operations in a commerce application related to processing a customer’s payment. It includes the checkout flow and order handling including refunds and swaps.
 
-In Medusa, there are 3 main components in the payment architecture: Payment Processor, Payment Session, and Payment.
+In InBzar, there are 3 main components in the payment architecture: Payment Processor, Payment Session, and Payment.
 
 :::note
 
-Payment Processors were previously named Payment Provider. With the roll-out of the Payment Processor API following v1.8 of the core Medusa package, Payment Provider is considered a legacy now. However, there are certain entities and services that still use the name Payment Provider as they still don't follow this change.
+Payment Processors were previously named Payment Provider. With the roll-out of the Payment Processor API following v1.8 of the core InBzar package, Payment Provider is considered a legacy now. However, there are certain entities and services that still use the name Payment Provider as they still don't follow this change.
 
 :::
 
@@ -28,25 +28,25 @@ An important part in the Payment architecture to understand is the **Idempotency
 
 ## Payment Processor
 
-A Payment Processor in Medusa is a method to handle payments in selected regions. It is not associated with a cart, customer, or order in particular. It provides the necessary implementation to create Payment Sessions and Payments, as well as authorize and capture payments, among other functionalities.
+A Payment Processor in InBzar is a method to handle payments in selected regions. It is not associated with a cart, customer, or order in particular. It provides the necessary implementation to create Payment Sessions and Payments, as well as authorize and capture payments, among other functionalities.
 
 Payment Processors can be integrated with third-party services that handle payment operations such as capturing a payment. An example of a Payment Processor is Stripe.
 
-Payment Processors can also be related to a custom way of handling payment operations. An example of that is Cash on Delivery (COD) payment methods or Medusa’s [manual payment provider plugin](https://github.com/medusajs/medusa/tree/master/packages/medusa-payment-manual) which provides a minimal implementation of a payment provider and allows store operators to manually handle order payments.
+Payment Processors can also be related to a custom way of handling payment operations. An example of that is Cash on Delivery (COD) payment methods or InBzar’s [manual payment provider plugin](https://github.com/medusajs/medusa/tree/master/packages/medusa-payment-manual) which provides a minimal implementation of a payment provider and allows store operators to manually handle order payments.
 
 :::tip
 
-The manual payment plugin is still considered a payment provider since it does not follow the Payment Processor API introduced in v1.8 of the core Medusa package.
+The manual payment plugin is still considered a payment provider since it does not follow the Payment Processor API introduced in v1.8 of the core InBzar package.
 
 :::
 
 ### How Payment Processor is Created
 
-A Payment Processor is essentially a Medusa [service](../../development/services/create-service.mdx) with a unique identifier, and it extends the `AbstractPaymentProcessor` from the core Medusa package `@medusajs/medusa`. You can create it as part of a [plugin](../../development/plugins/overview.mdx), or just as a service file in your Medusa backend.
+A Payment Processor is essentially a InBzar [service](../../development/services/create-service.mdx) with a unique identifier, and it extends the `AbstractPaymentProcessor` from the core InBzar package `@medusajs/medusa`. You can create it as part of a [plugin](../../development/plugins/overview.mdx), or just as a service file in your InBzar backend.
 
-As a developer, you will mainly work with the Payment Processor when integrating a payment method in Medusa.
+As a developer, you will mainly work with the Payment Processor when integrating a payment method in InBzar.
 
-When you run your Medusa backend, the Payment Processor will be registered on your backend if it hasn’t been already.
+When you run your InBzar backend, the Payment Processor will be registered on your backend if it hasn’t been already.
 
 Once the Payment Processor is added to the backend, the store operator will be able to choose using the [admin dashboard](../../admin/quickstart.mdx) the payment processors available in a region. You can alternatively do that using the [admin APIs](https://docs.medusajs.com/api/admin). These payment processors are shown to the customer at checkout as payment methods to choose from and use.
 
@@ -112,7 +112,7 @@ Payments are generally created using data from the Payment Session and it holds 
 
 Once the customer completes their purchase and the payment has been authorized, a Payment instance will be created from the Payment Session. The Payment is associated first with the cart and then with the order once it’s created and placed.
 
-When the store operator then chooses to capture the order from the Medusa Admin, the Payment is used by the Payment Processor to capture the payment. This is the same case for refunding the amount, canceling the order, or creating a swap.
+When the store operator then chooses to capture the order from the InBzar Admin, the Payment is used by the Payment Processor to capture the payment. This is the same case for refunding the amount, canceling the order, or creating a swap.
 
 ### Payment Entity Overview
 

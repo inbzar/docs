@@ -30,7 +30,7 @@ module.exports = {
     {
       type: 'doc',
       id: 'create-medusa-app',
-      label: 'Create Medusa App',
+      label: 'Create InBzar App',
       customProps: {
         sidebar_icon: 'rocket-launch',
       },

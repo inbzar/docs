@@ -1,5 +1,5 @@
 ---
-description: 'Learn how to create a composable commerce platform using Medusa. This quickstart guide will help you set up your Medusa backend and the admin dashboard.'
+description: 'Learn how to create a composable commerce platform using InBzar. This quickstart guide will help you set up your InBzar backend and the admin dashboard.'
 addHowToData: true
 ---
 
@@ -20,17 +20,17 @@ import PostgresDockerError from './troubleshooting/database-errors/_docker.md'
 import DbUrlError from './troubleshooting/create-medusa-app-errors/_db-url-error.md'
 import ForwardingError from './troubleshooting/create-medusa-app-errors/_forwarding.md'
 
-# Install Medusa with create-medusa-app
+# Install InBzar with create-medusa-app
 
-Medusa is a toolkit for developers to create digital commerce applications. In its simplest form, Medusa is a Node.js backend with the core API, plugins, and modules installed through npm.
+InBzar is a toolkit for developers to create digital commerce applications. In its simplest form, InBzar is a Node.js backend with the core API, plugins, and modules installed through npm.
 
-`create-medusa-app` is a command that facilitates creating a Medusa ecosystem. It installs the Medusa backend and admin dashboard, along with the necessary configurations to run the backend.
+`create-medusa-app` is a command that facilitates creating a InBzar ecosystem. It installs the InBzar backend and admin dashboard, along with the necessary configurations to run the backend.
 
 ---
 
 ## Prerequisites
 
-Before you can install and use Medusa, you need the following tools installed on your machine:
+Before you can install and use InBzar, you need the following tools installed on your machine:
 
 - [Node.js v16+](./development/backend/prepare-environment.mdx#nodejs)
 - [Git](./development/backend/prepare-environment.mdx#git)
@@ -73,7 +73,7 @@ In your terminal, run the following command:
 
   - `--repo-url <url>`: The repository URL to create the project from. By default it will be `https://github.com/medusajs/medusa-starter-default`.
   - `--seed`: A flag indicating whether the database should be seeded with demo data. By default, seeding is disabled.
-  - `--no-boilerplate`: A flag that removes all files added for an enhanced onboarding experience (files under `src/admin`, `src/api`, etc...). This is helpful if you want to create a clean project, and is only recommended if you're familiar with Medusa.
+  - `--no-boilerplate`: A flag that removes all files added for an enhanced onboarding experience (files under `src/admin`, `src/api`, etc...). This is helpful if you want to create a clean project, and is only recommended if you're familiar with InBzar.
   - `--no-browser`: Disables opening the browser at the end of the project creation and only shows success message.
   - `--skip-db`: Skips creating the database, running migrations, and seeding, and subsequently skips opening the browser. Useful if you want to set the database URL at a later point in the configurations.
   - `--db-url <url>`: Skips database creation and sets the database URL to the provided URL. Throws an error if connection to the database fails. Will still run migrations and open the admin after project creation. Useful if you already have a database created, locally or remotely.
@@ -116,7 +116,7 @@ In your terminal, run the following command:
 
 ## Step 2: Specify Project Name
 
-You’ll first be asked to enter the name of your project, which is used to create the directory holding your Medusa backend. You can use the default `my-medusa-store` or enter another project name.
+You’ll first be asked to enter the name of your project, which is used to create the directory holding your InBzar backend. You can use the default `my-medusa-store` or enter another project name.
 
 ---
 
@@ -128,13 +128,13 @@ You'll then be prompted to enter an admin email for your admin user. You'll be u
 
 ## (Optional) Step 4: Install Next.js Starter Storefront
 
-If you didn't pass the `--with-nextjs-starter` option, you'll be asked if you want to install the [Next.js starter storefront](./starters/nextjs-medusa-starter.mdx) along with the Medusa backend. This will install the storefront under the `<PROJECT_NAME>-storefront` directory, where `<PROJECT_NAME>` is the name of the project you specified in step 2.
+If you didn't pass the `--with-nextjs-starter` option, you'll be asked if you want to install the [Next.js starter storefront](./starters/nextjs-medusa-starter.mdx) along with the InBzar backend. This will install the storefront under the `<PROJECT_NAME>-storefront` directory, where `<PROJECT_NAME>` is the name of the project you specified in step 2.
 
 If you want to install the storefront, type `y` and press <kbd>enter</kbd>. If not, you can use the default value `N` and just press <kbd>enter</kbd>.
 
 :::note
 
-You can always install the storefront at a later point. Medusa is a headless backend, so it operates without a storefront by default. You can connect any storefront to it. The Next.js Starter storefront is a good option to use, but you can also build your own storefront later on.
+You can always install the storefront at a later point. InBzar is a headless backend, so it operates without a storefront by default. You can connect any storefront to it. The Next.js Starter storefront is a good option to use, but you can also build your own storefront later on.
 
 :::
 
@@ -150,7 +150,7 @@ This doesn't apply if you supplied the `--db-url` option. In that case, the comm
 
 By default, this command will try to use the default PostgreSQL credentials to connect to your PostgreSQL server. If they don't work, you'll be prompted to enter your PostgreSQL database and password. If they work, you can move ahead to the next step.
 
-These credentials will be used to create a database during this setup and configure your Medusa backend to connect to that database.
+These credentials will be used to create a database during this setup and configure your InBzar backend to connect to that database.
 
 After following the above steps, the project setup will start which includes:
 
@@ -158,7 +158,7 @@ After following the above steps, the project setup will start which includes:
 2. Creating the project database if `--db-url` and `--skip-db` options are not passed.
 3. Installing dependencies in your project directory.
 4. Building project
-5. Running migrations to migrate the Medusa schema into your project database unless `--skip-db` or `--no-migrations` are passed.
+5. Running migrations to migrate the InBzar schema into your project database unless `--skip-db` or `--no-migrations` are passed.
 6. Creating the admin user unless `--skip-db` or `--no-migrations` are passed.
 7. Seeding the database with demo data unless `--skip-db` or `--no-migrations` are passed.
 
@@ -166,13 +166,13 @@ After following the above steps, the project setup will start which includes:
 
 ## Step 6: Log into admin dashboard
 
-Once the project is prepared, the Medusa backend will start and the admin dashboard will be opened in your default browser. You'll then be asked to enter a password for the admin email you entered earlier, as well as other account information.
+Once the project is prepared, the InBzar backend will start and the admin dashboard will be opened in your default browser. You'll then be asked to enter a password for the admin email you entered earlier, as well as other account information.
 
-Once you're logged in, you can start using Medusa! Try following the setup guide to create your first product and order.
+Once you're logged in, you can start using InBzar! Try following the setup guide to create your first product and order.
 
 <Feedback 
    event="survey_create-medusa-app"
-   question="Did you set up Medusa successfully?"
+   question="Did you set up InBzar successfully?"
    positiveQuestion="Is there anything that should improved?"
    negativeQuestion="Please describe the issue you faced."
 />
@@ -196,10 +196,10 @@ Based on what you're building, you can find a development path for you in the Re
   {
     type: 'link',
     href: '/development/overview',
-    label: 'Medusa Backend Basics',
+    label: 'InBzar Backend Basics',
     customProps: {
       icon: Icons['server-stack-solid'],
-      description: 'Learn all the basics of developing with the Medusa backend.'
+      description: 'Learn all the basics of developing with the InBzar backend.'
     }
   },
   {
@@ -208,7 +208,7 @@ Based on what you're building, you can find a development path for you in the Re
     label: 'Commerce Modules',
     customProps: {
       icon: Icons['puzzle-solid'],
-      description: 'Learn about the available commerce modules and features in the Medusa backend.'
+      description: 'Learn about the available commerce modules and features in the InBzar backend.'
     }
   },
 ]} />

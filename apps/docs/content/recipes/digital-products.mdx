@@ -8,29 +8,29 @@ import Icons from '@theme/Icon';
 
 # Digital Products
 
-This document guides you through the different documentation resources that will help you build digital products with Medusa.
+This document guides you through the different documentation resources that will help you build digital products with InBzar.
 
 ## Overview
 
 Digital products are stored privately using a storage service like S3 or another storage mechanism. When the customer buys this type of product, an email is sent to them where they can download the product.
 
-Medusa doesn't have a built-in concept of a digital product since our focus is standardizing features and implementations, then offering the building blocks that enable you to build your use case.
+InBzar doesn't have a built-in concept of a digital product since our focus is standardizing features and implementations, then offering the building blocks that enable you to build your use case.
 
 You can create new entities to represent a digital product and link them to existing product-related entities.
 
-Medusa's plugins also allow you to choose the services that play a part in your digital product implementation. Whether you want to use S3, MinIO, or another service to store your digital products, you must install an existing plugin or create your own. The same applies to sending notifications, such as emails, to customers using notification services.
+InBzar's plugins also allow you to choose the services that play a part in your digital product implementation. Whether you want to use S3, MinIO, or another service to store your digital products, you must install an existing plugin or create your own. The same applies to sending notifications, such as emails, to customers using notification services.
 
 ---
 
 ## Install a File Service
 
-A file service is used to handle storage functionalities in Medusa. This includes uploading, retrieving, and downloading files, among other features. For digital products, a file service is essential to implement the basic functionalities of digital products.
+A file service is used to handle storage functionalities in InBzar. This includes uploading, retrieving, and downloading files, among other features. For digital products, a file service is essential to implement the basic functionalities of digital products.
 
-The Medusa core defines an abstract file service extended by File Service plugins with the actual functionality. This allows you to choose the best storage method for your use case.
+The InBzar core defines an abstract file service extended by File Service plugins with the actual functionality. This allows you to choose the best storage method for your use case.
 
-When you install a Medusa project, the Local file service plugin is installed by default. This plugin is helpful for development, but it's not recommended for production.
+When you install a InBzar project, the Local file service plugin is installed by default. This plugin is helpful for development, but it's not recommended for production.
 
-Medusa also provides official file service plugins that you can use in production, such as the [S3 plugin](../plugins/file-service/s3.mdx) or the [MinIO plugin](../plugins/file-service/minio.md). You can also create your own file service, or browse the [Plugins Library](https://medusajs.com/plugins/?filters=Storage&categories=Storage) for plugins created by the community.
+InBzar also provides official file service plugins that you can use in production, such as the [S3 plugin](../plugins/file-service/s3.mdx) or the [MinIO plugin](../plugins/file-service/minio.md). You can also create your own file service, or browse the [Plugins Library](https://medusajs.com/plugins/?filters=Storage&categories=Storage) for plugins created by the community.
 
 <DocCardList colSize={4} items={[
   {
@@ -70,9 +70,9 @@ A notification service is used to handle sending notifications to users and cust
 
 For digital products, a notification service allows you to send the customer an email or another form of notification with a link to download the file they purchased.
 
-The Medusa core defines an abstract Notification service extended by Notification Service plugins with the actual functionality. This allows you to choose the best notification method for your use case.
+The InBzar core defines an abstract Notification service extended by Notification Service plugins with the actual functionality. This allows you to choose the best notification method for your use case.
 
-Medusa provides official notification plugins that you can use, such as the SendGrid plugin. You can also create your own notification service, or browse the [Plugins Library for plugins](https://medusajs.com/plugins/?filters=Storage&filters=Notification&categories=Storage&categories=Notification) created by the community.
+InBzar provides official notification plugins that you can use, such as the SendGrid plugin. You can also create your own notification service, or browse the [Plugins Library for plugins](https://medusajs.com/plugins/?filters=Storage&filters=Notification&categories=Storage&categories=Notification) created by the community.
 
 <DocCardList colSize={4} items={[
   {
@@ -108,7 +108,7 @@ Medusa provides official notification plugins that you can use, such as the Send
 
 ## Create Custom Entity
 
-An entity represents a table in the database. The Medusa core defines entities necessary for the commerce features it provides. You can also extend those entities or create your own.
+An entity represents a table in the database. The InBzar core defines entities necessary for the commerce features it provides. You can also extend those entities or create your own.
 
 To represent a digital product, it's recommended to create an entity that has a relation to the `ProductVariant` entity. The `ProductVariant` entity represents the saleable variant of a `Product`.
 
@@ -121,7 +121,7 @@ For example, if you're selling the Harry Potter movies, you would have a `Produc
     label: 'Create an Entity',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create an entity in the Medusa backend.',
+      description: 'Learn how to create an entity in the InBzar backend.',
     }
   },
   {
@@ -130,7 +130,7 @@ For example, if you're selling the Harry Potter movies, you would have a `Produc
     label: 'Extend an entity',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to extend an entity in the Medusa backend.',
+      description: 'Learn how to extend an entity in the InBzar backend.',
     }
   },
 ]} />
@@ -218,7 +218,7 @@ For example, if you're selling the Harry Potter movies, you would have a `Produc
   }
   ```
 
-  To apply the migrations on your database and create the `product_media` table, run the following commands in the root directory of your Medusa backend:
+  To apply the migrations on your database and create the `product_media` table, run the following commands in the root directory of your InBzar backend:
 
   ```bash npm2yarn
   npm run build
@@ -236,7 +236,7 @@ After creating your entity, you need to create custom admin API Routes that allo
 
 :::tip
 
-The Medusa backend provides the necessary API Routes for the actual file upload. So, you don’t need to create API Routes for that.
+The InBzar backend provides the necessary API Routes for the actual file upload. So, you don’t need to create API Routes for that.
 
 :::
 
@@ -251,7 +251,7 @@ Creating an API Route also requires creating a service, which is a class that ty
     label: 'Create a Service',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a service in the Medusa backend.',
+      description: 'Learn how to create a service in the InBzar backend.',
     }
   },
   {
@@ -260,7 +260,7 @@ Creating an API Route also requires creating a service, which is a class that ty
     label: 'Create an API Route',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create an entity in the Medusa backend.',
+      description: 'Learn how to create an entity in the InBzar backend.',
     }
   },
 ]} />
@@ -544,7 +544,7 @@ Creating an API Route also requires creating a service, which is a class that ty
 
 ## Customize Admin Dashboard
 
-The Medusa Admin dashboard provides merchants with an easy-to-use interface to manage their store's data and settings. It's also extendable, so you can add widgets, pages, and setting pages relevant to your use case.
+The InBzar Admin dashboard provides merchants with an easy-to-use interface to manage their store's data and settings. It's also extendable, so you can add widgets, pages, and setting pages relevant to your use case.
 
 To add an interface that allows the admin user to upload digital products, you can create custom widgets or pages that use the routes you created. You can use the [Protected Files Upload API Route](https://docs.medusajs.com/api/admin#uploads_postuploadsprotected).
 
@@ -555,7 +555,7 @@ To add an interface that allows the admin user to upload digital products, you c
     label: 'Create a Widget',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a widget in the Medusa Admin.',
+      description: 'Learn how to create a widget in the InBzar Admin.',
     }
   },
   {
@@ -564,7 +564,7 @@ To add an interface that allows the admin user to upload digital products, you c
     label: 'Create UI Route',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a UI route in the Medusa Admin.',
+      description: 'Learn how to create a UI route in the InBzar Admin.',
     }
   },
   {
@@ -583,15 +583,15 @@ To add an interface that allows the admin user to upload digital products, you c
 
   In this example, you’ll add a single page that lists the digital products and allows you to create a new one. The implementation will be minimal for the purpose of simplicity, so you can elaborate on it based on your use case.
       
-  Before starting off, make sure to install the necessary dependencies in your Medusa backend project:
+  Before starting off, make sure to install the necessary dependencies in your InBzar backend project:
 
   ```bash npm2yarn
   npm install medusa-react @tanstack/react-query@4.22 @medusajs/ui
   ```
 
-  This installs the necessary packages to use the Medusa React client and the [Medusa UI package](https://docs.medusajs.com/ui).
+  This installs the necessary packages to use the InBzar React client and the [InBzar UI package](https://docs.medusajs.com/ui).
 
-  You also need to create types for the expected requests and responses of the API Routes you created. This is helpful when using Medusa React’s custom hooks. To do that, create the file `src/types/product-media.ts` with the following content:
+  You also need to create types for the expected requests and responses of the API Routes you created. This is helpful when using InBzar React’s custom hooks. To do that, create the file `src/types/product-media.ts` with the following content:
 
   ```ts title="src/types/product-media.ts" badgeLabel="Backend"
   import { 
@@ -955,7 +955,7 @@ Finally, you can send a notification, such as an email, to the customer using th
   label: 'Create a Subscriber',
   customProps: {
     icon: Icons['academic-cap-solid'],
-    description: 'Learn how to create a service in the Medusa backend.',
+    description: 'Learn how to create a service in the InBzar backend.',
   }
 }} />
 
@@ -1051,7 +1051,7 @@ Finally, you can send a notification, such as an email, to the customer using th
 
 Customers use your storefront to browse your digital products and purchase them. You can also provide other helpful features such as previewing the digital product before purchase.
 
-Medusa provides a [Next.js storefront](../starters/nextjs-medusa-starter.mdx) with standard commerce features including listing products, placing orders, and managing accounts. You can customize the storefront and cater its functionalities to support digital products.
+InBzar provides a [Next.js storefront](../starters/nextjs-medusa-starter.mdx) with standard commerce features including listing products, placing orders, and managing accounts. You can customize the storefront and cater its functionalities to support digital products.
 
 Alternatively, you can follow the [Build a Storefront roadmap](../storefront/roadmap.mdx) to build a storefront with your preferred technology stack.
 
@@ -1951,7 +1951,7 @@ After the customer purchases the digital product you can show a download button 
 
   Before you implement the storefront changes, you need to create a new API Route in the backend that ensures that the currently logged-in customer has purchased the digital product and, if so, returns a presigned URL to download it.
 
-  Create the file `src/api/store/product-media/download/[variant_id]/route.ts` in the Medusa backend with the following content:
+  Create the file `src/api/store/product-media/download/[variant_id]/route.ts` in the InBzar backend with the following content:
 
   ```ts title="src/api/store/product-media/download/[variant_id]/route.ts" badgeLabel="Backend"
   import type { 
@@ -2205,4 +2205,4 @@ After the customer purchases the digital product you can show a download button 
 
 ## Additional Development
 
-You can find other resources for your dit development in the [Medusa Development section](../development/overview.mdx) of this documentation.
+You can find other resources for your dit development in the [InBzar Development section](../development/overview.mdx) of this documentation.

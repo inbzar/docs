@@ -1,10 +1,10 @@
 ---
-description: "In this document, you’ll learn how to install multi-warehouse related modules using NPM in the Medusa backend."
+description: "In this document, you’ll learn how to install multi-warehouse related modules using NPM in the InBzar backend."
 ---
 
 # Install Multi-Warehouse Modules
 
-In this document, you’ll learn how to install multi-warehouse related modules using NPM in the Medusa backend.
+In this document, you’ll learn how to install multi-warehouse related modules using NPM in the InBzar backend.
 
 :::tip
 
@@ -16,7 +16,7 @@ You can also install these modules in any NPM project.
 
 ### Step 1: Install Inventory Module
 
-To install the Inventory Module, run the following command in the root directory of the Medusa backend:
+To install the Inventory Module, run the following command in the root directory of the InBzar backend:
 
 ```bash npm2yarn
 npm install @medusajs/inventory
@@ -56,7 +56,7 @@ After installing the Stock Location Module, make sure to [run the migration scri
 
 ### Step 1: Install Stock Location Module
 
-To install the Stock Location Module, run the following command in the root directory of the Medusa backend:
+To install the Stock Location Module, run the following command in the root directory of the InBzar backend:
 
 ```bash npm2yarn
 npm install @medusajs/stock-location
@@ -100,4 +100,4 @@ After installing both modules, run the following command to migrate current prod
 node ./node_modules/@medusajs/medusa/dist/scripts/migrate-inventory-items.js
 ```
 
-You can now start the Medusa backend and use the Stock Location Module in your commerce application.
+You can now start the InBzar backend and use the Stock Location Module in your commerce application.

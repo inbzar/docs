@@ -195,7 +195,7 @@ export const Feedback = ({
                       </div>
                       <div className="flex flex-col gap-docs_0.5">
                         <Label>
-                          If applicable, what version of Medusa are you using?
+                          If applicable, what version of InBzar are you using?
                           If a plugin is related to the error, please provide a
                           version of that as well.
                         </Label>

@@ -1,5 +1,5 @@
 ---
-description: 'Learn about what Regions are and how they are used in a Medusa backend. Regions represent at least one country on the Medusa backend.'
+description: 'Learn about what Regions are and how they are used in a InBzar backend. Regions represent at least one country on the InBzar backend.'
 ---
 
 # Regions Architecture
@@ -8,7 +8,7 @@ In this document, you’ll learn about the Region entity and its architecture.
 
 ## Introduction
 
-Regions represent at least one country on your Medusa backend. They're used to define different business logic and configurations for a set of countries.
+Regions represent at least one country on your InBzar backend. They're used to define different business logic and configurations for a set of countries.
 
 For example, you can enable one payment processor for region A, and a different payment processor for region B. Customers can then use the payment processor enabled in their region.
 
@@ -55,11 +55,11 @@ A region is stored in the database as a [Region](../../references/entities/class
 
 ## Relations to Other Entities
 
-As regions are a core part of your Medusa backend, there are many relations to other entities.
+As regions are a core part of your InBzar backend, there are many relations to other entities.
 
 This section covers relations to entities that make up the configurations of a region.
 
-![Regions Relations Overview](https://res.cloudinary.com/dza7lstvk/image/upload/v1677487695/Medusa%20Docs/Diagrams/regions-architecture_v50h9d.jpg)
+![Regions Relations Overview](https://res.cloudinary.com/dza7lstvk/image/upload/v1677487695/InBzar%20Docs/Diagrams/regions-architecture_v50h9d.jpg)
 
 ### Country
 

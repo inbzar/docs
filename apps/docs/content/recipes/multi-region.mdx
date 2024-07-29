@@ -7,19 +7,19 @@ import Icons from '@theme/Icon';
 
 # Multi-Regional Store
 
-This document guides you through Medusa's different features and resources to create a multi-regional store.
+This document guides you through InBzar's different features and resources to create a multi-regional store.
 
 ## Overview
 
 A multi-regional store allows merchants to sell across different countries. This includes supporting each country's tax rules, currency, available shipping and payment options, and more.
 
-Medusa comes with multi-regional support out of the box. This recipe explains how you can benefit from Medusa's features to create a multi-regional store.
+InBzar comes with multi-regional support out of the box. This recipe explains how you can benefit from InBzar's features to create a multi-regional store.
 
 ---
 
 ## Multi-Region Setup
 
-With Medusa, you can create unlimited regions in your store. Each region has configurations managed through the Medusa Admin Dashboard or the Admin API.
+With InBzar, you can create unlimited regions in your store. Each region has configurations managed through the InBzar Admin Dashboard or the Admin API.
 
 ### Currency
 
@@ -29,7 +29,7 @@ When customers view your products from a region, they see the prices in the regi
 
 ### Tax rates and providers
 
-At the regional level, merchants can define a default tax rate and tax rates for specific conditions (for example, for a particular set of products). Each region can also have a different tax provider that calculates the taxes. You can use Medusa's default tax provider or create a custom tax provider.
+At the regional level, merchants can define a default tax rate and tax rates for specific conditions (for example, for a particular set of products). Each region can also have a different tax provider that calculates the taxes. You can use InBzar's default tax provider or create a custom tax provider.
 
 During checkout, the taxes are calculated based on the customer's region, tax configurations, and rates.
 
@@ -37,10 +37,10 @@ During checkout, the taxes are calculated based on the customer's region, tax co
   {
     type: 'link',
     href: '/user-guide/taxes/manage',
-    label: 'Manage Taxes in Medusa Admin',
+    label: 'Manage Taxes in InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Learn how to manage taxes in Medusa Admin.',
+      description: 'Learn how to manage taxes in InBzar Admin.',
     }
   },
   {
@@ -69,16 +69,16 @@ Merchants can choose which payment and fulfillment providers are available in ea
 
 Customers will only be shown the payment providers and shipping options configured for the region during checkout. This lets you give customers a localized experience that feels familiar and instills trust.
 
-Medusa provides official plugins for payment and fulfillment providers. You can also create custom providers.
+InBzar provides official plugins for payment and fulfillment providers. You can also create custom providers.
 
 <DocCardList colSize={6} items={[
   {
     type: 'link',
     href: '/user-guide/regions/providers',
-    label: 'Manage Providers in Medusa Admin',
+    label: 'Manage Providers in InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Learn how to manage providers in Medusa Admin.',
+      description: 'Learn how to manage providers in InBzar Admin.',
     }
   },
   {
@@ -114,20 +114,20 @@ Medusa provides official plugins for payment and fulfillment providers. You can 
 
 ## Prices Per Region and Currency
 
-When a merchant sets the price of a product in Medusa, they can specify the price per currency and region. Merchants can also benefit from this pricing mechanism when adding sales or overriding prices for specific conditions using the [Price Lists feature](../modules/price-lists/overview.mdx).
+When a merchant sets the price of a product in InBzar, they can specify the price per currency and region. Merchants can also benefit from this pricing mechanism when adding sales or overriding prices for specific conditions using the [Price Lists feature](../modules/price-lists/overview.mdx).
 
-Then, customers see the price of a product based on the region they're in and the region's currency and whether any special pricing applies to their case. Medusa has a pricing strategy (which you can override) to show the customer the best price based on their context.
+Then, customers see the price of a product based on the region they're in and the region's currency and whether any special pricing applies to their case. InBzar has a pricing strategy (which you can override) to show the customer the best price based on their context.
 
-Using the [tax-inclusive beta feature](../beta.md#tax-inclusive-pricing), merchants can specify prices, including taxes per currency and region. Medusa then calculates the tax amount applied to a line item in the cart based on the region's tax configurations.
+Using the [tax-inclusive beta feature](../beta.md#tax-inclusive-pricing), merchants can specify prices, including taxes per currency and region. InBzar then calculates the tax amount applied to a line item in the cart based on the region's tax configurations.
 
 <DocCardList colSize={6} items={[
   {
     type: 'link',
     href: '/user-guide/products/manage#edit-product-prices-with-bulk-editor',
-    label: 'Setting Product Prices in Medusa Admin',
+    label: 'Setting Product Prices in InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Learn how to set a product prices in Medusa Admin.',
+      description: 'Learn how to set a product prices in InBzar Admin.',
     }
   },
   {
@@ -145,9 +145,9 @@ Using the [tax-inclusive beta feature](../beta.md#tax-inclusive-pricing), mercha
 
 ## Multi-Warehouse Support
 
-Medusa provides Multi-warehouse features that allow you to manage your inventory across different locations. Merchants can then control which location an item in an order is fulfilled, allowing them to keep a correct inventory count across locations and sales channels.
+InBzar provides Multi-warehouse features that allow you to manage your inventory across different locations. Merchants can then control which location an item in an order is fulfilled, allowing them to keep a correct inventory count across locations and sales channels.
 
-A multi-regional setup lets you manage your inventory through Medusa across the different regions you serve. Your products’ inventory and availability aren't bound to a single stock location, and customers are always shown accurate inventory information based on the location associated with their sales channel.
+A multi-regional setup lets you manage your inventory through InBzar across the different regions you serve. Your products’ inventory and availability aren't bound to a single stock location, and customers are always shown accurate inventory information based on the location associated with their sales channel.
 
 <DocCardList colSize={4} items={[
   {
@@ -156,7 +156,7 @@ A multi-regional setup lets you manage your inventory through Medusa across the 
     label: 'Multi-warehouse Overview',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn about the Multi-warehouse feature in Medusa.',
+      description: 'Learn about the Multi-warehouse feature in InBzar.',
     }
   },
   {
@@ -165,7 +165,7 @@ A multi-regional setup lets you manage your inventory through Medusa across the 
     label: 'Manage Stock Locations',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Learn how to manage stock locations in the Medusa Admin.',
+      description: 'Learn how to manage stock locations in the InBzar Admin.',
     }
   },
   {
@@ -174,7 +174,7 @@ A multi-regional setup lets you manage your inventory through Medusa across the 
     label: 'Manage Inventory',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Learn how to manage inventory in the Medusa Admin.',
+      description: 'Learn how to manage inventory in the InBzar Admin.',
     }
   },
 ]} />
@@ -183,9 +183,9 @@ A multi-regional setup lets you manage your inventory through Medusa across the 
 
 ## Multi-Lingual Setup with Third-Party CMS
 
-Medusa can be integrated with third-party services, including Content Management Systems (CMS). You can benefit from rich CMS features with a third-party CMS, including managing your content in multiple languages. This allows you to cater to customers’ different languages in the regions you serve.
+InBzar can be integrated with third-party services, including Content Management Systems (CMS). You can benefit from rich CMS features with a third-party CMS, including managing your content in multiple languages. This allows you to cater to customers’ different languages in the regions you serve.
 
-Medusa provides an official Contentful plugin and a community Strapi plugin. You can also create a CMS plugin that integrates with your preferred CMS platform to provide multi-lingual features.
+InBzar provides an official Contentful plugin and a community Strapi plugin. You can also create a CMS plugin that integrates with your preferred CMS platform to provide multi-lingual features.
 
 <DocCardList colSize={6} items={[
   {
@@ -194,7 +194,7 @@ Medusa provides an official Contentful plugin and a community Strapi plugin. You
     label: 'CMS Plugins',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn about available CMS plugins for the Medusa backend.',
+      description: 'Learn about available CMS plugins for the InBzar backend.',
     }
   },
   {
@@ -203,7 +203,7 @@ Medusa provides an official Contentful plugin and a community Strapi plugin. You
     label: 'How to Create a Plugin',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a plugin for the Medusa backend.',
+      description: 'Learn how to create a plugin for the InBzar backend.',
     }
   },
 ]} />
@@ -214,7 +214,7 @@ Medusa provides an official Contentful plugin and a community Strapi plugin. You
 
 When you sell across regions, it's essential to be able to detect the customer's region and provide them with the products, prices, and content relevant to them without requiring actions from their side.
 
-Medusa provides an IP Lookup plugin that lets you detect a customer's location and, ultimately, their region using [ipstack](https://ipstack.com/). You can also create a plugin that detects the location through a different logic.
+InBzar provides an IP Lookup plugin that lets you detect a customer's location and, ultimately, their region using [ipstack](https://ipstack.com/). You can also create a plugin that detects the location through a different logic.
 
 <DocCardList colSize={6} items={[
   {
@@ -223,7 +223,7 @@ Medusa provides an IP Lookup plugin that lets you detect a customer's location a
     label: 'IP Lookup Plugin',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to use the IP Lookup plugin in your Medusa backend.',
+      description: 'Learn how to use the IP Lookup plugin in your InBzar backend.',
     }
   },
   {
@@ -232,7 +232,7 @@ Medusa provides an IP Lookup plugin that lets you detect a customer's location a
     label: 'How to Create a Plugin',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a plugin for the Medusa backend.',
+      description: 'Learn how to create a plugin for the InBzar backend.',
     }
   },
 ]} />
@@ -241,7 +241,7 @@ Medusa provides an IP Lookup plugin that lets you detect a customer's location a
 
 ## Additional Features and Development Resources
 
-Medusa provides other essential commerce features and development resources to help you build your multi-region store.
+InBzar provides other essential commerce features and development resources to help you build your multi-region store.
 
 <DocCardList colSize={6} items={[
   {
@@ -250,16 +250,16 @@ Medusa provides other essential commerce features and development resources to h
     label: 'Commerce Modules',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn about the available commerce features and modules in Medusa.',
+      description: 'Learn about the available commerce features and modules in InBzar.',
     }
   },
   {
     type: 'link',
     href: '/development/overview',
-    label: 'Medusa Development',
+    label: 'InBzar Development',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to customize your Medusa backend for your use case.',
+      description: 'Learn how to customize your InBzar backend for your use case.',
     }
   },
 ]} />

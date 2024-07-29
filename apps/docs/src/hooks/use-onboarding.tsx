@@ -13,7 +13,7 @@ const useOnboarding = () => {
       track("finished_onboarding")
       const id = generateId()
       addNotification({
-        title: "Thank you for installing Medusa!",
+        title: "Thank you for installing InBzar!",
         text: "Please rate your onboarding experience",
         type: "success",
         show: showNotification,

@@ -1,16 +1,16 @@
 ---
-description: "Learn about Fulfillments, how they’re used in your Medusa backend, and their relation to other entities."
+description: "Learn about Fulfillments, how they’re used in your InBzar backend, and their relation to other entities."
 ---
 
 # Fulfillments Architecture Overview
 
-In this document, you’ll learn about Fulfillments, how they’re used in your Medusa backend, and their relation to other entities.
+In this document, you’ll learn about Fulfillments, how they’re used in your InBzar backend, and their relation to other entities.
 
 ## Overview
 
 Fulfillments are used to ship items, typically to a customer. Fulfillments can be used in orders, returns, swaps, and more.
 
-Fulfillments are processed within Medusa by a [fulfillment provider](../../references/fulfillment/classes/fulfillment.AbstractFulfillmentService.mdx). The fulfillment provider handles creating, validating, and processing the fulfillment, among other functionalities. Typically, a fulfillment provider would be integrated with a third-party service that handles the actual shipping of the items.
+Fulfillments are processed within InBzar by a [fulfillment provider](../../references/fulfillment/classes/fulfillment.AbstractFulfillmentService.mdx). The fulfillment provider handles creating, validating, and processing the fulfillment, among other functionalities. Typically, a fulfillment provider would be integrated with a third-party service that handles the actual shipping of the items.
 
 When a fulfillment is created for one or more item, shipments can then be created for that fulfillment. These shipments can then be tracked using tracking numbers, providing customers and merchants accurate details about a shipment.
 
@@ -21,7 +21,7 @@ When a fulfillment is created for one or more item, shipments can then be create
 Some of the `Fulfillment` entity’s attributes include:
 
 - `provider_id`: a string indicating the ID of the fulfillment provider that processes this fulfillment. You can also access the provider by expanding the `provider` relation and accessing `fulfillment.provider`.
-- `location_id`: a string indicating where the fulfillment is being made from. When paired with the Stock Location Module in the Medusa backend, this would be the ID of a `StockLocation`.
+- `location_id`: a string indicating where the fulfillment is being made from. When paired with the Stock Location Module in the InBzar backend, this would be the ID of a `StockLocation`.
 - `no_notification`: a boolean value indicating whether the customer should receive notifications for fulfillment updates.
 - `data`: an object that can hold any data relevant for the fulfillment provider.
 - `shipped_at`: a date indicating when the fulfillment was shipped.

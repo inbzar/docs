@@ -34,21 +34,21 @@ There are many more functionalities within the order domain related to returns, 
 
 ## Prerequisites
 
-### Medusa Components
+### InBzar Components
 
-It is assumed that you already have a Medusa backend installed and set up. If not, you can follow our [quickstart guide](../../../development/backend/install.mdx) to get started.
+It is assumed that you already have a InBzar backend installed and set up. If not, you can follow our [quickstart guide](../../../development/backend/install.mdx) to get started.
 
 ### JS Client
 
-This guide includes code snippets to send requests to your Medusa backend using Medusa’s JS Client, among other methods.
+This guide includes code snippets to send requests to your InBzar backend using InBzar’s JS Client, among other methods.
 
-If you follow the JS Client code blocks, it’s assumed you already have [Medusa’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
+If you follow the JS Client code blocks, it’s assumed you already have [InBzar’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
 
-### Medusa React
+### InBzar React
 
-This guide also includes code snippets to send requests to your Medusa backend using Medusa React, among other methods.
+This guide also includes code snippets to send requests to your InBzar backend using InBzar React, among other methods.
 
-If you follow the Medusa React code blocks, it's assumed you already have [Medusa React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
+If you follow the InBzar React code blocks, it's assumed you already have [InBzar React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
 
 ### Authenticated Admin User
 
@@ -63,7 +63,7 @@ You can learn more about [authenticating as an admin user in the API reference](
 You can list orders by sending a request to the [List Orders API Route](https://docs.medusajs.com/api/admin#orders_getorders):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.list()
@@ -73,7 +73,7 @@ You can list orders by sending a request to the [List Orders API Route](https://
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminOrders } from "medusa-react"
@@ -134,7 +134,7 @@ This API Route accepts a variety of query parameters that allow you to filter or
 For example, you can filter the orders by one or more status:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.list({
@@ -150,7 +150,7 @@ For example, you can filter the orders by one or more status:
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminOrders } from "medusa-react"
@@ -215,7 +215,7 @@ You can check available order statuses [here](../../../references/entities/enums
 Another example is filtering the orders by a sales channel:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.list({
@@ -233,7 +233,7 @@ Another example is filtering the orders by a sales channel:
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminOrders } from "medusa-react"
@@ -296,7 +296,7 @@ Another example is filtering the orders by a sales channel:
 You can also combine filters together:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.list({
@@ -315,7 +315,7 @@ You can also combine filters together:
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminOrders } from "medusa-react"
@@ -383,7 +383,7 @@ You can also combine filters together:
 You can retrieve an order by sending a request to the [Get an Order API Route](https://docs.medusajs.com/api/admin#orders_getordersorder):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.retrieve(orderId)
@@ -393,7 +393,7 @@ You can retrieve an order by sending a request to the [Get an Order API Route](h
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminOrder } from "medusa-react"
@@ -468,7 +468,7 @@ Updating an order’s details can include updating its:
 You can update any of the above details of an order by sending a request to the [Update an Order API Route](https://docs.medusajs.com/api/admin#orders_postordersorder):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.update(orderId, {
@@ -480,7 +480,7 @@ You can update any of the above details of an order by sending a request to the 
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminUpdateOrder } from "medusa-react"
@@ -562,7 +562,7 @@ The request returns the updated order as an object.
 You can capture an order’s payment by sending a request to the [Capture Order’s Payment API Route](https://docs.medusajs.com/api/admin#orders_postordersordercapture):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.capturePayment(orderId)
@@ -572,7 +572,7 @@ You can capture an order’s payment by sending a request to the [Capture Order�
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCapturePayment } from "medusa-react"
@@ -637,7 +637,7 @@ You can refund an amount that is less than `order.refundable_amount`.
 To refund payment, send a request to the [Refund Payment API Route](https://docs.medusajs.com/api/admin#orders_postordersorderrefunds):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.refundPayment(orderId, {
@@ -650,7 +650,7 @@ To refund payment, send a request to the [Refund Payment API Route](https://docs
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminRefundPayment } from "medusa-react"
@@ -742,7 +742,7 @@ The request returns the updated order as an object.
 You can create a fulfillment by sending a request to the [Create a Fulfillment API Route](https://docs.medusajs.com/api/admin#orders_postordersorderfulfillments):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.createFulfillment(orderId, {
@@ -759,7 +759,7 @@ You can create a fulfillment by sending a request to the [Create a Fulfillment A
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCreateFulfillment } from "medusa-react"
@@ -861,7 +861,7 @@ The request returns the updated order as an object.
 You can create a shipment for a fulfillment by sending a request to the [Create Shipment API Route](https://docs.medusajs.com/api/admin#orders_postordersordershipment):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.createShipment(orderId, {
@@ -873,7 +873,7 @@ You can create a shipment for a fulfillment by sending a request to the [Create 
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCreateShipment } from "medusa-react"
@@ -952,7 +952,7 @@ The request returns the updated order as an object.
 You can cancel a fulfillment by sending a request to the [Cancel Fulfillment API Route](https://docs.medusajs.com/api/admin#orders_postordersorderfulfillmentscancel):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.cancelFulfillment(orderId, fulfillmentId)
@@ -962,7 +962,7 @@ You can cancel a fulfillment by sending a request to the [Cancel Fulfillment API
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCancelFulfillment } from "medusa-react"
@@ -1031,7 +1031,7 @@ The request returns the updated order as an object.
 You can mark an order completed, changing its status, by sending a request to the [Complete an Order API Route](https://docs.medusajs.com/api/admin#orders_postordersordercomplete):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.complete(orderId)
@@ -1041,7 +1041,7 @@ You can mark an order completed, changing its status, by sending a request to th
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCompleteOrder } from "medusa-react"
@@ -1106,7 +1106,7 @@ The request returns the updated order as an object.
 You can cancel an order by sending a request to the [Cancel Order API Route](https://docs.medusajs.com/api/admin#orders_postordersordercancel):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.cancel(orderId)
@@ -1116,7 +1116,7 @@ You can cancel an order by sending a request to the [Cancel Order API Route](htt
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCancelOrder } from "medusa-react"
@@ -1181,7 +1181,7 @@ The request returns the updated order as an object.
 You can archive an order by sending a request to the [Archive Order API Route](https://docs.medusajs.com/api/admin#orders_postordersorderarchive):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.archive(orderId)
@@ -1191,7 +1191,7 @@ You can archive an order by sending a request to the [Archive Order API Route](h
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminArchiveOrder } from "medusa-react"

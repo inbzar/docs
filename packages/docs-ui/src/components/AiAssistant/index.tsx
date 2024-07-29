@@ -86,14 +86,14 @@ export const AiAssistant = () => {
     {
       title: "FAQ",
       items: [
-        "What is Medusa?",
-        "How can I create an ecommerce store with Medusa?",
-        "How can I build a marketplace with Medusa?",
-        "How can I build subscription-based purchases with Medusa?",
-        "How can I build digital products with Medusa?",
-        "What can I build with Medusa?",
-        "What is Medusa Admin?",
-        "How do I configure the database in Medusa?",
+        "What is InBzar?",
+        "How can I create an ecommerce store with InBzar?",
+        "How can I build a marketplace with InBzar?",
+        "How can I build subscription-based purchases with InBzar?",
+        "How can I build digital products with InBzar?",
+        "What can I build with InBzar?",
+        "What is InBzar Admin?",
+        "How do I configure the database in InBzar?",
       ],
     },
   ]
@@ -314,7 +314,7 @@ export const AiAssistant = () => {
             "shadow-none flex-1 text-medusa-fg-base",
             "disabled:!bg-transparent disabled:cursor-not-allowed"
           )}
-          placeholder="Ask me a question about Medusa..."
+          placeholder="Ask me a question about InBzar..."
           autoFocus={true}
           passedRef={inputRef}
           disabled={loading}
@@ -400,7 +400,7 @@ export const AiAssistant = () => {
             )}
           >
             <AiAssistantCommandIcon />
-            <span className="text-medusa-fg-subtle">Medusa AI Assistant</span>
+            <span className="text-medusa-fg-subtle">InBzar AI Assistant</span>
             <Badge variant="purple">Beta</Badge>
           </div>
         </Tooltip>

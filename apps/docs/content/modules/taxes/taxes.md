@@ -1,16 +1,16 @@
 ---
-description: 'Learn about taxes in Medusa. This includes learning about the usage of taxes in regions, tax rates, tax providers, and more.'
+description: 'Learn about taxes in InBzar. This includes learning about the usage of taxes in regions, tax rates, tax providers, and more.'
 ---
 
 # Taxes Architecture Overview
 
-In this document, you’ll learn about taxes in Medusa.
+In this document, you’ll learn about taxes in InBzar.
 
 ## Overview
 
 Taxes are fees applied on items and shipping options when making a purchase. Taxes are typically different for each region around the world, both in amount and calculation logic.
 
-In Medusa, there are different ways you can customize taxes, allowing you to implement what works for your setup or the regions your commerce store operates in. You can:
+In InBzar, there are different ways you can customize taxes, allowing you to implement what works for your setup or the regions your commerce store operates in. You can:
 
 - Create a tax provider that defines the tax lines applied to line items and shipping methods.
 - Customize the tax calculation strategy to change how taxes are calculated.
@@ -52,7 +52,7 @@ The `TaxRate` entity’s attributes include:
 
 ### Tax Provider
 
-Tax providers are used to return the tax line items for a set of line items and shipping methods during checkout. The Medusa backend has a `system` tax provider. It returns the line items as-is, without making any changes. You can also create your own tax provider that matches your use case.
+Tax providers are used to return the tax line items for a set of line items and shipping methods during checkout. The InBzar backend has a `system` tax provider. It returns the line items as-is, without making any changes. You can also create your own tax provider that matches your use case.
 
 Each region can use a different tax provider. By default, regions use the `system` tax provider.
 
@@ -76,9 +76,9 @@ On the other hand, the `ShippingMethodTaxLine` has the attributes of `TaxLine` a
 
 ## Tax Calculation Strategy
 
-The tax calculation strategy is used to calculate taxes based on a set of line items, tax lines, and a context during checkout. The strategy is used throughout the Medusa backend, such as when calculating the totals of a cart.
+The tax calculation strategy is used to calculate taxes based on a set of line items, tax lines, and a context during checkout. The strategy is used throughout the InBzar backend, such as when calculating the totals of a cart.
 
-Medusa defines a default tax calculation strategy. It calculates the taxes of line items and shipping methods, and returns the total of the two.
+InBzar defines a default tax calculation strategy. It calculates the taxes of line items and shipping methods, and returns the total of the two.
 
 You can override the tax calculation strategy to define a calculation strategy that works for your use case.
 

@@ -1,14 +1,14 @@
 ---
-description: 'Learn about what Customers are in Medusa and how they are implemented. Customers are individuals that make purchases in your store.'
+description: 'Learn about what Customers are in InBzar and how they are implemented. Customers are individuals that make purchases in your store.'
 ---
 
 # Customers
 
-In this document, you’ll learn about Customers and their relation to other entities in Medusa.
+In this document, you’ll learn about Customers and their relation to other entities in InBzar.
 
 ## Introduction
 
-Customers are individuals that make purchases in your store. In Medusa, there are two types of customers: registered customers and guests or unregistered customers.
+Customers are individuals that make purchases in your store. In InBzar, there are two types of customers: registered customers and guests or unregistered customers.
 
 Both registered and unregistered customers can make purchases. However, only registered customers can log into their accounts and manage their details and orders.
 

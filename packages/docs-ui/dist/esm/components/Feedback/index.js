@@ -84,7 +84,7 @@ export const Feedback = ({ event, pathName, reportLink, question = "Was this sec
                                     React.createElement(Label, null, "Can you provide the exact steps you took before receiving the error? For example, the commands you ran."),
                                     React.createElement(TextArea, { rows: 4, value: steps, onChange: (e) => setSteps(e.target.value), placeholder: "1. I ran npm dev..." })),
                                 React.createElement("div", { className: "flex flex-col gap-docs_0.5" },
-                                    React.createElement(Label, null, "If applicable, what version of Medusa are you using? If a plugin is related to the error, please provide a version of that as well."),
+                                    React.createElement(Label, null, "If applicable, what version of InBzar are you using? If a plugin is related to the error, please provide a version of that as well."),
                                     React.createElement(TextArea, { rows: 4, value: medusaVersion, onChange: (e) => setMedusaVersion(e.target.value), placeholder: "@medusajs/medusa: vX" })),
                                 React.createElement("div", { className: "flex flex-col gap-docs_0.5" },
                                     React.createElement(Label, null, "Were you able to fix the error? If so, what steps did you follow?"),

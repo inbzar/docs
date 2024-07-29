@@ -25,9 +25,9 @@ You can alternatively use the [SendGrid](../../../plugins/notifications/sendgrid
 
 ## Prerequisites
 
-### Medusa Components
+### InBzar Components
 
-It's assumed that you already have a Medusa backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started. The Medusa backend must also have an event bus module installed, which is available when using the default Medusa backend starter.
+It's assumed that you already have a InBzar backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started. The InBzar backend must also have an event bus module installed, which is available when using the default InBzar backend starter.
 
 ### Notification Provider
 

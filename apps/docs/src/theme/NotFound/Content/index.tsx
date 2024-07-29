@@ -45,7 +45,7 @@ export default function NotFoundContent({ className }: Props): JSX.Element {
           <ul>
             <li>
               <Link href={useBaseUrl("/create-medusa-app")}>
-                Install Medusa with create-medusa-app
+                Install InBzar with create-medusa-app
               </Link>
             </li>
             <li>
@@ -65,7 +65,7 @@ export default function NotFoundContent({ className }: Props): JSX.Element {
             </li>
             <li>
               <Link href={useBaseUrl("/admin/quickstart")}>
-                Install Medusa Admin
+                Install InBzar Admin
               </Link>
             </li>
             <li>

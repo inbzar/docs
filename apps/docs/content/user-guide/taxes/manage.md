@@ -1,12 +1,12 @@
 ---
 sidebar_position: 2
-description: 'This user guide explains how to manage taxes on the Medusa Admin. Learn how to edit their configurations.'
+description: 'This user guide explains how to manage taxes on the InBzar Admin. Learn how to edit their configurations.'
 addHowToData: true
 ---
 
 # Manage Taxes
 
-In this document, you’ll learn how to view and manage taxes in your Medusa Admin.
+In this document, you’ll learn how to view and manage taxes in your InBzar Admin.
 
 ## View Taxes
 
@@ -40,7 +40,7 @@ The save button only appears when you make changes to the settings.
 
 ### Change Tax Provider
 
-The tax provider that you choose defines how taxes are calculated for products and shipping options on checkout. Medusa provides a default tax provider with the name “System Tax Provider”.
+The tax provider that you choose defines how taxes are calculated for products and shipping options on checkout. InBzar provides a default tax provider with the name “System Tax Provider”.
 
 If you have integrated a custom tax provider and want to use it to calculate taxes in a region:
 
@@ -51,7 +51,7 @@ If you have integrated a custom tax provider and want to use it to calculate tax
 
 ### Disable Automatic Taxes Calculation
 
-By default, taxes are calculated automatically by Medusa. They’re calculated in different places during checkout, such as when a shipping method is chosen or when a new product is added to the cart.
+By default, taxes are calculated automatically by InBzar. They’re calculated in different places during checkout, such as when a shipping method is chosen or when a new product is added to the cart.
 
 If you use a third-party tax provider and you want to avoid sending too many requests to the tax provider, you can disable this behavior.
 

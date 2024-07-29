@@ -1,16 +1,16 @@
 ---
-description: "Learn about draft orders, process around draft orders, and their relation to other entities in the Medusa backend."
+description: "Learn about draft orders, process around draft orders, and their relation to other entities in the InBzar backend."
 ---
 
 # Draft Orders Architecture Overview
 
-In this document, you’ll learn about draft orders, process around draft orders, and their relation to other entities in the Medusa backend.
+In this document, you’ll learn about draft orders, process around draft orders, and their relation to other entities in the InBzar backend.
 
 ## Overview
 
 Merchants may need to manually create orders without any involvement from the customer. This can be useful if the order is being created through a channel that isn’t integrated within your commerce system, or for some reason the customer can’t create the order themselves.
 
-In Medusa, these types of orders are called draft orders. An admin or a merchant can create a draft order that holds all the details of the order. Then, the draft order can be later transformed into an actual order.
+In InBzar, these types of orders are called draft orders. An admin or a merchant can create a draft order that holds all the details of the order. Then, the draft order can be later transformed into an actual order.
 
 ---
 
@@ -32,17 +32,17 @@ There are other important attributes discussed in later sections. Check out the 
 
 ## How Draft Orders Work
 
-You have full freedom in how you choose to implement creating draft orders. This section explains how it’s created in the Medusa backend using the [Create Draft Order](https://docs.medusajs.com/api/admin#draft-orders_postdraftorders) and [Register Payment](https://docs.medusajs.com/api/admin#draft-orders_postdraftordersdraftorderregisterpayment) API Routes.
+You have full freedom in how you choose to implement creating draft orders. This section explains how it’s created in the InBzar backend using the [Create Draft Order](https://docs.medusajs.com/api/admin#draft-orders_postdraftorders) and [Register Payment](https://docs.medusajs.com/api/admin#draft-orders_postdraftordersdraftorderregisterpayment) API Routes.
 
 A draft order is created using the `DraftOrderService`'s [create method](../../references/services/classes/services.DraftOrderService.mdx#create). Within that method, a cart is created along with it. The cart is used to store the order’s details, such as the draft order’s items, shipping options, and more. The cart has the type `draft_order`.
 
-Since the draft order is associated with a cart, the process implemented in the Medusa backend around completing the draft order is pretty similar to that of completing a cart.
+Since the draft order is associated with a cart, the process implemented in the InBzar backend around completing the draft order is pretty similar to that of completing a cart.
 
 The payment must be authorized before the cart can be completed, which can be done using the `CartService`'s [authorizePayment method](../../references/services/classes/services.CartService.mdx#authorizepayment). Once the payment is authorized, the order can be created using the `OrderService`'s [createFromCart method](../../references/services/classes/services.OrderService.mdx#createfromcart).
 
 :::note
 
-In the Register Payment API Route, the `system` payment method is used by default as the payment session of the cart. This means that the authorization and capturing of the payment don’t actually trigger any processes with existing payment processors integrated into your Medusa backend. It’s expected that the merchant will handle these processes manually.
+In the Register Payment API Route, the `system` payment method is used by default as the payment session of the cart. This means that the authorization and capturing of the payment don’t actually trigger any processes with existing payment processors integrated into your InBzar backend. It’s expected that the merchant will handle these processes manually.
 
 :::
 

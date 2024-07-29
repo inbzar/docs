@@ -19,7 +19,7 @@ This guide explains how you can listen to the `order.placed` event to send an em
 
 ### Event Bus Module
 
-The event bus module trigger the event to the listening subscribers. So, it’s required to have an event bus module installed and configured on your Medusa backend.
+The event bus module trigger the event to the listening subscribers. So, it’s required to have an event bus module installed and configured on your InBzar backend.
 
 The [Local Event Bus module](../../../development/events/modules/local.md) works in a development environment. For production, it’s recommended to use the [Redis Event Bus module](../../../development/events/modules/redis.md).
 

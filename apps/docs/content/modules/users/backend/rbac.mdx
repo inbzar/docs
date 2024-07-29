@@ -8,7 +8,7 @@ import Icons from '@theme/Icon';
 
 # Implement Role-Based Access Control (RBAC)
 
-In this document, you'll get a high-level overview of how you can implement role-based access control (RBAC) in your Medusa backend.
+In this document, you'll get a high-level overview of how you can implement role-based access control (RBAC) in your InBzar backend.
 
 ## Overview
 
@@ -16,7 +16,7 @@ Role-Based Access Control (RBAC) refers to the level of access a user has. Typic
 
 For example, you may want a content-manager user who can only access CMS functionalities and another manager user who can only access order functionalities. RBAC is also useful in [marketplace use cases](../../../recipes/marketplace.mdx).
 
-This guide gives you a high-level approach to implementing RBAC in Medusa. The examples included in this guide provide a simple implementation to give you an idea of how you can implement this functionality in your Medusa backend.
+This guide gives you a high-level approach to implementing RBAC in InBzar. The examples included in this guide provide a simple implementation to give you an idea of how you can implement this functionality in your InBzar backend.
 
 ---
 
@@ -333,7 +333,7 @@ So, the first step would be to create the `Role` and `Permission` entities to re
 
 To ensure that users who have the privilege can access an API Route, you must create a middleware that guards admin routes. This middleware will run on all authenticated admin requests to ensure that only allowed users can access an API Route.
 
-Since the Medusa backend uses Express, you can create a middleware and attach it to all admin routes.
+Since the InBzar backend uses Express, you can create a middleware and attach it to all admin routes.
 
 <DocCard item={{
   type: 'link',
@@ -341,7 +341,7 @@ Since the Medusa backend uses Express, you can create a middleware and attach it
   label: 'Create a Middleware',
   customProps: {
     icon: Icons['academic-cap-solid'],
-    description: 'Learn how to create a middleware in Medusa.',
+    description: 'Learn how to create a middleware in InBzar.',
   }
 }} />
 
@@ -456,7 +456,7 @@ Furthermore, you may need to extend core services if you need to perform actions
     label: 'Create API Route',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create an API Route in Medusa.',
+      description: 'Learn how to create an API Route in InBzar.',
     }
   },
   {
@@ -465,7 +465,7 @@ Furthermore, you may need to extend core services if you need to perform actions
     label: 'Create Service',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a service in Medusa',
+      description: 'Learn how to create a service in InBzar',
     }
   },
   {
@@ -474,7 +474,7 @@ Furthermore, you may need to extend core services if you need to perform actions
     label: 'Extend Service',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to extend a core service in Medusa',
+      description: 'Learn how to extend a core service in InBzar',
     }
   },
 ]} />
@@ -725,7 +725,7 @@ Furthermore, you may need to extend core services if you need to perform actions
 
   This creates the Associate User API Route at `/admin/roles/[id]/user/[user_id]` that uses the `RoleService` to associate a role with a user.
 
-  To test the API Routes out, run the `build` command in the root directory of your Medusa backend project:
+  To test the API Routes out, run the `build` command in the root directory of your InBzar backend project:
 
   ```bash npm2yarn
   npm run build
@@ -768,4 +768,4 @@ Furthermore, you may need to extend core services if you need to perform actions
 
 ## Additional Development
 
-If your use case requires other changes or functionality implementations, check out the [Medusa Development section](../../../development/overview.mdx) of the documentation for all available development guides.
+If your use case requires other changes or functionality implementations, check out the [InBzar Development section](../../../development/overview.mdx) of the documentation for all available development guides.

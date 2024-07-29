@@ -25,27 +25,27 @@ You want to add or use the following admin functionalities:
 
 ## Prerequisites
 
-### Medusa Components
+### InBzar Components
 
-It is assumed that you already have a Medusa backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started.
+It is assumed that you already have a InBzar backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started.
 
 ### Required Module
 
-This guide assumes you have the Inventory Module installed on your Medusa backend. If not, you can learn how to install it using [this guide](../install-modules.md#inventory-module).
+This guide assumes you have the Inventory Module installed on your InBzar backend. If not, you can learn how to install it using [this guide](../install-modules.md#inventory-module).
 
 Furthermore, inventory levels are tied to a location ID. So, it’s recommended to use the [Stock Location module](../install-modules.md#stock-location-module) if you don’t have any location logic implemented in place.
 
 ### JS Client
 
-This guide includes code snippets to send requests to your Medusa backend using Medusa’s JS Client, among other methods.
+This guide includes code snippets to send requests to your InBzar backend using InBzar’s JS Client, among other methods.
 
-If you follow the JS Client code blocks, it’s assumed you already have [Medusa’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
+If you follow the JS Client code blocks, it’s assumed you already have [InBzar’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
 
-### Medusa React
+### InBzar React
 
-This guide also includes code snippets to send requests to your Medusa backend using Medusa React, among other methods.
+This guide also includes code snippets to send requests to your InBzar backend using InBzar React, among other methods.
 
-If you follow the Medusa React code blocks, it's assumed you already have [Medusa React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
+If you follow the InBzar React code blocks, it's assumed you already have [InBzar React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
 
 ### Authenticated Admin User
 
@@ -60,7 +60,7 @@ You can learn more about [authenticating as an admin user in the API reference](
 You can list inventory items by sending a request to the [List Inventory Items API Route](https://docs.medusajs.com/api/admin#inventory-items_getinventoryitems):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.inventoryItems.list()
@@ -70,7 +70,7 @@ You can list inventory items by sending a request to the [List Inventory Items A
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminInventoryItems } from "medusa-react"
@@ -144,7 +144,7 @@ Inventory items are automatically created when a variant is created with `manage
 You can create an inventory item by sending a request to the [Create Inventory Item API Route](https://docs.medusajs.com/api/admin#inventory-items_postinventoryitems):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.inventoryItems.create({
@@ -156,7 +156,7 @@ You can create an inventory item by sending a request to the [Create Inventory I
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCreateInventoryItem } from "medusa-react"
@@ -227,7 +227,7 @@ This request returns the created inventory item as an object.
 You can retrieve an inventory item by sending a request to the [Get Inventory Item API Route](https://docs.medusajs.com/api/admin#inventory-items_getinventoryitemsinventoryitem):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.inventoryItems.retrieve(inventoryItemId)
@@ -237,7 +237,7 @@ You can retrieve an inventory item by sending a request to the [Get Inventory It
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminInventoryItem } from "medusa-react"
@@ -302,7 +302,7 @@ The request returns the inventory item as an object.
 You can update an inventory item by sending a request to the [Update Inventory Item API Route](https://docs.medusajs.com/api/admin#inventory-items_postinventoryitemsinventoryitem):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.inventoryItems.update(inventoryItemId, {
@@ -314,7 +314,7 @@ You can update an inventory item by sending a request to the [Update Inventory I
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminUpdateInventoryItem } from "medusa-react"
@@ -397,7 +397,7 @@ This section shows you the different ways you can manage inventory levels. Each 
 You can list inventory levels of an inventory item by sending a request to the [List inventory levels API Route](https://docs.medusajs.com/api/admin#inventory-items_getinventoryitemsinventoryitemlocationlevels):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.inventoryItems.listLocationLevels(inventoryItemId)
@@ -407,7 +407,7 @@ You can list inventory levels of an inventory item by sending a request to the [
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { 
@@ -476,7 +476,7 @@ The request returns the inventory item as an object. In that object, the list of
 You can create a location level by sending a request to the [Create Inventory Level API Route](https://docs.medusajs.com/api/admin#inventory-items_postinventoryitemsinventoryitemlocationlevels):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.inventoryItems.createLocationLevel(
@@ -492,7 +492,7 @@ You can create a location level by sending a request to the [Create Inventory Le
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCreateLocationLevel } from "medusa-react"
@@ -580,7 +580,7 @@ This request returns the inventory item associated with the created location lev
 You can update a location level by sending a request to the [Update Location Level API Route](https://docs.medusajs.com/api/admin#inventory-items_postinventoryitemsinventoryitemlocationlevelslocationlevel):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.inventoryItems.updateLocationLevel(
@@ -596,7 +596,7 @@ You can update a location level by sending a request to the [Update Location Lev
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminUpdateLocationLevel } from "medusa-react"
@@ -679,7 +679,7 @@ The request returns the inventory item associated with the location level as an 
 You can delete a location level of an inventory item by sending a request to the [Delete Location Level API Route](https://docs.medusajs.com/api/admin#inventory-items_deleteinventoryitemsinventoryitelocationlevelslocation):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.inventoryItems.deleteLocationLevel(
@@ -692,7 +692,7 @@ You can delete a location level of an inventory item by sending a request to the
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminDeleteLocationLevel } from "medusa-react"
@@ -757,7 +757,7 @@ The request returns the inventory item as an object.
 You can delete an inventory item by sending a request to the [Delete Inventory Item API Route](https://docs.medusajs.com/api/admin#inventory-items_deleteinventoryitemsinventoryitem):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.inventoryItems.delete(inventoryItemId)
@@ -767,7 +767,7 @@ You can delete an inventory item by sending a request to the [Delete Inventory I
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminDeleteInventoryItem } from "medusa-react"

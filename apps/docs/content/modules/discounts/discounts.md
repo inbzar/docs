@@ -1,5 +1,5 @@
 ---
-description: 'Learn about the discount architecture in the Medusa backend. Discounts are used to offer promotions to the user for marketing purposes.'
+description: 'Learn about the discount architecture in the InBzar backend. Discounts are used to offer promotions to the user for marketing purposes.'
 ---
 
 # Discounts Architecture
@@ -98,7 +98,7 @@ Based on the value of `type`, one of the following relations can be used to retr
 - `product_tags` is an array of product tags that this condition applies to if the condition’s `type` is `product_tags`. Each item of the array would be a [`DiscountConditionProductTag`](../../references/entities/classes/entities.DiscountConditionProductTag.mdx).
 - `customer_groups` is an array of customer groups that this condition applies to if the condition’s `type` is `customer_groups`. Each item of the array would be a [`DiscountConditionCustomerGroup`](../../references/entities/classes/entities.DiscountConditionCustomerGroup.mdx).
 
-![Discounts Architecture](https://res.cloudinary.com/dza7lstvk/image/upload/v1678372360/Medusa%20Docs/Diagrams/discounts_ioivrl.png)
+![Discounts Architecture](https://res.cloudinary.com/dza7lstvk/image/upload/v1678372360/InBzar%20Docs/Diagrams/discounts_ioivrl.png)
 
 ---
 

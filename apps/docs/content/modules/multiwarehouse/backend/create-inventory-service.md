@@ -1,17 +1,17 @@
 ---
-description: 'Learn how to create an inventory service, which you can use in a custom inventory module in the Medusa backend.'
+description: 'Learn how to create an inventory service, which you can use in a custom inventory module in the InBzar backend.'
 addHowToData: true
 ---
 
 # How to Create an Inventory Service
 
-In this document, you’ll learn how to create an inventory service, which you can use in a custom inventory module in the Medusa backend.
+In this document, you’ll learn how to create an inventory service, which you can use in a custom inventory module in the InBzar backend.
 
 ## Overview
 
-An inventory module is used in a commerce application, such as the Medusa backend, to handle functionalities related to stock-kept items. This includes managing those items, their locations, and their allocations in orders.
+An inventory module is used in a commerce application, such as the InBzar backend, to handle functionalities related to stock-kept items. This includes managing those items, their locations, and their allocations in orders.
 
-While Medusa provides [an inventory module](../inventory-module.md) that you can use in your Medusa backend, you can also create a custom module to handle these functionalities.
+While InBzar provides [an inventory module](../inventory-module.md) that you can use in your InBzar backend, you can also create a custom module to handle these functionalities.
 
 The module is expected to, at the very least, export the inventory service. If necessary, you can include entities, migrations, and other resources as part of the export.
 
@@ -19,7 +19,7 @@ This guide will only explain what is required to create in your custom inventory
 
 :::note
 
-It should be noted that the Medusa backend expects the Inventory Module to have entities for an inventory item, an inventory level, and a reservation item, as it uses the IDs of those entities when orchestrating between different modules and the in the API Routes it exposes. You can learn more about this in the [Inventory Module Architecture documentation](../inventory-module.md).
+It should be noted that the InBzar backend expects the Inventory Module to have entities for an inventory item, an inventory level, and a reservation item, as it uses the IDs of those entities when orchestrating between different modules and the in the API Routes it exposes. You can learn more about this in the [Inventory Module Architecture documentation](../inventory-module.md).
 
 :::
 
@@ -27,7 +27,7 @@ It should be noted that the Medusa backend expects the Inventory Module to have 
 
 ## Prerequisites
 
-The `IStockLocationService` interface that you’ll be implementing is available in the `@medusajs/types` package. So, make sure to install it in your Medusa backend or the module project (depending on where you’re adding your implementation):
+The `IStockLocationService` interface that you’ll be implementing is available in the `@medusajs/types` package. So, make sure to install it in your InBzar backend or the module project (depending on where you’re adding your implementation):
 
 ```bash npm2yarn
 npm install @medusajs/types
@@ -1201,7 +1201,7 @@ Make sure to replace `CustomInventoryItem` with your inventory item entity.
 
 ## Step 2: Use the Inventory Service
 
-After implementing your custom service along with any other necessary resources, you can test it out or use it in your Medusa backend. You can learn more about how to do that in the [Create Module documentation](../../../development/modules/create.mdx).
+After implementing your custom service along with any other necessary resources, you can test it out or use it in your InBzar backend. You can learn more about how to do that in the [Create Module documentation](../../../development/modules/create.mdx).
 
 ---
 

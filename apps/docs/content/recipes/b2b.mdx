@@ -9,13 +9,13 @@ import LearningPath from '@site/src/components/LearningPath';
 
 # B2B Recipe
 
-This document guides you through the different documentation resources that will help you build a B2B store with Medusa.
+This document guides you through the different documentation resources that will help you build a B2B store with InBzar.
 
 ## Overview
 
 In a B2B store, it’s essential to differentiate between customer types to provide them with relevant pricing, products, shopping experience, and more.
 
-Medusa’s commerce features, including sales channels, customer groups, and price lists, facilitate implementing this setup. Medusa’s architecture and extendible nature allow you to customize your store based on your use case.
+InBzar’s commerce features, including sales channels, customer groups, and price lists, facilitate implementing this setup. InBzar’s architecture and extendible nature allow you to customize your store based on your use case.
 
 <LearningPath pathName="b2b" />
 
@@ -23,18 +23,18 @@ Medusa’s commerce features, including sales channels, customer groups, and pri
 
 ## Create B2B Sales Channel
 
-In Medusa, a sales channel allows you to set product availability per channel. In this case, you can create a B2B sales channel that will include only B2B products.
+In InBzar, a sales channel allows you to set product availability per channel. In this case, you can create a B2B sales channel that will include only B2B products.
 
-You can create a sales channel through the Medusa Admin or Admin REST APIs.
+You can create a sales channel through the InBzar Admin or Admin REST APIs.
 
 <DocCardList colSize={6} items={[
   {
     type: 'link',
     href: '/user-guide/sales-channels/manage',
-    label: 'Option 1: Use Medusa Admin',
+    label: 'Option 1: Use InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Create the sales channel using the Medusa Admin.',
+      description: 'Create the sales channel using the InBzar Admin.',
     }
   },
   {
@@ -54,16 +54,16 @@ You can create a sales channel through the Medusa Admin or Admin REST APIs.
 
 Publishable API keys can be associated with one or more sales channels. Then, in a client such as a storefront, you can pass the publishable API key in the header of your requests to ensure all products retrieved belong to the associated sales channel(s).
 
-You can create a publishable API key through the Medusa Admin or the Admin REST APIs, then associate it with the B2B sales channel. You’ll later use this key when developing your B2B storefront.
+You can create a publishable API key through the InBzar Admin or the Admin REST APIs, then associate it with the B2B sales channel. You’ll later use this key when developing your B2B storefront.
 
 <DocCardList colSize={6} items={[
   {
     type: 'link',
     href: '/user-guide/settings/publishable-api-keys',
-    label: 'Option 1: Use Medusa Admin',
+    label: 'Option 1: Use InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Create the publishable API key using the Medusa Admin.',
+      description: 'Create the publishable API key using the InBzar Admin.',
     }
   },
   {
@@ -81,7 +81,7 @@ You can create a publishable API key through the Medusa Admin or the Admin REST 
 
 ## Add Products
 
-Using the Medusa Admin or the Admin REST APIs, you can add your B2B products to your store. You can also import your products from an existing CSV file using the Product Import feature.
+Using the InBzar Admin or the Admin REST APIs, you can add your B2B products to your store. You can also import your products from an existing CSV file using the Product Import feature.
 
 After or while you add your products, set the products’ availability to the B2B sales channel you’ve created.
 
@@ -89,10 +89,10 @@ After or while you add your products, set the products’ availability to the B2
   {
     type: 'link',
     href: '/user-guide/products/manage',
-    label: 'Add Products Using Medusa Admin',
+    label: 'Add Products Using InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Create the product using the Medusa Admin.',
+      description: 'Create the product using the InBzar Admin.',
     }
   },
   {
@@ -107,10 +107,10 @@ After or while you add your products, set the products’ availability to the B2
   {
     type: 'link',
     href: '/user-guide/products/import',
-    label: 'Import Products Using Medusa Admin',
+    label: 'Import Products Using InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Import the products using the Medusa Admin.',
+      description: 'Import the products using the InBzar Admin.',
     }
   },
   {
@@ -140,10 +140,10 @@ For more advanced customer modeling, you may create custom entities. This is cov
   {
     type: 'link',
     href: '/user-guide/customers/groups',
-    label: 'Option 1: Use Medusa Admin',
+    label: 'Option 1: Use InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Create the customer group using the Medusa Admin.',
+      description: 'Create the customer group using the InBzar Admin.',
     }
   },
   {
@@ -163,16 +163,16 @@ For more advanced customer modeling, you may create custom entities. This is cov
 
 After adding your B2B customer group, you can add B2B customers and assign them to the B2B customer group. Alternatively, if you want to allow B2B customers to register themselves, then that will be covered in a later step.
 
-You can create a customer through the Medusa Admin or Admin REST APIs.
+You can create a customer through the InBzar Admin or Admin REST APIs.
 
 <DocCardList colSize={6} items={[
   {
     type: 'link',
     href: '/user-guide/customers/manage',
-    label: 'Option 1: Use Medusa Admin',
+    label: 'Option 1: Use InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Create the customers using the Medusa Admin.',
+      description: 'Create the customers using the InBzar Admin.',
     }
   },
   {
@@ -194,16 +194,16 @@ A price list allows you to set different prices on a set of products for various
 
 You can use price lists to set the same price for all B2B customers or different prices for different B2B customers if you’ve organized them into separate customer groups.
 
-You can create a price list through the Medusa Admin or Admin REST APIs.
+You can create a price list through the InBzar Admin or Admin REST APIs.
 
 <DocCardList colSize={6} items={[
   {
     type: 'link',
     href: '/user-guide/price-lists/manage',
-    label: 'Add Price List Using Medusa Admin',
+    label: 'Add Price List Using InBzar Admin',
     customProps: {
       icon: Icons['users-solid'],
-      description: 'Create the price list using the Medusa Admin.',
+      description: 'Create the price list using the InBzar Admin.',
     }
   },
   {
@@ -238,10 +238,10 @@ Each of the entities you create can be controlled using custom logic.
   {
     type: 'link',
     href: '/development/overview',
-    label: 'Medusa Development',
+    label: 'InBzar Development',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Find all the development resources to customize Medusa.',
+      description: 'Find all the development resources to customize InBzar.',
     }
   },
 ]} />
@@ -254,7 +254,7 @@ On the frontend clients communicating with your store, such as the storefront, y
 
 The API Route's logic differs based on how you’ve implemented the B2B logic. For example, if you’ve used the `is_b2b` flag in the customer group, your API Route can check whether that flag is enabled for the logged-in customer.
 
-Medusa allows you to create custom API Routes exposed as REST APIs.
+InBzar allows you to create custom API Routes exposed as REST APIs.
 
 <DocCard item={{
   type: 'link',
@@ -262,7 +262,7 @@ Medusa allows you to create custom API Routes exposed as REST APIs.
   label: 'Create an API Route',
   customProps: {
     icon: Icons['academic-cap-solid'],
-    description: 'Learn how to create an API Route in Medusa.',
+    description: 'Learn how to create an API Route in InBzar.',
   }
 }} />
 
@@ -325,9 +325,9 @@ Medusa allows you to create custom API Routes exposed as REST APIs.
 
 ## Customize Admin
 
-Based on your use case, you may need to customize the Medusa Admin to add new widgets or pages.
+Based on your use case, you may need to customize the InBzar Admin to add new widgets or pages.
 
-The Medusa Admin plugin can be extended to add widgets, UI routes, and setting pages.
+The InBzar Admin plugin can be extended to add widgets, UI routes, and setting pages.
 
 <DocCardList colSize={4} items={[
   {
@@ -345,7 +345,7 @@ The Medusa Admin plugin can be extended to add widgets, UI routes, and setting p
     label: 'Create Admin UI Routes',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to add new pages to your Medusa Admin.',
+      description: 'Learn how to add new pages to your InBzar Admin.',
     }
   },
   {
@@ -354,7 +354,7 @@ The Medusa Admin plugin can be extended to add widgets, UI routes, and setting p
     label: 'Create Admin Setting Page',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to add new page to the Medusa Admin settings.',
+      description: 'Learn how to add new page to the InBzar Admin settings.',
     }
   },
 ]} />
@@ -365,7 +365,7 @@ The Medusa Admin plugin can be extended to add widgets, UI routes, and setting p
 
 You may want different interfaces for B2B and regular customers on the storefront. You may also want to display products differently for each type of customer.
 
-Medusa provides a Next.js starter that you can use and customize. You can also build your storefront with any frontend technology. Medusa provides you with different client libraries and REST APIs to use.
+InBzar provides a Next.js starter that you can use and customize. You can also build your storefront with any frontend technology. InBzar provides you with different client libraries and REST APIs to use.
 
 Use the publishable API key you associated with your B2B sales channel in the storefront to ensure only B2B products are retrieved.
 
@@ -410,10 +410,10 @@ Once you finish your development, you can deploy your B2B backend and storefront
   {
     type: 'link',
     href: '/deployments/server',
-    label: 'Deploy Medusa Backend',
+    label: 'Deploy InBzar Backend',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to deploy your Medusa backend to your preferred hosting provider.',
+      description: 'Learn how to deploy your InBzar backend to your preferred hosting provider.',
     }
   },
   {
@@ -431,4 +431,4 @@ Once you finish your development, you can deploy your B2B backend and storefront
 
 ## Additional Development
 
-You can find other resources for your B2B development in the [Medusa Development section](../development/overview.mdx) of this documentation.
+You can find other resources for your B2B development in the [InBzar Development section](../development/overview.mdx) of this documentation.

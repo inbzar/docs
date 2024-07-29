@@ -1,10 +1,10 @@
 ---
-description: 'Learn what gift cards are and how they work in the Medusa backend. Learn about the relations between Gift Cards and other entities.'
+description: 'Learn what gift cards are and how they work in the InBzar backend. Learn about the relations between Gift Cards and other entities.'
 ---
 
 # Gift Cards
 
-In this document, you’ll learn about Gift Cards and how they work in Medusa.
+In this document, you’ll learn about Gift Cards and how they work in InBzar.
 
 ## Introduction
 

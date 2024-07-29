@@ -9,7 +9,7 @@ import LearningPath from '@site/src/components/LearningPath';
 
 # Build a Marketplace
 
-This document guides you through the different documentation resources that will help you build a marketplace with Medusa.
+This document guides you through the different documentation resources that will help you build a marketplace with InBzar.
 
 ## Overview
 
@@ -27,9 +27,9 @@ Entities represent tables in the database.
 
 :::
 
-By default, entities like users, products, or orders aren't associated with a store, as it's assumed there's one store in Medusa. For a marketplace, each of these entities should be associated with their respective stores.
+By default, entities like users, products, or orders aren't associated with a store, as it's assumed there's one store in InBzar. For a marketplace, each of these entities should be associated with their respective stores.
 
-To associate these entities with the `Store` entity, you need to extend and customize entities created in the Medusa core package `@medusajs/medusa`, such as the `User` entity, to add a relation to the `Store` entity.
+To associate these entities with the `Store` entity, you need to extend and customize entities created in the InBzar core package `@medusajs/medusa`, such as the `User` entity, to add a relation to the `Store` entity.
 
 <DocCard item={{
   type: 'link',
@@ -37,7 +37,7 @@ To associate these entities with the `Store` entity, you need to extend and cust
   label: 'Extend an Entity',
   customProps: {
     icon: Icons['academic-cap-solid'],
-    description: 'Learn how to extend an entity in Medusa.',
+    description: 'Learn how to extend an entity in InBzar.',
   }
 }} />
 
@@ -161,7 +161,7 @@ Throughout your development, you'll likely need access to the logged-in user. Fo
 
 ## Customize Data Management Functionalities
 
-After associating entities with stores, you'll need to customize how certain data management functionalities are implemented in the Medusa core package.
+After associating entities with stores, you'll need to customize how certain data management functionalities are implemented in the InBzar core package.
 
 For example, when a new user is created, you need to ensure that it's associated either with a new store or with the store of the logged-in user. Another example is associating a new product with the logged-in user's store.
 
@@ -175,7 +175,7 @@ You can also extend services if you need to customize a functionality implemente
   label: 'Extend a Service',
   customProps: {
     icon: Icons['academic-cap-solid'],
-    description: 'Learn how to extend a service in Medusa',
+    description: 'Learn how to extend a service in InBzar',
   }
 }} />
 
@@ -264,7 +264,7 @@ To listen to events, you need to create Subscribers that subscribe a handler fun
   label: 'Create a Subscriber',
   customProps: {
     icon: Icons['academic-cap-solid'],
-    description: 'Learn how to create a subscriber in Medusa.',
+    description: 'Learn how to create a subscriber in InBzar.',
   }
 }} />
 
@@ -309,7 +309,7 @@ To listen to events, you need to create Subscribers that subscribe a handler fun
 
 ## Add Payment and Fulfillment Providers
 
-Payment and fulfillment providers can be added through plugins or directly in your project. You can either create your own provider, use one of Medusa's official plugins, or use community plugins.
+Payment and fulfillment providers can be added through plugins or directly in your project. You can either create your own provider, use one of InBzar's official plugins, or use community plugins.
 
 :::note
 
@@ -346,10 +346,10 @@ Payment and fulfillment providers are associated with regions, which are not ass
   {
     type: 'link',
     href: '/plugins/overview',
-    label: 'Install an Official Medusa Plugin',
+    label: 'Install an Official InBzar Plugin',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Check out available Medusa plugins to install.',
+      description: 'Check out available InBzar plugins to install.',
     }
   },
   {
@@ -369,7 +369,7 @@ Payment and fulfillment providers are associated with regions, which are not ass
 
 As you add marketplace features to your store, you'll most likely need to customize the admin to provide an interface to manage these features.
 
-Medusa's [admin plugin](../admin/quickstart.mdx) can be extended to add widgets or new blocks to existing pages, add UI routes to add new pages, or add setting pages.
+InBzar's [admin plugin](../admin/quickstart.mdx) can be extended to add widgets or new blocks to existing pages, add UI routes to add new pages, or add setting pages.
 
 <DocCardList colSize={4} items={[
   {
@@ -387,7 +387,7 @@ Medusa's [admin plugin](../admin/quickstart.mdx) can be extended to add widgets 
     label: 'Create Admin UI Routes',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to add new pages to your Medusa Admin.',
+      description: 'Learn how to add new pages to your InBzar Admin.',
     }
   },
   {
@@ -396,7 +396,7 @@ Medusa's [admin plugin](../admin/quickstart.mdx) can be extended to add widgets 
     label: 'Create Admin Setting Page',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to add new page to the Medusa Admin settings.',
+      description: 'Learn how to add new page to the InBzar Admin settings.',
     }
   },
 ]} />
@@ -415,7 +415,7 @@ If you want to implement this functionality, you can follow the RBAC recipe.
   label: 'Implement Role-Based Access Control',
   customProps: {
     icon: Icons['academic-cap-solid'],
-    description: 'Learn how to implement role-based access control (RBAC) in Medusa.',
+    description: 'Learn how to implement role-based access control (RBAC) in InBzar.',
   }
 }} />
 
@@ -423,7 +423,7 @@ If you want to implement this functionality, you can follow the RBAC recipe.
 
 ## Build a Storefront
 
-Medusa provides a Next.js Starter Template that you can use with Medusa. Since you've customized your Medusa project, you'll need to either customize the existing Next.js Starter Template, or create a custom storefront.
+InBzar provides a Next.js Starter Template that you can use with InBzar. Since you've customized your InBzar project, you'll need to either customize the existing Next.js Starter Template, or create a custom storefront.
 
 <DocCardList colSize={6} items={[
   {
@@ -450,7 +450,7 @@ Medusa provides a Next.js Starter Template that you can use with Medusa. Since y
 
 ## Deploy Marketplace
 
-Our documentation includes deployment guides for a basic Medusa backend. You should be able to follow it to deploy your customized marketplace, as well.
+Our documentation includes deployment guides for a basic InBzar backend. You should be able to follow it to deploy your customized marketplace, as well.
 
 <DocCard item={{
   type: 'link',
@@ -466,4 +466,4 @@ Our documentation includes deployment guides for a basic Medusa backend. You sho
 
 ## Additional Development
 
-You can find other resources for your marketplace development in the [Medusa Development section](../development/overview.mdx) of this documentation.
+You can find other resources for your marketplace development in the [InBzar Development section](../development/overview.mdx) of this documentation.

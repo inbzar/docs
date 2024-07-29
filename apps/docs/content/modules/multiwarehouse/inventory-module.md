@@ -10,13 +10,13 @@ In this document, you’ll learn about the Inventory Module and how it works.
 
 The Inventory Module includes all functionalities related to product inventory. It implements inventory management for a product, confirming whether a product is available across inventory levels, and updating the inventory availability of a product variant at different points in the order lifecycle.
 
-Medusa's Inventory module is a standalone module that can be used in any commerce application, not just in a Medusa backend. This document gives a general overview of how the Inventory Module is designed, then explains how the Medusa core orchestrates relations and processes around this module when it's used with the Medusa backend.
+InBzar's Inventory module is a standalone module that can be used in any commerce application, not just in a InBzar backend. This document gives a general overview of how the Inventory Module is designed, then explains how the InBzar core orchestrates relations and processes around this module when it's used with the InBzar backend.
 
 ---
 
 ## Entities Overview
 
-![Inventory Module Entities Diagram](https://res.cloudinary.com/dza7lstvk/image/upload/v1680184977/Medusa%20Docs/Diagrams/inventory-diagram_1_eaupf2.jpg)
+![Inventory Module Entities Diagram](https://res.cloudinary.com/dza7lstvk/image/upload/v1680184977/InBzar%20Docs/Diagrams/inventory-diagram_1_eaupf2.jpg)
 
 ### InventoryItem
 
@@ -49,35 +49,35 @@ The `ReservationItem` entity has the following notable attributes, among others:
 
 ---
 
-## How the Module Integrates into Medusa
+## How the Module Integrates into InBzar
 
-This section explains how the Medusa backend uses the Inventory Module along with its entities and other modules, and in its processes.
+This section explains how the InBzar backend uses the Inventory Module along with its entities and other modules, and in its processes.
 
 ### Entities Relation Overview
 
-The core Medusa package contains an entity `ProductVariantInventoryItem` that is used to establish a relation between a product variant and an inventory item. This enables you to use inventory management features on the product variant level, while maintaining the modularity that allows you to use Medusa's inventory module or implement your custom inventory module.
+The core InBzar package contains an entity `ProductVariantInventoryItem` that is used to establish a relation between a product variant and an inventory item. This enables you to use inventory management features on the product variant level, while maintaining the modularity that allows you to use InBzar's inventory module or implement your custom inventory module.
 
-When you use Medusa's Inventory Module, the Medusa backend uses the `ProductVariantInventoryItem` entity as a bridge between the `InventoryItem` entity and the `ProductVariant` entity.
+When you use InBzar's Inventory Module, the InBzar backend uses the `ProductVariantInventoryItem` entity as a bridge between the `InventoryItem` entity and the `ProductVariant` entity.
 
-![Inventory Item's Relation to Product Variants in the Medusa Backend](https://res.cloudinary.com/dza7lstvk/image/upload/v1680185070/Medusa%20Docs/Diagrams/inventory-item-medusa-diagram_i21ht8.jpg)
+![Inventory Item's Relation to Product Variants in the InBzar Backend](https://res.cloudinary.com/dza7lstvk/image/upload/v1680185070/InBzar%20Docs/Diagrams/inventory-item-medusa-diagram_i21ht8.jpg)
 
-The Medusa backend also orchestrates between the installed inventory and stock location modules. The association between an Inventory Level and a location is handled by passing the ID of a location from the Stock Location Module to the Inventory Module when an Inventory Level is being created. When using Medusa's [Stock Location module](./stock-location-module.md), the entity representing the location is `StockLocation`.
+The InBzar backend also orchestrates between the installed inventory and stock location modules. The association between an Inventory Level and a location is handled by passing the ID of a location from the Stock Location Module to the Inventory Module when an Inventory Level is being created. When using InBzar's [Stock Location module](./stock-location-module.md), the entity representing the location is `StockLocation`.
 
-![Inventory Level's relation to Stock Location Module in the Medusa Backend](https://res.cloudinary.com/dza7lstvk/image/upload/v1680185151/Medusa%20Docs/Diagrams/inventory-medusa-diagram_ltojt9.jpg)
+![Inventory Level's relation to Stock Location Module in the InBzar Backend](https://res.cloudinary.com/dza7lstvk/image/upload/v1680185151/InBzar%20Docs/Diagrams/inventory-medusa-diagram_ltojt9.jpg)
 
-Similarly, the Medusa backend associates the `ReservationItem` entity with a line item and a location by passing the IDs of each to the Inventory Module when a reservation item is created.
+Similarly, the InBzar backend associates the `ReservationItem` entity with a line item and a location by passing the IDs of each to the Inventory Module when a reservation item is created.
 
 ### Product Variant Creation Process
 
-In the Medusa backend, when a product variant that has an enabled `manage_inventory` attribute is created, the backend uses the Inventory Module to automatically create an inventory item along with the product variant. When the inventory item is created, the Medusa backend attaches it to the product variant using the `ProductVariantInventoryItem` entity as explained earlier.
+In the InBzar backend, when a product variant that has an enabled `manage_inventory` attribute is created, the backend uses the Inventory Module to automatically create an inventory item along with the product variant. When the inventory item is created, the InBzar backend attaches it to the product variant using the `ProductVariantInventoryItem` entity as explained earlier.
 
-The Medusa backend uses the Inventory Module to create Inventory Levels when the admin sets the available quantity of a product variant in a stock location.
+The InBzar backend uses the Inventory Module to create Inventory Levels when the admin sets the available quantity of a product variant in a stock location.
 
 ### Cart and Checkout
 
-During the cart and checkout workflow, for example when a product variant is added to the cart or during cart validation, the Medusa backend uses the Inventory Module to confirm that items in the cart have sufficient stock to be purchased in the desired quantity. If a product variant doesn't have an inventory item, which is the case when the `manage_inventory` attribute of the variant is disabled, the variant is assumed to be available in stock.
+During the cart and checkout workflow, for example when a product variant is added to the cart or during cart validation, the InBzar backend uses the Inventory Module to confirm that items in the cart have sufficient stock to be purchased in the desired quantity. If a product variant doesn't have an inventory item, which is the case when the `manage_inventory` attribute of the variant is disabled, the variant is assumed to be available in stock.
 
-As an inventory item can exist in multiple locations, the Inventory Module checks across those locations. The Medusa backend retrieves the locations based on the sales channel of the cart, as each location is associated with a sales channel, and passes them along to the Inventory Module to perform the checking.
+As an inventory item can exist in multiple locations, the Inventory Module checks across those locations. The InBzar backend retrieves the locations based on the sales channel of the cart, as each location is associated with a sales channel, and passes them along to the Inventory Module to perform the checking.
 
 :::tip
 
@@ -89,14 +89,14 @@ Then, the Inventory Module confirms that the product variant has sufficient quan
 
 ### Order Placement
 
-When an order is placed, the Medusa backend uses the Inventory Module to reserve the ordered quantity of line items that are associated with product variants having an enabled `manage_inventory` attribute. The reserved quantity is indicated by creating a reservation item for each line item, associating it with its inventory item and a stock location.
+When an order is placed, the InBzar backend uses the Inventory Module to reserve the ordered quantity of line items that are associated with product variants having an enabled `manage_inventory` attribute. The reserved quantity is indicated by creating a reservation item for each line item, associating it with its inventory item and a stock location.
 
-The Medusa backend chooses the stock location randomly from the available stock locations associated with the order’s sales channel. The admin can later change which stock location the item will be fulfilled from.
+The InBzar backend chooses the stock location randomly from the available stock locations associated with the order’s sales channel. The admin can later change which stock location the item will be fulfilled from.
 
 ### Order Fulfillment
 
-When an item in the order is fulfilled, and the item is associated with a product variant that has an enabled `manage_inventory`, the Medusa backend uses the Inventory Module to subtract the inventory level's `reserved_quantity` from the `stocked_quantity`. The Inventory Module also resets the `reserved_quantity` to `0`.
+When an item in the order is fulfilled, and the item is associated with a product variant that has an enabled `manage_inventory`, the InBzar backend uses the Inventory Module to subtract the inventory level's `reserved_quantity` from the `stocked_quantity`. The Inventory Module also resets the `reserved_quantity` to `0`.
 
 ### Order Return
 
-When an item in the order is returned, and the item is associated with a product variant that has an enabled `manage_inventory`, the Medusa backend uses the Inventory Module to increment the inventory level's `stocked_quantity` with the returned amount.
+When an item in the order is returned, and the item is associated with a product variant that has an enabled `manage_inventory`, the InBzar backend uses the Inventory Module to increment the inventory level's `stocked_quantity` with the returned amount.

@@ -1,5 +1,5 @@
 ---
-description: 'Learn how the shipping architecture is implemented in the Medusa backend. This includes an overview of what the Fulfillment Provider, Shipping Profile, Shipping Option, and Shipping Methods.'
+description: 'Learn how the shipping architecture is implemented in the InBzar backend. This includes an overview of what the Fulfillment Provider, Shipping Profile, Shipping Option, and Shipping Methods.'
 ---
 
 # Shipping Architecture Overview
@@ -8,7 +8,7 @@ This document gives an overview of the shipping architecture and its four most i
 
 ## Introduction
 
-In Medusa, the Shipping architecture relies on 4 components: **Fulfillment Provider**, **Shipping Profiles**, **Shipping Options**, and **Shipping Methods**.
+In InBzar, the Shipping architecture relies on 4 components: **Fulfillment Provider**, **Shipping Profiles**, **Shipping Options**, and **Shipping Methods**.
 
 The distinction between the four is important. It has been carefully planned and put together to support all the different ecommerce use cases and shipping providers that can be integrated.
 
@@ -23,29 +23,29 @@ It’s also constructed to support multiple regions, provide different shipment 
 - **Shipping Options:** created by the admin and belong to a shipping profile. They are specific to certain regions and can have cart conditions. They use an underlying fulfillment provider. Once a customer checks out, they can choose the shipping option that’s available and most relevant to them.
 - **Shipping Method:** created when the customer chooses a shipping option on checkout. The shipping method is basically a copy of the shipping option, but with values specific to the customer and the cart it’s associated with. When the order is placed, the shipping method will then be associated with the order and fulfilled based on the integration with the fulfillment provider.
 
-![Shipping Architecture](https://res.cloudinary.com/dza7lstvk/image/upload/v1677698747/Medusa%20Docs/Diagrams/shipping-architecture_oszxhj.jpg)
+![Shipping Architecture](https://res.cloudinary.com/dza7lstvk/image/upload/v1677698747/InBzar%20Docs/Diagrams/shipping-architecture_oszxhj.jpg)
 
 ---
 
 ## Fulfillment Provider
 
-A Fulfillment Provider in Medusa is a method to handle shipping products in selected regions. It is not associated with a cart, customer, or order in particular.
+A Fulfillment Provider in InBzar is a method to handle shipping products in selected regions. It is not associated with a cart, customer, or order in particular.
 
 It provides the necessary implementation to create Fulfillments for orders and ship items to customers. They can also be used for order returns and swaps.
 
 Fulfillment Providers can be integrated with third-party services that handle the actual shipment of products. An example of a Fulfillment Provider is FedEx.
 
-Fulfillment Providers can also be related to a custom way of handling fulfillment operations. An example of that is Medusa’s [manual fulfillment provider plugin](https://github.com/medusajs/medusa/tree/master/packages/medusa-fulfillment-manual) which provides a minimal implementation of a fulfillment provider and allows store operators to manually handle order fulfillments.
+Fulfillment Providers can also be related to a custom way of handling fulfillment operations. An example of that is InBzar’s [manual fulfillment provider plugin](https://github.com/medusajs/medusa/tree/master/packages/medusa-fulfillment-manual) which provides a minimal implementation of a fulfillment provider and allows store operators to manually handle order fulfillments.
 
 ### How Fulfillment Provider is Created
 
-A Fulfillment Provider is essentially a Medusa [Service](../../development/services/create-service.mdx) with a unique identifier, and it extends the `FulfillmentService` provided by the `medusa-interfaces` package. It can be created as part of a [plugin](../../development/plugins/overview.mdx), or it can be created just as a Service file in your Medusa backend.
+A Fulfillment Provider is essentially a InBzar [Service](../../development/services/create-service.mdx) with a unique identifier, and it extends the `FulfillmentService` provided by the `medusa-interfaces` package. It can be created as part of a [plugin](../../development/plugins/overview.mdx), or it can be created just as a Service file in your InBzar backend.
 
-As a developer, you will mainly work with the Fulfillment Provider when integrating a fulfillment method in Medusa.
+As a developer, you will mainly work with the Fulfillment Provider when integrating a fulfillment method in InBzar.
 
-When you run your Medusa backend, the Fulfillment Provider will be registered on your backend if it hasn’t been already.
+When you run your InBzar backend, the Fulfillment Provider will be registered on your backend if it hasn’t been already.
 
-Once the Fulfillment Provider is added to the backend, the store operator will be able to associate on the [Medusa Admin](../../development/backend/install.mdx) the Fulfillment Provider with shipping options.
+Once the Fulfillment Provider is added to the backend, the store operator will be able to associate on the [InBzar Admin](../../development/backend/install.mdx) the Fulfillment Provider with shipping options.
 
 ### FulfillmentProvider Entity Overview
 
@@ -103,7 +103,7 @@ Think of a shipping option as a template defined by the admin that indicates wha
 
 The [`ShippingOption`](../../references/entities/classes/entities.ShippingOption.mdx) entity belongs to the `ShippingProfile` entity.
 
-The `ShippingOption` entity also belongs to a `FulfillmentProvider`. This can be either a custom third-party provider or one of Medusa’s default fulfillment providers.
+The `ShippingOption` entity also belongs to a `FulfillmentProvider`. This can be either a custom third-party provider or one of InBzar’s default fulfillment providers.
 
 It has the `price_type` attribute to indicate whether the shipping option’s rate is `calculated` by the provider or a fixed `flat_rate` price. It also has the `amount` attribute to set an amount for the shipping option if the `price_type` is `flat_rate`.
 

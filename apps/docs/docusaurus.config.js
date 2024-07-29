@@ -10,8 +10,8 @@ const announcementBar = JSON.parse(fs.readFileSync("./announcement.json"))
 
 /** @type {import('@medusajs/docs').MedusaDocusaurusConfig} */
 const config = {
-  title: "Medusa",
-  tagline: "Explore and learn how to use Medusa",
+  title: "InBzar",
+  tagline: "Explore and learn how to use InBzar",
   url: "https://docs.medusajs.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -183,7 +183,7 @@ const config = {
     navbar: {
       hideOnScroll: false,
       logo: {
-        alt: "Medusa",
+        alt: "InBzar",
         src: "img/logo-icon.png",
         srcDark: "img/logo-icon-dark.png",
         width: 20,
@@ -238,14 +238,14 @@ const config = {
       },
     ],
     mobileLogo: {
-      alt: "Medusa",
+      alt: "InBzar",
       src: "img/logo-mobile.png",
       srcDark: "img/logo-mobile-dark.png",
       width: 82,
       height: 20,
     },
     footer: {
-      copyright: `© ${new Date().getFullYear()} Medusa, Inc. All rights reserved.`,
+      copyright: `© ${new Date().getFullYear()} InBzar, Inc. All rights reserved.`,
     },
     socialLinks: [
       {

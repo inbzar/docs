@@ -9,7 +9,7 @@ In this document, you’ll learn how to override the cart completion strategy.
 
 :::note
 
-This guide only explains how to override the cart completion strategy. It’s highly recommended to first understand how Medusa implements the cart completion strategy as explained [here](../cart.md#cart-completion-process).
+This guide only explains how to override the cart completion strategy. It’s highly recommended to first understand how InBzar implements the cart completion strategy as explained [here](../cart.md#cart-completion-process).
 
 :::
 
@@ -17,7 +17,7 @@ This guide only explains how to override the cart completion strategy. It’s hi
 
 ## Step 1: Create Strategy Class
 
-Create a TypeScript or JavaScript file in `src/strategies` of your Medusa backend project with a class that extends the `AbstractCartCompletionStrategy` class:
+Create a TypeScript or JavaScript file in `src/strategies` of your InBzar backend project with a class that extends the `AbstractCartCompletionStrategy` class:
 
 ```ts title="src/strategies/cart-completion.ts"
 import { 
@@ -98,13 +98,13 @@ The completion strategy is expected to return an object with the following prope
 - `response_code`: a number indicating the response code.
 - `response_body`: an object that will be returned to the client.
 
-You can refer to [this guide](../cart.md#cart-completion-process) to learn how the cart conceptual guide is implemented in the Medusa backend. This can help you understand how details such as inventory, taxes, and more are handled.
+You can refer to [this guide](../cart.md#cart-completion-process) to learn how the cart conceptual guide is implemented in the InBzar backend. This can help you understand how details such as inventory, taxes, and more are handled.
 
 ---
 
 ## Step 3: Run Build Command
 
-In the directory of the Medusa backend, run the `build` command to transpile the files in the `src` directory into the `dist` directory:
+In the directory of the InBzar backend, run the `build` command to transpile the files in the `src` directory into the `dist` directory:
 
 ```bash npm2yarn
 npm run build

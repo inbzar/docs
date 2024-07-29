@@ -1,17 +1,17 @@
 ---
 sidebar_position: 1
-description: 'Medusa Admin allows merchants to manage their sales channels. Merchants can separate products into multiple sales channels.'
+description: 'InBzar Admin allows merchants to manage their sales channels. Merchants can separate products into multiple sales channels.'
 ---
 
 # Sales Channels Overview
 
-In this document, you’ll get an overview of sales channels in Medusa and learn about their importance in your ecommerce store.
+In this document, you’ll get an overview of sales channels in InBzar and learn about their importance in your ecommerce store.
 
 ## Overview
 
 Sales Channels are multiple channels that you can sell your products through. For example, you can have a sales channel for the web storefront, another for the mobile app, and another for selling across social media platforms.
 
-By default, there’s a default sales channel in a Medusa store. You can add multiple sales channels.
+By default, there’s a default sales channel in a InBzar store. You can add multiple sales channels.
 
 ---
 
@@ -21,7 +21,7 @@ Sales channels are associated with data and settings in your ecommerce store.
 
 For each sales channel, you can choose which products belong to that sales channel. A product can be available in more than one sales channel.
 
-Then, when customers place an order from a sales channel, the order is associated with that sales channel. You’ll be able to see the sales channel an order was placed from in the Medusa Admin.
+Then, when customers place an order from a sales channel, the order is associated with that sales channel. You’ll be able to see the sales channel an order was placed from in the InBzar Admin.
 
 ---
 

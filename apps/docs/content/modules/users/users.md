@@ -4,11 +4,11 @@ description: "Users are admins that can manage the ecommerce store’s data and 
 
 # Users Architecture Overview
 
-In this document, you’ll learn about the users architecture and invites in Medusa.
+In this document, you’ll learn about the users architecture and invites in InBzar.
 
 ## Overview
 
-A user is an admin that can view and process sensitive and private information in the commerce store. A store in Medusa can have more than one user. Users can create or invite other users to manage the store.
+A user is an admin that can view and process sensitive and private information in the commerce store. A store in InBzar can have more than one user. Users can create or invite other users to manage the store.
 
 :::tip
 
@@ -31,7 +31,7 @@ Some of the `User` entity attributes include:
 
 :::note
 
-The `role` attribute does not actually provide permission or Access Control List (ACL) features within Medusa.
+The `role` attribute does not actually provide permission or Access Control List (ACL) features within InBzar.
 
 :::
 
@@ -55,14 +55,14 @@ An invitation is represented by the `Invite` entity. Some of its attributes incl
 
 ### Invite Process Overview
 
-You have full freedom in how you choose to implement the invite flow. This section explains how it’s implemented within the Medusa backend.
+You have full freedom in how you choose to implement the invite flow. This section explains how it’s implemented within the InBzar backend.
 
-![User Invitation Flow](https://res.cloudinary.com/dza7lstvk/image/upload/v1683100772/Medusa%20Docs/Diagrams/invite-flow_gm4hkb.jpg)
+![User Invitation Flow](https://res.cloudinary.com/dza7lstvk/image/upload/v1683100772/InBzar%20Docs/Diagrams/invite-flow_gm4hkb.jpg)
 
-The invitation process typically follows these steps in the Medusa backend:
+The invitation process typically follows these steps in the InBzar backend:
 
 1. A user creates an invite either using the [Create Invite API Route](https://docs.medusajs.com/api/admin#invites_postinvites) or the `InviteService`'s `create` method. Part of creating an invite includes generating the token and setting the expiry date. By default, the expiry date is set to a week after the date of invitation creation.
-2. The new user receives the invite, typically through their email (although this is not implemented by default within the Medusa backend). The new user has to provide their details and password. The invite can be accepted either using the [Accept Invite API Route](https://docs.medusajs.com/api/admin#invites_postinvitesinviteaccept) or using the `InviteService`'s `accept` method.
+2. The new user receives the invite, typically through their email (although this is not implemented by default within the InBzar backend). The new user has to provide their details and password. The invite can be accepted either using the [Accept Invite API Route](https://docs.medusajs.com/api/admin#invites_postinvitesinviteaccept) or using the `InviteService`'s `accept` method.
 3. When the new user accepts the invite, the invitation is validated first to ensure it’s not expired. If it’s not expired, a new user is created using the `UserService`'s [create method](../../references/services/classes/services.UserService.mdx#create).
 
 If an invitation is expired, an existing user can resend the invite either using the Resend Invite API Route or using the `InviteService`'s resend method. This would generate a new token and reset the expiry date.

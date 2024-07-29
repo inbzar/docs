@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: 'Medusa Admin allows merchants to manage regions. Regions represent different countries within an ecommerce store.'
+description: 'InBzar Admin allows merchants to manage regions. Regions represent different countries within an ecommerce store.'
 ---
 
 # Regions Overview

@@ -1,10 +1,10 @@
 ---
-description: 'Learn what Customer Groups are and how they can be used in the Medusa backend. Customer Groups allow to combine customers with similar attributes into a single group.'
+description: 'Learn what Customer Groups are and how they can be used in the InBzar backend. Customer Groups allow to combine customers with similar attributes into a single group.'
 ---
 
 # Customer Groups
 
-In this document, you’ll learn about Customer Groups and how they can be used in Medusa.
+In this document, you’ll learn about Customer Groups and how they can be used in InBzar.
 
 ## Introduction
 
@@ -26,7 +26,7 @@ The customer groups feature can be used in a variety of use cases including:
 
 A customer group is stored in the database as a [CustomerGroup](../../references/entities/classes/entities.CustomerGroup.mdx) entity. This entity has two attributes other than the `id`: `name` and `metadata`.
 
-Similar to all entities in Medusa, you can use the `metadata` object attribute to store any custom data you want. For example, you can add some flag or tag to the customer group for a custom use case:
+Similar to all entities in InBzar, you can use the `metadata` object attribute to store any custom data you want. For example, you can add some flag or tag to the customer group for a custom use case:
 
 ```js noReport
 metadata: {

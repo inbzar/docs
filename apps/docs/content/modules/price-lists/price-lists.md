@@ -1,5 +1,5 @@
 ---
-description: 'Learn what price lists are and how they work in a Medusa backend. Price Lists can be used to override product prices based on different conditions.'
+description: 'Learn what price lists are and how they work in a InBzar backend. Price Lists can be used to override product prices based on different conditions.'
 ---
 
 # Price Lists
@@ -45,7 +45,7 @@ You can use any of the following conditions:
 
 ## How are Price Lists Applied
 
-When a product or a line item is retrieved or manipulated on the storefront, Medusa determines its price using a Price Selection Strategy. The price selection strategy determines the best price to apply in a given context. Part of determining the price depends on the price list.
+When a product or a line item is retrieved or manipulated on the storefront, InBzar determines its price using a Price Selection Strategy. The price selection strategy determines the best price to apply in a given context. Part of determining the price depends on the price list.
 
 :::info
 

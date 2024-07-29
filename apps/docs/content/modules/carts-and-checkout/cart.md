@@ -79,7 +79,7 @@ You can learn how to override the cart completion strategy [here](./backend/cart
 
 :::
 
-![Cart Completion Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681828705/Medusa%20Docs/Diagrams/cart-completion_atqkhg.jpg)
+![Cart Completion Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681828705/InBzar%20Docs/Diagrams/cart-completion_atqkhg.jpg)
 
 The process is implemented as follows:
 

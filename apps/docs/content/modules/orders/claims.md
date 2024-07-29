@@ -1,16 +1,16 @@
 ---
-description: "Learn about claims, how the claim process is implemented in the Medusa backend, and a claim’s relation to other entities."
+description: "Learn about claims, how the claim process is implemented in the InBzar backend, and a claim’s relation to other entities."
 ---
 
 # Claims Architecture Overview
 
-In this document, you’ll learn about claims, how the claim process is implemented in the Medusa backend, and a claim’s relation to other entities.
+In this document, you’ll learn about claims, how the claim process is implemented in the InBzar backend, and a claim’s relation to other entities.
 
 ## Overview
 
 An item that the customer ordered may be defected or does not match the original product they ordered. In those cases, a merchant can create a claim to handle this situation by either refunding the customer or replacing the item they got with a different one.
 
-The Medusa core provides the necessary implementation and functionalities that allow you to integrate this process into your store.
+The InBzar core provides the necessary implementation and functionalities that allow you to integrate this process into your store.
 
 ---
 
@@ -30,7 +30,7 @@ There are other important attributes discussed in later sections. Check out the 
 
 ## How are Claims Created
 
-Claims are created in Medusa by an admin (typically a merchant). They are created on an order, and depending on the claim’s type the admin can specify details like the amount to be refunded, or the items to be returned and the new items to replace them.
+Claims are created in InBzar by an admin (typically a merchant). They are created on an order, and depending on the claim’s type the admin can specify details like the amount to be refunded, or the items to be returned and the new items to replace them.
 
 You can create a claim either using the [Create Claim API Route](https://docs.medusajs.com/api/admin#orders_postordersorderclaims) or using the `ClaimService`'s [create method](../../references/services/classes/services.ClaimService.mdx#create). This section explains the process within the Create Claim API Route, with a focus on the `create` method.
 
@@ -44,7 +44,7 @@ You can learn more about idempotency keys [here](../../development/idempotency-k
 
 The following flow is implemented within the Create Claim API Route:
 
-![Create Claim API Route Overview](https://res.cloudinary.com/dza7lstvk/image/upload/v1682519207/Medusa%20Docs/Diagrams/create-claim-overview_iqek1f.jpg)
+![Create Claim API Route Overview](https://res.cloudinary.com/dza7lstvk/image/upload/v1682519207/InBzar%20Docs/Diagrams/create-claim-overview_iqek1f.jpg)
 
 1. When the idempotency key’s recovery point is `started`, the creation of the claim is started using the `ClaimService`'s [create method](../../references/services/classes/services.ClaimService.mdx#create). If the claim is created successfully, the idempotency key’s recovery point is changed to `claim_created`. In the `create` method:
     1. If the type of the claim is `refund` and no refund amount is set, the refund amount is calculated based on the items in the claim using the `ClaimService`'s [getRefundTotalForClaimLinesOnOrder method](../../references/services/classes/services.ClaimService.mdx#getrefundtotalforclaimlinesonorder).

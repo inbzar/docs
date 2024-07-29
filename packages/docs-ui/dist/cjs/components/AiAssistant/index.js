@@ -61,14 +61,14 @@ const AiAssistant = () => {
         {
             title: "FAQ",
             items: [
-                "What is Medusa?",
-                "How can I create an ecommerce store with Medusa?",
-                "How can I build a marketplace with Medusa?",
-                "How can I build subscription-based purchases with Medusa?",
-                "How can I build digital products with Medusa?",
-                "What can I build with Medusa?",
-                "What is Medusa Admin?",
-                "How do I configure the database in Medusa?",
+                "What is InBzar?",
+                "How can I create an ecommerce store with InBzar?",
+                "How can I build a marketplace with InBzar?",
+                "How can I build subscription-based purchases with InBzar?",
+                "How can I build digital products with InBzar?",
+                "What can I build with InBzar?",
+                "What is InBzar Admin?",
+                "How do I configure the database in InBzar?",
             ],
         },
     ];
@@ -248,7 +248,7 @@ const AiAssistant = () => {
         react_1.default.createElement("div", { className: (0, clsx_1.default)("flex gap-docs_1 px-docs_1 py-docs_0.75", "h-[57px] w-full md:rounded-t-docs_xl relative border-0 border-solid", "border-b border-medusa-border-base relative") },
             react_1.default.createElement(components_1.Button, { variant: "clear", onClick: () => setCommand(null), className: "text-medusa-fg-subtle p-[5px]" },
                 react_1.default.createElement(icons_1.ArrowUturnLeft, null)),
-            react_1.default.createElement(components_1.InputText, { value: question, onChange: (e) => setQuestion(e.target.value), className: (0, clsx_1.default)("bg-transparent border-0 focus:outline-none hover:!bg-transparent", "shadow-none flex-1 text-medusa-fg-base", "disabled:!bg-transparent disabled:cursor-not-allowed"), placeholder: "Ask me a question about Medusa...", autoFocus: true, passedRef: inputRef, disabled: loading }),
+            react_1.default.createElement(components_1.InputText, { value: question, onChange: (e) => setQuestion(e.target.value), className: (0, clsx_1.default)("bg-transparent border-0 focus:outline-none hover:!bg-transparent", "shadow-none flex-1 text-medusa-fg-base", "disabled:!bg-transparent disabled:cursor-not-allowed"), placeholder: "Ask me a question about InBzar...", autoFocus: true, passedRef: inputRef, disabled: loading }),
             react_1.default.createElement(components_1.Button, { variant: "clear", onClick: () => {
                     var _a;
                     setQuestion("");
@@ -282,7 +282,7 @@ const AiAssistant = () => {
                     "apply") },
                 react_1.default.createElement("div", { className: (0, clsx_1.default)("flex items-center gap-docs_0.75 text-compact-small-plus") },
                     react_1.default.createElement(components_1.AiAssistantCommandIcon, null),
-                    react_1.default.createElement("span", { className: "text-medusa-fg-subtle" }, "Medusa AI Assistant"),
+                    react_1.default.createElement("span", { className: "text-medusa-fg-subtle" }, "InBzar AI Assistant"),
                     react_1.default.createElement(components_1.Badge, { variant: "purple" }, "Beta"))),
             react_1.default.createElement("div", { className: "hidden items-center gap-docs_1 md:flex" },
                 react_1.default.createElement("div", { className: "flex items-center gap-docs_0.5" },

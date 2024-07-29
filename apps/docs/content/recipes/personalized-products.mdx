@@ -7,19 +7,19 @@ import Icons from '@theme/Icon';
 
 # Personalized Products
 
-This document guides you through the different documentation resources to help you build personalized products with Medusa.
+This document guides you through the different documentation resources to help you build personalized products with InBzar.
 
 ## Overview
 
 Personalized products are products that customers can customize based on their need. For example, they can upload an image to print on a shirt or provide a message to include in a letter.
 
-Medusa’s customizable architecture allows you to customize its entities or create your own to implement and store personalized products. Also, as the Medusa backend is headless, you have freedom in how you choose to implement the storefront. This is essential for ecommerce stores that provide personalized products, as you typically build a unique experience around your products.
+InBzar’s customizable architecture allows you to customize its entities or create your own to implement and store personalized products. Also, as the InBzar backend is headless, you have freedom in how you choose to implement the storefront. This is essential for ecommerce stores that provide personalized products, as you typically build a unique experience around your products.
 
 ---
 
 ## Store Personalized Data
 
-Most of the entities in Medusa’s core include a `metadata` attribute. This attribute helps store custom data in the core entities.
+Most of the entities in InBzar’s core include a `metadata` attribute. This attribute helps store custom data in the core entities.
 
 The `Product` entity represents the main product, whereas the `ProductVariant` is the different saleable options of that product. For example, a shirt is a `Product`, and each different color of the shirt is the `ProductVariant`. The `LineItem` entity is the product variant added to the cart.
 
@@ -47,7 +47,7 @@ In more complex cases, you can extend entities from the core, such as the `Produ
     label: 'Create an Entity',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create an entity in the Medusa backend.',
+      description: 'Learn how to create an entity in the InBzar backend.',
     }
   },
   {
@@ -56,7 +56,7 @@ In more complex cases, you can extend entities from the core, such as the `Produ
     label: 'Extend an Entity',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to extend an entity in the Medusa backend.',
+      description: 'Learn how to extend an entity in the InBzar backend.',
     }
   },
 ]} />
@@ -65,11 +65,11 @@ In more complex cases, you can extend entities from the core, such as the `Produ
 
 ## Build a Custom Storefront
 
-Medusa provides a headless backend that can be accessed through REST APIs. So, there are no restrictions on what language or framework you use to build the storefront or what design or experience you provide customers.
+InBzar provides a headless backend that can be accessed through REST APIs. So, there are no restrictions on what language or framework you use to build the storefront or what design or experience you provide customers.
 
 You can build a unique experience around your products that focuses on the customer’s personalization capabilities.
 
-Medusa provides a Next.js storefront starter with basic ecommerce functionalities that can be used and modified. You can also build your own storefront by using Medusa’s client libraries or REST APIs to communicate with the backend from the storefront.
+InBzar provides a Next.js storefront starter with basic ecommerce functionalities that can be used and modified. You can also build your own storefront by using InBzar’s client libraries or REST APIs to communicate with the backend from the storefront.
 
 <DocCardList colSize={6} items={[
   {
@@ -116,7 +116,7 @@ In the case that you’ve created a custom entity or extended a core entity, you
     label: 'Create API Route',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create an API Route in the Medusa backend.',
+      description: 'Learn how to create an API Route in the InBzar backend.',
     }
   },
 ]} />
@@ -129,7 +129,7 @@ If you stored the personalized data in the `metadata` of the Line Items, those s
 
 In the case that you’ve created a custom entity or extended a core entity, you can create a custom API Route that handles retrieving the personalization data. If the entity you’ve created or customized is associated with the Order entity, you can alternatively expand it similarly to the `items` relation.
 
-If you want to show the personalized data in the Medusa Admin, you can extend the Medusa Admin to add a widget, a UI route, or a setting page and show the personalized data.
+If you want to show the personalized data in the InBzar Admin, you can extend the InBzar Admin to add a widget, a UI route, or a setting page and show the personalized data.
 
 <DocCardList colSize={4} items={[
   {
@@ -153,10 +153,10 @@ If you want to show the personalized data in the Medusa Admin, you can extend th
   {
     type: 'link',
     href: '/admin/widgets',
-    label: 'Extending Medusa Admin',
+    label: 'Extending InBzar Admin',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to extend the Medusa Admin with widgets and more.',
+      description: 'Learn how to extend the InBzar Admin with widgets and more.',
     }
   },
 ]} />
@@ -171,7 +171,7 @@ For example, if the customer personalizes a shirt to include an image or message
 
 You can also listen to other [Order-related events](../development/events/events-list.md#order-events) to perform this action at a different point if necessary, such as when the `order.fulfillment_created` is triggered.
 
-Alternatively, you can create a fulfillment service that integrates a third-party service or mechanism to fulfill the personalized product. This is useful if you want the fulfillment of personalized products to be embedded into Medusa’s existing order fulfillment.
+Alternatively, you can create a fulfillment service that integrates a third-party service or mechanism to fulfill the personalized product. This is useful if you want the fulfillment of personalized products to be embedded into InBzar’s existing order fulfillment.
 
 <DocCardList colSize={6} items={[
   {
@@ -189,7 +189,7 @@ Alternatively, you can create a fulfillment service that integrates a third-part
     label: 'Create a Fulfillment Service',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a fulfillment provider in Medusa.',
+      description: 'Learn how to create a fulfillment provider in InBzar.',
     }
   },
 ]} />
@@ -198,4 +198,4 @@ Alternatively, you can create a fulfillment service that integrates a third-part
 
 ## Additional Development
 
-You can find other resources for your personalized products development in the [Medusa Development section](../development/overview.mdx) of this documentation.
+You can find other resources for your personalized products development in the [InBzar Development section](../development/overview.mdx) of this documentation.

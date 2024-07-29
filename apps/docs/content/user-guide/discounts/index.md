@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: 'Medusa Admin allows merchants to manage discounts. Merchants can create discounts and manage their conditions.'
+description: 'InBzar Admin allows merchants to manage discounts. Merchants can create discounts and manage their conditions.'
 ---
 
 # Discounts Overview
@@ -9,7 +9,7 @@ In this document, you’ll get an overview of the customer listing page and ever
 
 ## Overview
 
-You can create discounts of different types in Medusa that customers use on checkout:
+You can create discounts of different types in InBzar that customers use on checkout:
 
 - **Percentage Discounts** to deduct a percentage of the total amount of an order.
 - **Fixed Discounts** to deduct a fixed amount from the total amount of an order.

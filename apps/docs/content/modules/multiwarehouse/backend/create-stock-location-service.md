@@ -1,17 +1,17 @@
 ---
-description: 'Learn how to create a stock location service, which you can use in a custom stock location module in the Medusa backend.'
+description: 'Learn how to create a stock location service, which you can use in a custom stock location module in the InBzar backend.'
 addHowToData: true
 ---
 
 # How to Create a Stock Location Service
 
-In this document, you’ll learn how to create a stock location service, which you can use in a custom stock location module in the Medusa backend.
+In this document, you’ll learn how to create a stock location service, which you can use in a custom stock location module in the InBzar backend.
 
 ## Overview
 
-A stock location module is used in a commerce application, such as the Medusa backend, to handle functionalities related to the different locations a stock-kept item can be located in.
+A stock location module is used in a commerce application, such as the InBzar backend, to handle functionalities related to the different locations a stock-kept item can be located in.
 
-While Medusa provides a [stock-location module](../stock-location-module.md) that you can use in your Medusa backend, you can also create a custom module to handle these functionalities.
+While InBzar provides a [stock-location module](../stock-location-module.md) that you can use in your InBzar backend, you can also create a custom module to handle these functionalities.
 
 The module is expected to, at the very least, export the stock-location service. If necessary, you can include entities, migrations, and other resources as part of the export.
 
@@ -19,7 +19,7 @@ This guide will only explain what is required to create in your custom stock loc
 
 :::note
 
-It should be noted that the Medusa backend expects the Stock Location Module to have entities for a location and a location address, as it uses the IDs of those entities when orchestrating between different modules and the in the API Routes it exposes. You can learn more about this in the [Stock Location Module Architecture documentation](../stock-location-module.md).
+It should be noted that the InBzar backend expects the Stock Location Module to have entities for a location and a location address, as it uses the IDs of those entities when orchestrating between different modules and the in the API Routes it exposes. You can learn more about this in the [Stock Location Module Architecture documentation](../stock-location-module.md).
 
 :::
 
@@ -27,7 +27,7 @@ It should be noted that the Medusa backend expects the Stock Location Module to 
 
 ## Prerequisites
 
-The `IStockLocationService` interface that you’ll be implementing is available in the `@medusajs/types` package. So, make sure to install it in your Medusa backend or the module project (depending on where you’re adding your implementation):
+The `IStockLocationService` interface that you’ll be implementing is available in the `@medusajs/types` package. So, make sure to install it in your InBzar backend or the module project (depending on where you’re adding your implementation):
 
 ```bash npm2yarn
 npm install @medusajs/types
@@ -374,7 +374,7 @@ Make sure to replace `CustomStockLocation` with your stock location entity.
 
 ## Step 2: Use the Stock Location Service
 
-After implementing your custom service along with any other necessary resources, you can test it out or use it in your Medusa backend. You can learn more about how to do that in the [Create Module documentation](../../../development/modules/create.mdx).
+After implementing your custom service along with any other necessary resources, you can test it out or use it in your InBzar backend. You can learn more about how to do that in the [Create Module documentation](../../../development/modules/create.mdx).
 
 ---
 

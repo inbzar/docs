@@ -26,19 +26,19 @@ You want to add or use the following admin functionalities:
 
 ## Prerequisites
 
-It is assumed that you already have a Medusa backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started.
+It is assumed that you already have a InBzar backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started.
 
 ### JS Client
 
-This guide includes code snippets to send requests to your Medusa backend using Medusa’s JS Client, JavaScript’s Fetch API, or cURL.
+This guide includes code snippets to send requests to your InBzar backend using InBzar’s JS Client, JavaScript’s Fetch API, or cURL.
 
-If you follow the JS Client code blocks, it’s assumed you already have [Medusa’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
+If you follow the JS Client code blocks, it’s assumed you already have [InBzar’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
 
-### Medusa React
+### InBzar React
 
-This guide also includes code snippets to send requests to your Medusa backend using Medusa React, among other methods.
+This guide also includes code snippets to send requests to your InBzar backend using InBzar React, among other methods.
 
-If you follow the Medusa React code blocks, it's assumed you already have [Medusa React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
+If you follow the InBzar React code blocks, it's assumed you already have [InBzar React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
 
 ### Authenticated Admin User
 
@@ -55,7 +55,7 @@ You can learn more about [authenticating as an admin user in the API reference](
 You can log in a user by sending a request to the [User Login API Route](https://docs.medusajs.com/api/admin#auth_postauth):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.auth.createSession({
@@ -68,7 +68,7 @@ You can log in a user by sending a request to the [User Login API Route](https:/
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminLogin } from "medusa-react"
@@ -138,7 +138,7 @@ The request returns the logged-in user as an object.
 You can log out a user by sending a request to the [User Logout API Route](https://docs.medusajs.com/api/admin#auth_deleteauth):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.auth.deleteSession()
@@ -148,7 +148,7 @@ You can log out a user by sending a request to the [User Logout API Route](https
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminDeleteSession } from "medusa-react"
@@ -203,7 +203,7 @@ The request doesn't return any data. The response code will be `200` for success
 You can retrieve the current user’s details for their profile by sending a request to the [Get Current User API Route](https://docs.medusajs.com/api/admin#auth_getauth):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.auth.getSession()
@@ -213,7 +213,7 @@ You can retrieve the current user’s details for their profile by sending a req
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminGetSession } from "medusa-react"
@@ -267,7 +267,7 @@ The request returns the current user as an object.
 You can update a user’s details in their profile by sending a request to the [Update User API Route](https://docs.medusajs.com/api/admin#users_postusersuser):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.users.update(userId, {
@@ -279,7 +279,7 @@ You can update a user’s details in their profile by sending a request to the [
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import {
@@ -359,18 +359,18 @@ This section explains how you can reset the password of a user if they forgot th
 
 ### Step 1: Request Password Reset
 
-The first step is to request a password reset. This would create in the Medusa backend a reset password token, which you typically would use in an email sent to the user. The email would include a link that allows the user to enter a new password, and the link would accept a token query parameter to be used in step 2.
+The first step is to request a password reset. This would create in the InBzar backend a reset password token, which you typically would use in an email sent to the user. The email would include a link that allows the user to enter a new password, and the link would accept a token query parameter to be used in step 2.
 
 :::note
 
-Sending the password reset email is not handled by default in the Medusa backend. You can either use the SendGrid plugin which handles it, or manually subscribe to the `user.password_reset` event and send the email.
+Sending the password reset email is not handled by default in the InBzar backend. You can either use the SendGrid plugin which handles it, or manually subscribe to the `user.password_reset` event and send the email.
 
 :::
 
 You can request a password reset by sending a request to the [Request Password Reset API Route](https://docs.medusajs.com/api/admin#users_postusersuserpasswordtoken):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.users.sendResetPasswordToken({
@@ -382,7 +382,7 @@ You can request a password reset by sending a request to the [Request Password R
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminSendResetPasswordToken } from "medusa-react"
@@ -449,12 +449,12 @@ The request does not return any data. The response code will be `204` if the req
 
 ### Step 2: Reset Password
 
-After the user resets their password and, typically, receives an email with a link to reset their password, they should enter their new password. The new password, along with the token passed to this page are used to reset the password on the Medusa backend.
+After the user resets their password and, typically, receives an email with a link to reset their password, they should enter their new password. The new password, along with the token passed to this page are used to reset the password on the InBzar backend.
 
 You can reset the password by sending a request to the [Reset Password API Route](https://docs.medusajs.com/api/admin#users_postusersuserpassword):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.users.resetPassword({
@@ -467,7 +467,7 @@ You can reset the password by sending a request to the [Reset Password API Route
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminResetPassword } from "medusa-react"

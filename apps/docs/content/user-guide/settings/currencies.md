@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: 'This user guide explains how to manage currencies on the Medusa Admin. Learn how to add currencies and set default currency.'
+description: 'This user guide explains how to manage currencies on the InBzar Admin. Learn how to add currencies and set default currency.'
 addHowToData: true
 ---
 
@@ -10,7 +10,7 @@ In this document, you’ll learn how to set the default currency in your store a
 
 ## Overview
 
-Medusa supports using more than one currency in your store. When you add currencies, you can set prices for products for each of those currencies.
+InBzar supports using more than one currency in your store. When you add currencies, you can set prices for products for each of those currencies.
 
 To make a currency available for your customers, you have to use the currency in a region. Then, your customers will be able to choose the region with the currency that fits them.
 

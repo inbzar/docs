@@ -1,5 +1,5 @@
 ---
-description: 'Learn how to handle the order claim event in the Medusa backend. When the event is triggered, you can send an email to the customer to inform them about it.'
+description: 'Learn how to handle the order claim event in the InBzar backend. When the event is triggered, you can send an email to the customer to inform them about it.'
 addHowToData: true
 ---
 
@@ -13,7 +13,7 @@ When a guest customer places an order, the order isn't associated with a custome
 
 After the customer registers, later on, they can claim that order by providing the order’s ID.
 
-When the customer requests to claim the order, the event `order-update-token.created` is triggered on the Medusa backend. This event should be used to send the customer a confirmation email.
+When the customer requests to claim the order, the event `order-update-token.created` is triggered on the InBzar backend. This event should be used to send the customer a confirmation email.
 
 In this document, you’ll learn how to handle the `order-update-token.created` event on the backend to send the customer a confirmation email.
 
@@ -21,9 +21,9 @@ In this document, you’ll learn how to handle the `order-update-token.created` 
 
 ## Prerequisites
 
-### Medusa Components
+### InBzar Components
 
-It's assumed that you already have a Medusa backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started. The Medusa backend must also have an event bus module installed, which is available when using the default Medusa backend starter.
+It's assumed that you already have a InBzar backend installed and set up. If not, you can follow the [quickstart guide](../../../development/backend/install.mdx) to get started. The InBzar backend must also have an event bus module installed, which is available when using the default InBzar backend starter.
 
 ### Notification Provider
 

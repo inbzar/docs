@@ -7,17 +7,17 @@ import Icons from '@theme/Icon';
 
 # POS
 
-This document guides you through Medusa's different features and resources to create a point-of-sale (POS) system.
+This document guides you through InBzar's different features and resources to create a point-of-sale (POS) system.
 
 ## Overview
 
 Building a POS system on top of an ecommerce engine introduces challenges related to the tech stack used, data sync across channels, and feature availability relevant to offline sales in a POS, not just online sales.
 
-Medusa's modular architecture solves these challenges. Any frontend can utilize Medusa's commerce features through its REST APIs. Medusa's commerce features include multi-warehouse and sales channel features that facilitate integrating a POS system.
+InBzar's modular architecture solves these challenges. Any frontend can utilize InBzar's commerce features through its REST APIs. InBzar's commerce features include multi-warehouse and sales channel features that facilitate integrating a POS system.
 
 :::tip
 
-Recommended read: [How Tekla built a POS system with Medusa](https://medusajs.com/blog/tekla-agilo-pos-case/).
+Recommended read: [How Tekla built a POS system with InBzar](https://medusajs.com/blog/tekla-agilo-pos-case/).
 
 :::
 
@@ -27,18 +27,18 @@ Recommended read: [How Tekla built a POS system with Medusa](https://medusajs.co
 
 When you build a POS system, you must choose which programming framework, language, or tool you want to use.
 
-Medusa's modular architecture removes any restrictions you may have while making this choice. Any client or front end can connect to the Medusa backend using its headless REST APIs.
+InBzar's modular architecture removes any restrictions you may have while making this choice. Any client or front end can connect to the InBzar backend using its headless REST APIs.
 
-![POS Tech Stack](https://res.cloudinary.com/dza7lstvk/image/upload/v1695114981/Medusa%20Docs/Diagrams/pos-tech-stack_j6mkyc.jpg)
+![POS Tech Stack](https://res.cloudinary.com/dza7lstvk/image/upload/v1695114981/InBzar%20Docs/Diagrams/pos-tech-stack_j6mkyc.jpg)
 
 <DocCardList colSize={4} items={[
   {
     type: 'link',
     href: '/development/fundamentals/architecture-overview',
-    label: 'Medusa’s Architecture',
+    label: 'InBzar’s Architecture',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn about Medusa\'s architecture and its ecosystem.',
+      description: 'Learn about InBzar\'s architecture and its ecosystem.',
     }
   },
   {
@@ -47,7 +47,7 @@ Medusa's modular architecture removes any restrictions you may have while making
     label: 'Admin REST APIs',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Check out available Admin REST APIs in Medusa.',
+      description: 'Check out available Admin REST APIs in InBzar.',
     }
   },
   {
@@ -67,11 +67,11 @@ Medusa's modular architecture removes any restrictions you may have while making
 
 POS systems make the checkout process smoother by integrating a barcode scanner. Merchants can scan a product by its barcode to check its details or add it to the customer's purchase.
 
-Medusa’s [Product Variant entity](../references/entities/classes/entities.ProductVariant.mdx) includes the necessary attributes to implement this integration, mainly the `barcode` attribute. Other notable attributes include `ean`, `upc`, and `hs_code`, among others.
+InBzar’s [Product Variant entity](../references/entities/classes/entities.ProductVariant.mdx) includes the necessary attributes to implement this integration, mainly the `barcode` attribute. Other notable attributes include `ean`, `upc`, and `hs_code`, among others.
 
 To search through product variants by their barcode, you can create a custom API Route and call it within your POS.
 
-![Example flow of integrating a barcode scanner](https://res.cloudinary.com/dza7lstvk/image/upload/v1695115066/Medusa%20Docs/Diagrams/pos-scan-barcode_xaa61c.jpg)
+![Example flow of integrating a barcode scanner](https://res.cloudinary.com/dza7lstvk/image/upload/v1695115066/InBzar%20Docs/Diagrams/pos-scan-barcode_xaa61c.jpg)
 
 <DocCardList colSize={6} items={[
   {
@@ -89,7 +89,7 @@ To search through product variants by their barcode, you can create a custom API
     label: 'Create API Route',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create an API Route in the Medusa backend.',
+      description: 'Learn how to create an API Route in the InBzar backend.',
     }
   },
 ]} />
@@ -143,9 +143,9 @@ To search through product variants by their barcode, you can create a custom API
 
 As you manage an online and offline store, it's essential to separate inventory quantity across different locations.
 
-Using Medusa's multi-warehouse features, merchants can manage the inventory items and their availability across locations and sales channels. They can create a sales channel for their online store and a sales channel for their POS system, then manage the inventory quantity of product variants in each channel.
+Using InBzar's multi-warehouse features, merchants can manage the inventory items and their availability across locations and sales channels. They can create a sales channel for their online store and a sales channel for their POS system, then manage the inventory quantity of product variants in each channel.
 
-![Using Multi-warehouse features with POS](https://res.cloudinary.com/dza7lstvk/image/upload/v1695115132/Medusa%20Docs/Diagrams/pos-multiwarehouse__1_jscw9e.jpg)
+![Using Multi-warehouse features with POS](https://res.cloudinary.com/dza7lstvk/image/upload/v1695115132/InBzar%20Docs/Diagrams/pos-multiwarehouse__1_jscw9e.jpg)
 
 This also opens the door for other business opportunities, such as an endless aisle experience. Suppose a product isn't available in-store but is available in different warehouses. In that case, you can allow customers to purchase that item in-store and deliver it to their address.
 
@@ -183,9 +183,9 @@ This also opens the door for other business opportunities, such as an endless ai
 
 ## Build an Omni-channel Customer Experience
 
-Using Medusa's Customer APIs and features, you can retrieve a customer's details from the backend and place an order on the POS under their account. The customer can then view their order details on their online profile as if they had placed the order online.
+Using InBzar's Customer APIs and features, you can retrieve a customer's details from the backend and place an order on the POS under their account. The customer can then view their order details on their online profile as if they had placed the order online.
 
-In addition, using Medusa's dynamic discounts feature, store operators can create discounts on the fly for customers using the POS system and apply them to their orders. You can also extend Medusa to provide features for a better customer experience, such as a rewards system or loyalty points.
+In addition, using InBzar's dynamic discounts feature, store operators can create discounts on the fly for customers using the POS system and apply them to their orders. You can also extend InBzar to provide features for a better customer experience, such as a rewards system or loyalty points.
 
 <DocCardList colSize={6} items={[
   {
@@ -212,11 +212,11 @@ In addition, using Medusa's dynamic discounts feature, store operators can creat
 
 ## Accept Payment, Place Order, and Use RMA Features
 
-Medusa's architecture allows you to integrate any third-party payment processor for your POS and online storefront. For example, you can integrate [Stripe Terminal](https://stripe.com/terminal) to accept in-store payments.
+InBzar's architecture allows you to integrate any third-party payment processor for your POS and online storefront. For example, you can integrate [Stripe Terminal](https://stripe.com/terminal) to accept in-store payments.
 
 Once you accept the payment, you can place an order in the POS system using the [Draft Order APIs](https://docs.medusajs.com/api/admin#draft-orders). Draft orders provide similar features to an online checkout experience, including discounts, payment processing, and more.
 
-Then, merchants can view all orders coming from different sales channels using the Medusa Admin dashboard. This keeps logistics and order handling consistent and allows businesses to provide return and exchange features to online and in-store customers.
+Then, merchants can view all orders coming from different sales channels using the InBzar Admin dashboard. This keeps logistics and order handling consistent and allows businesses to provide return and exchange features to online and in-store customers.
 
 <DocCardList colSize={6} items={[
   {
@@ -261,4 +261,4 @@ Then, merchants can view all orders coming from different sales channels using t
 
 ## Additional Development
 
-You can find other resources for your POS development in the [Medusa Development section](../development/overview.mdx) of this documentation.
+You can find other resources for your POS development in the [InBzar Development section](../development/overview.mdx) of this documentation.

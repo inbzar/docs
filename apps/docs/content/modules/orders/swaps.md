@@ -1,16 +1,16 @@
 ---
-description: "Learn what swaps are, swap processes implemented in the Medusa backend, and a swap’s relation to other entities"
+description: "Learn what swaps are, swap processes implemented in the InBzar backend, and a swap’s relation to other entities"
 ---
 
 # Swaps Architecture Overview
 
-In this document, you’ll learn what swaps are, swap processes implemented in the Medusa backend, and a swap’s relation to other entities.
+In this document, you’ll learn what swaps are, swap processes implemented in the InBzar backend, and a swap’s relation to other entities.
 
 ## Overview
 
 After an order is created and fulfilled, the customer may need to replace an item they received with another. They can then create a swap, requesting to return an item they have in place for a new item. The swap, similar to an order, can then be paid, fulfilled, and more.
 
-The Medusa core provides the necessary implementation and functionalities that allow you to integrate swaps in your store and automate the Return Merchandise Authorization (RMA) flow.
+The InBzar core provides the necessary implementation and functionalities that allow you to integrate swaps in your store and automate the Return Merchandise Authorization (RMA) flow.
 
 ---
 
@@ -35,7 +35,7 @@ There are other important attributes discussed in later sections. Check out the 
 
 ## How are Swaps Created
 
-In Medusa, Swaps are created by the customer through the storefront. This ensures an automated Return Merchandise Authorization (RMA) flow. This section explains the ideal and recommended process, but you’re free in how you choose to implement Swaps creation flow.
+In InBzar, Swaps are created by the customer through the storefront. This ensures an automated Return Merchandise Authorization (RMA) flow. This section explains the ideal and recommended process, but you’re free in how you choose to implement Swaps creation flow.
 
 ### Idempotency Key
 
@@ -49,7 +49,7 @@ You can learn more about idempotency keys [here](../../development/idempotency-k
 
 The customer starts by creating their swap, which can be done through the Create Swap API Route. In this API Route, the following steps are implemented:
 
-![Swap Creation Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681983755/Medusa%20Docs/Diagrams/swap-process_kylqq0.jpg)
+![Swap Creation Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681983755/InBzar%20Docs/Diagrams/swap-process_kylqq0.jpg)
 
 1. The swap’s creation is initiated with the `SwapService`'s [create method](../../references/services/classes/services.SwapService.mdx#create):
     1. The order is first validated to see if a swap can be created. This includes checking the `payment_status` of the order to ensure the payment has already been captured, and the `fulfillment_status` of the order to ensure the status isn’t `not_fulfilled`. If any of these conditions aren’t met, the process is terminated with an error.
@@ -85,9 +85,9 @@ A swap’s payment can be accessed by expanding the `payment` relation and acces
 
 After the swap has been created and completed by the customer, the merchant should handle the [fulfillment](./fulfillments.md) of the new items.
 
-Although you have freedom in how you implement the process, the recommended process provided in the Medusa backend is as follows:
+Although you have freedom in how you implement the process, the recommended process provided in the InBzar backend is as follows:
 
-![Swap Fulfillment Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681984933/Medusa%20Docs/Diagrams/swap-fulfillment-process_xfurko.jpg)
+![Swap Fulfillment Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681984933/InBzar%20Docs/Diagrams/swap-fulfillment-process_xfurko.jpg)
 
 1. The fulfillment is created either using the `SwapService`'s [createFulfillment method](../../references/services/classes/services.SwapService.mdx#createfulfillment) or using the [Create a Swap Fulfillment API Route](https://docs.medusajs.com/api/admin#orders_postordersorderswapsswapfulfillments). This would set the `fulfillment_status` of the swap either to `fulfilled` if all items have been fulfilled, or `partially_fulfilled` if only some items were fulfilled.
 2. The shipment can then be created using the `SwapService`'s [createShipment method](../../references/services/classes/services.SwapService.mdx#createshipment) or using the [Create Swap Shipment API Route](https://docs.medusajs.com/api/admin#orders_postordersorderswapsswapshipments). This would set the `fulfillment_status` of the swap either to `shipped` if all items have been shipped, or `partially_shipped` if only some items were shipped.
@@ -121,7 +121,7 @@ Giving the client control over the creation of the swap and handling the returns
 
 The client, typically the customer, creates the swap, authorizes any additional payment required, and handles returning the item. The admin, typically the merchant, can view the created swap, process the payment, and fulfill and ship the additional items.
 
-![RMA Automation with Swaps Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681987907/Medusa%20Docs/Diagrams/rma-automation-swap_c9wwaj.jpg)
+![RMA Automation with Swaps Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681987907/InBzar%20Docs/Diagrams/rma-automation-swap_c9wwaj.jpg)
 
 This removes any friction and support required between the client and the admin.
 

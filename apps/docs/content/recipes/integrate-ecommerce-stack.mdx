@@ -8,7 +8,7 @@ import LearningPath from '@site/src/components/LearningPath';
 
 # Integrate Ecommerce Stack Recipe
 
-This document guides you through integrating systems in your ecommerce stack with Medusa.
+This document guides you through integrating systems in your ecommerce stack with InBzar.
 
 ## Overview
 
@@ -18,7 +18,7 @@ Integrating third-party systems, such as ERP or a CMS, into your ecommerce stack
 - Building flows that span across multiple systems.
 - Maintaining data consistency and syncing between your systems.
 
-Medusa’s architecture and functionalities allow you to integrate third-party systems and build flows around them. It also provides error-handling mechanisms and webhook capabilities that prevent data inconsistency between your systems.
+InBzar’s architecture and functionalities allow you to integrate third-party systems and build flows around them. It also provides error-handling mechanisms and webhook capabilities that prevent data inconsistency between your systems.
 
 <LearningPath pathName="integrate-ecommerce-stack" />
 
@@ -26,7 +26,7 @@ Medusa’s architecture and functionalities allow you to integrate third-party s
 
 ## Connect to External Systems with Services
 
-Medusa’s Services let you implement a client that connects and performs functionalities with your third-party system. You can then use the service to connect to your third-party system in other resources, such as a Workflow or an API Route.
+InBzar’s Services let you implement a client that connects and performs functionalities with your third-party system. You can then use the service to connect to your third-party system in other resources, such as a Workflow or an API Route.
 
 This increases the maintainability of your integration as it’s all implemented within the service. If the external system makes any changes to its APIs, you only need to make changes within the service.
 
@@ -36,7 +36,7 @@ This increases the maintainability of your integration as it’s all implemented
   label: 'Create a Service',
   customProps: {
     icon: Icons['academic-cap-solid'],
-    description: 'Learn how to create a service in Medusa.',
+    description: 'Learn how to create a service in InBzar.',
   }
 }} />
 
@@ -109,11 +109,11 @@ Products have an `external_id` attribute that can be used to store the product's
 
 ## Build Flows Across Systems
 
-With Medusa’s workflows, you can build flows with steps that may perform actions on different systems. For example, you can create a workflow that updates the product’s details in integrated systems like ERPs, WMSs, and CMSs.
+With InBzar’s workflows, you can build flows with steps that may perform actions on different systems. For example, you can create a workflow that updates the product’s details in integrated systems like ERPs, WMSs, and CMSs.
 
 Workflows can be executed from anywhere. So, taking the workflow described in the above example, you can listen to the `product.updated` event using a [Subscriber](../development/events/subscribers.mdx) and execute the workflow whenever the event is triggered.
 
-![A flowchart of how the workflow is executed when the product.updated event is triggered](https://res.cloudinary.com/dza7lstvk/image/upload/v1701340569/Medusa%20Docs/Diagrams/workflow-recipe-example_wmwmo5.jpg)
+![A flowchart of how the workflow is executed when the product.updated event is triggered](https://res.cloudinary.com/dza7lstvk/image/upload/v1701340569/InBzar%20Docs/Diagrams/workflow-recipe-example_wmwmo5.jpg)
 
 Workflows guarantee data consistency through their compensation feature. You can provide a compensation function to steps that roll back the actions of that step. Then, if an error occurs in any step, the actions of previous steps are rolled back using the compensation function.
 
@@ -237,9 +237,9 @@ Workflows guarantee data consistency through their compensation feature. You can
 
 ## Create Webhook Listeners
 
-You can provide webhook listeners that your external systems call when their data is updated. This lets you synchronize data between your systems. Webhook listeners can be created in Medusa using API Routes. 
+You can provide webhook listeners that your external systems call when their data is updated. This lets you synchronize data between your systems. Webhook listeners can be created in InBzar using API Routes. 
 
-For example, suppose an administrator changes the product data in the ERP system. In that case, the system sends a request to the webhook you define in Medusa, which updates the product data in Medusa.
+For example, suppose an administrator changes the product data in the ERP system. In that case, the system sends a request to the webhook you define in InBzar, which updates the product data in InBzar.
 
 <DocCard item={{
   type: 'link',
@@ -247,7 +247,7 @@ For example, suppose an administrator changes the product data in the ERP system
   label: 'Create an API Route',
   customProps: {
     icon: Icons['academic-cap-solid'],
-    description: 'Learn how to create an API Route in Medusa.',
+    description: 'Learn how to create an API Route in InBzar.',
   }
 }} />
 
@@ -304,4 +304,4 @@ For example, suppose an administrator changes the product data in the ERP system
 
 ## Additional Development
 
-You can find other resources for your ecommerce development in the [Medusa Development section](../development/overview.mdx) of this documentation.
+You can find other resources for your ecommerce development in the [InBzar Development section](../development/overview.mdx) of this documentation.

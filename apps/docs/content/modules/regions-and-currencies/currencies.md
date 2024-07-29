@@ -10,7 +10,7 @@ In this document, you’ll learn about the Currency entity and its relation to o
 
 Currencies are used to define the price of products, services, and other monetary details in a commerce system.
 
-Medusa supports multi-currency within your commerce store. You can specify prices per currency, and even per region. This means that you can serve customers globally without limitations related to pricing.
+InBzar supports multi-currency within your commerce store. You can specify prices per currency, and even per region. This means that you can serve customers globally without limitations related to pricing.
 
 ---
 
@@ -27,9 +27,9 @@ The `Currency` entity has the following attributes:
 
 ## How Currencies are Created
 
-Currencies are defined in the core of your Medusa backend under `utils/currencies.js` (or `packages/medusa/src/utils/currencies.ts` if you’re using the Medusa mono-repository). They’re defined in an object in that file.
+Currencies are defined in the core of your InBzar backend under `utils/currencies.js` (or `packages/medusa/src/utils/currencies.ts` if you’re using the InBzar mono-repository). They’re defined in an object in that file.
 
-When you run the `migration` or `seed` command the first time on your Medusa server, a migration uses this object to insert all its properties (the currencies) into the database.
+When you run the `migration` or `seed` command the first time on your InBzar server, a migration uses this object to insert all its properties (the currencies) into the database.
 
 So, if you want to add more currencies, you can create a migration that inserts your currencies into the database.
 

@@ -62,14 +62,14 @@ const glossary: GlossaryType[] = [
   },
   {
     title: "Loader",
-    content: "A script that runs when the Medusa backend starts.",
+    content: "A script that runs when the InBzar backend starts.",
     matchTextRegex: /loader/i,
     referenceLink: "/development/loaders/overview",
   },
   {
     title: "Scheduled Job",
     content:
-      "A task that is performed at specific times during the Medusa backend's runtime.",
+      "A task that is performed at specific times during the InBzar backend's runtime.",
     matchTextRegex: /scheduled job/i,
     referenceLink: "/development/scheduled-jobs/overview",
   },
@@ -89,7 +89,7 @@ const glossary: GlossaryType[] = [
   {
     title: "Feature Flag",
     content:
-      "A flag that guards beta features in the Medusa backend and ensures they can only be used when enabled.",
+      "A flag that guards beta features in the InBzar backend and ensures they can only be used when enabled.",
     matchTextRegex: /(feature-flag|feature flag)/i,
     referenceLink: "/development/feature-flags/overview",
   },
@@ -124,7 +124,7 @@ const glossary: GlossaryType[] = [
   {
     title: "Plugin",
     content:
-      "A reusable NPM package that can be reused in Medusa backends and provide custom functionalities.",
+      "A reusable NPM package that can be reused in InBzar backends and provide custom functionalities.",
     matchTextRegex: /plugin/i,
     ignoreTextRegex:
       /(file-service plugin|file service plugin|notification service plugin|notification-service plugin|search service plugin|search-service plugin)/i,
@@ -149,35 +149,35 @@ const glossary: GlossaryType[] = [
   {
     title: "JavaScript Client",
     content:
-      "An NPM package that provides methods to interact with the Medusa backend's REST APIs.",
+      "An NPM package that provides methods to interact with the InBzar backend's REST APIs.",
     matchTextRegex: /(js-client|js client|medusa javascript client)/i,
     referenceLink: "/js-client/overview",
   },
   {
-    title: "Medusa React",
+    title: "InBzar React",
     content:
-      "An NPM package that provides React hooks and utility methods to interact with the Medusa backend's REST APIs.",
+      "An NPM package that provides React hooks and utility methods to interact with the InBzar backend's REST APIs.",
     matchTextRegex: /(medusa-react|medusa react)/i,
     referenceLink: "/medusa-react/overview",
   },
   {
     title: "Admin Widget",
     content:
-      "Custom React components that can be injected into different locations in the Medusa admin dashboard.",
+      "Custom React components that can be injected into different locations in the InBzar admin dashboard.",
     matchTextRegex: /admin widget/i,
     referenceLink: "/admin/widgets",
   },
   {
     title: "Admin UI Route",
     content:
-      "A React component that is used to create a new page in the Medusa admin dashboard.",
+      "A React component that is used to create a new page in the InBzar admin dashboard.",
     matchTextRegex: /(admin route|admin UI route)/i,
     referenceLink: "/admin/routes",
   },
   {
     title: "Admin Setting Page",
     content:
-      "A React component that is used to create a new setting page in the Medusa admin dashboard.",
+      "A React component that is used to create a new setting page in the InBzar admin dashboard.",
     matchTextRegex: /admin setting page/i,
     referenceLink: "/admin/setting-pages",
   },

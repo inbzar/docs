@@ -1,16 +1,16 @@
 ---
-description: "Learn about returns, how the return process is implemented in the Medusa backend, and a return’s relation to other entities."
+description: "Learn about returns, how the return process is implemented in the InBzar backend, and a return’s relation to other entities."
 ---
 
 # Returns Architecture Overview
 
-In this document, you’ll learn about returns, how the return process is implemented in the Medusa backend, and a return’s relation to other entities.
+In this document, you’ll learn about returns, how the return process is implemented in the InBzar backend, and a return’s relation to other entities.
 
 ## Overview
 
 After a customer receives an item they ordered, they might want to return it back. This process includes returning the item into the commerce store, and refunding the payment back to the customer.
 
-The Medusa core provides the necessary implementation and functionalities that allow you to integrate this process into your store and automate the Return Merchandise Authorization (RMA) flow.
+The InBzar core provides the necessary implementation and functionalities that allow you to integrate this process into your store and automate the Return Merchandise Authorization (RMA) flow.
 
 ---
 
@@ -48,11 +48,11 @@ You can learn more about idempotency keys [here](../../development/idempotency-k
 
 ### Return Creation Process Through the Customer
 
-This section explains how the return is created by the customer or any type of client. This is the process created within the Medusa core.
+This section explains how the return is created by the customer or any type of client. This is the process created within the InBzar core.
 
 The following process occurs within the Create Return storefront API Route:
 
-![Return Client Process Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681994516/Medusa%20Docs/Diagrams/return-client-process_evbjf5.jpg)
+![Return Client Process Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681994516/InBzar%20Docs/Diagrams/return-client-process_evbjf5.jpg)
 
 1. The customer creates a return, specifying the items they want to return and optionally the shipping option they want to use to return the items. This is done using the `ReturnService`'s [create method](../../references/services/classes/services.ReturnService.mdx#create).
 2. If they specify the return shipping option they want to use, a shipping method is created from the chosen shipping option and the return is automatically fulfilled in the backend using the `ReturnService`'s [fulfill method](../../references/services/classes/services.ReturnService.mdx#fulfill).
@@ -65,7 +65,7 @@ Marking a return as received would refund the amount to the customer and adjust 
 
 The following process occurs within the [Receive Return admin API Route](https://docs.medusajs.com/api/admin#returns_postreturnsreturnreceive):
 
-![Receive Return Process Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681996834/Medusa%20Docs/Diagrams/return-admin-process_e99skk.jpg)
+![Receive Return Process Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681996834/InBzar%20Docs/Diagrams/return-admin-process_e99skk.jpg)
 
 1. The return is marked as received using the `ReturnService`'s receive method. In this method:
     1. The return’s status is checked to ensure it’s not canceled or received. If so, the process is terminated with an error.
@@ -91,7 +91,7 @@ Giving the client control over the creation of a return allows businesses to aut
 
 The client, typically the customer, creates the return, and specifies the shipping option they’ll use to return the item. The admin, typically the merchant, can view the requested return, mark it as received, and refund the payment to the customer. The core will also take care of adjusting the inventory automatically.
 
-![RMA Automation Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681996158/Medusa%20Docs/Diagrams/rma-automation-return_prleib.jpg)
+![RMA Automation Flowchart](https://res.cloudinary.com/dza7lstvk/image/upload/v1681996158/InBzar%20Docs/Diagrams/rma-automation-return_prleib.jpg)
 
 This removes any friction and support required between the client and the admin.
 

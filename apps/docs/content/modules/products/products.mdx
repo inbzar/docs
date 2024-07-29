@@ -1,10 +1,10 @@
 ---
-description: 'Learn what product categories are and how they work in a Medusa backend. Product categories can be used to organize products using nested collections.'
+description: 'Learn what product categories are and how they work in a InBzar backend. Product categories can be used to organize products using nested collections.'
 ---
 
 # Products Architecture Overview
 
-In this document, you’ll learn about Products in Medusa and their relation to other entities.
+In this document, you’ll learn about Products in InBzar and their relation to other entities.
 
 ## Overview
 
@@ -23,7 +23,7 @@ The `Product` entity has many useful attributes, including:
 - `title`: The name of the product.
 - `handle`: A slug representation of the product’s title. This can be used in the storefront to generate human-readable URLs for products, which can be beneficial for Search Engine Optimization (SEO) purposes.
 - `status`: A string indicating the status of the product. Its values can be `draft`, `proposed`, `published`, and `rejected`.
-- `external_id`: A string that can be used to store an ID of the product on an external system. This is useful if you’re migrating the product from an ecommerce platform to Medusa, or if you’re connecting Medusa’s products to an external service.
+- `external_id`: A string that can be used to store an ID of the product on an external system. This is useful if you’re migrating the product from an ecommerce platform to InBzar, or if you’re connecting InBzar’s products to an external service.
 
 Other attributes of the `Product` entity are explored in the next sections.
 
@@ -74,7 +74,7 @@ You can’t have two product variants with the same values. For example, you can
 
 :::
 
-![Product Diagram](https://res.cloudinary.com/dza7lstvk/image/upload/v1681731289/Medusa%20Docs/Diagrams/product_m0zb7u.jpg)
+![Product Diagram](https://res.cloudinary.com/dza7lstvk/image/upload/v1681731289/InBzar%20Docs/Diagrams/product_m0zb7u.jpg)
 
 Product variants are represented by the `ProductVariant` entity. The entity’s attributes include:
 
@@ -82,7 +82,7 @@ Product variants are represented by the `ProductVariant` entity. The entity’s 
 - `product_id`: A string indicating which product this variant belongs to. You can also access the product through the `product` relation if it’s expanded.
 - `sku`: A string indicating the Stock Keeping Unit (SKU) of the variant. This, along with other attributes like `barcode` or `upc`  are useful to store inventory-related information.
 - `inventory_quantity`: A number indicating the available inventory of the variant. This is only useful if you have `manage_inventory` disabled.
-- `manage_inventory`: A boolean value indicating whether Medusa should handle the management of the product variant’s inventory. This would allow you to handle your inventory data more accurately across different locations. You can learn more in [the Inventory Module documentation](../multiwarehouse/inventory-module.md).
+- `manage_inventory`: A boolean value indicating whether InBzar should handle the management of the product variant’s inventory. This would allow you to handle your inventory data more accurately across different locations. You can learn more in [the Inventory Module documentation](../multiwarehouse/inventory-module.md).
 - `inventory_items`: A relation that gives you access to the inventory items of a variant when `manage_inventory` is enabled. You can learn more in [the Inventory Module documentation](../multiwarehouse/inventory-module.md).
 - `variant_rank`: a number that can be used to decide the sort order of variants in a storefront.
 
@@ -94,7 +94,7 @@ As the product variant is the salable item in your store, the price of a product
 
 A product variant can have more than one price for different context. For example, a product variant can have a different price for each currency or region.
 
-The prices of a product variant are available on the `prices` relation, which is an array of `MoneyAmount` items. `MoneyAmount` is an entity used throughout Medusa to store prices in general.
+The prices of a product variant are available on the `prices` relation, which is an array of `MoneyAmount` items. `MoneyAmount` is an entity used throughout InBzar to store prices in general.
 
 The `MoneyAmount` entity has the following attributes that are useful for a product variant:
 
@@ -135,7 +135,7 @@ For zero-decimal currencies, the amount is still stored as an integer without mu
 
 This logic of formatting the price is not handled in the backend. So, when you add a product variant using the Admin APIs, you must format the price as explained earlier. The backend stores the price as received from API requests.
 
-In addition, the Medusa Admin dashboard and the Next.js Starter Template expect the price to be of that format, so when prices are displayed for currencies that are stored multiplied by a `100`, such as USD, they’re divided by a hundred. Also, when you add or update a product variant, its price is sent to the Medusa backend as the price multiplied by a hundred.
+In addition, the InBzar Admin dashboard and the Next.js Starter Template expect the price to be of that format, so when prices are displayed for currencies that are stored multiplied by a `100`, such as USD, they’re divided by a hundred. Also, when you add or update a product variant, its price is sent to the InBzar backend as the price multiplied by a hundred.
 
 ### Displaying the Product Variant’s Price
 
@@ -145,7 +145,7 @@ When showing a product’s details to the customer in the storefront, you can pa
 
 ## Relations to Other Entities
 
-This section explores the relations between the `Product` entity and other entities in your Medusa backend.
+This section explores the relations between the `Product` entity and other entities in your InBzar backend.
 
 ### SalesChannel
 

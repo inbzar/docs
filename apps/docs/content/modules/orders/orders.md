@@ -10,7 +10,7 @@ In this document, you’ll learn about the orders architecture, how they’re cr
 
 Orders are placed by customers who purchase items from your store. They involve intricate commerce operations related to inventory, fulfillment, payment, and more.
 
-Medusa supports order features such as order editing, creating swaps for orders, returning orders, and more. These features allow merchants to handle and automate Return Merchandise Authorization (RMA) flows.
+InBzar supports order features such as order editing, creating swaps for orders, returning orders, and more. These features allow merchants to handle and automate Return Merchandise Authorization (RMA) flows.
 
 :::note
 
@@ -43,7 +43,7 @@ There are other important attributes discussed in later sections. Check out the 
 
 ## How are Orders Created
 
-You have full freedom in how you create your orders. Within the Medusa backend, there are two defined ways when an order is created:
+You have full freedom in how you create your orders. Within the InBzar backend, there are two defined ways when an order is created:
 
 1. Using a cart: The customer adds products to their cart and go through the checkout process to place the order. Learn about the [cart completion process here](../carts-and-checkout/cart.md#cart-completion-process).
 2. Using draft orders: the merchant can create draft orders without the customer’s involvement. This includes a very similar process of adding products to the draft order, supplying the shipping and billing addresses, and more. The draft order can later be turned into a regular order.
@@ -62,7 +62,7 @@ In the default scenario, the merchant would have to capture that payment manuall
 
 After a payment has been captured, it can be refunded either fully or a specific amount of it. This is useful if items of an order has been returned or swapped, or if an order has been edited. The payment can be refunded using the `PaymentService`'s [refund method](../../references/services/classes/services.PaymentService.mdx#refund).
 
-The Medusa backend also provides payment admin APIs that you can use to retrieve, capture, and refund the payment.
+The InBzar backend also provides payment admin APIs that you can use to retrieve, capture, and refund the payment.
 
 ---
 
@@ -80,7 +80,7 @@ A fulfillment can instead be canceled, changing the `fulfillment_status` to `can
 
 If one or some items in an order are returned, the `fulfillment_status` is set to `partially_returned`. If all items were returned, the `fulfillment_status` is set to `returned`.
 
-The Medusa backend provides these functionalities through the admin APIs. You can also use the `OrderService`'s methods to perform these functionalities in a custom flow, such as the [createFulfillment](../../references/services/classes/services.OrderService.mdx#createfulfillment) or [createShipment](../../references/services/classes/services.OrderService.mdx#createshipment) methods.
+The InBzar backend provides these functionalities through the admin APIs. You can also use the `OrderService`'s methods to perform these functionalities in a custom flow, such as the [createFulfillment](../../references/services/classes/services.OrderService.mdx#createfulfillment) or [createShipment](../../references/services/classes/services.OrderService.mdx#createshipment) methods.
 
 ---
 
@@ -129,11 +129,11 @@ Typically, a merchant would edit the order and send the edit request to the cust
 
 A merchant may also choose to force the edit on the order, by-passing the customer’s confirmation.
 
-![https://res.cloudinary.com/dza7lstvk/image/upload/fl_lossy/f_auto/r_16/ar_16:9,c_pad/v1/Medusa%20Docs/Diagrams/order-edit_mcnfc3.jpg?_a=ATFGlAA0](https://res.cloudinary.com/dza7lstvk/image/upload/fl_lossy/f_auto/r_16/ar_16:9,c_pad/v1/Medusa%20Docs/Diagrams/order-edit_mcnfc3.jpg?_a=ATFGlAA0)
+![https://res.cloudinary.com/dza7lstvk/image/upload/fl_lossy/f_auto/r_16/ar_16:9,c_pad/v1/InBzar%20Docs/Diagrams/order-edit_mcnfc3.jpg?_a=ATFGlAA0](https://res.cloudinary.com/dza7lstvk/image/upload/fl_lossy/f_auto/r_16/ar_16:9,c_pad/v1/InBzar%20Docs/Diagrams/order-edit_mcnfc3.jpg?_a=ATFGlAA0)
 
-Although this process is implemented in this flow within the Medusa backend, there is no requirement for you to actually follow it. For example, you can allow the customer or a third-party service to create and manage the order edit.
+Although this process is implemented in this flow within the InBzar backend, there is no requirement for you to actually follow it. For example, you can allow the customer or a third-party service to create and manage the order edit.
 
-The Medusa backend provides the [order edit admin APIs](https://docs.medusajs.com/api/admin#order-edits), but you can also use the [OrderEditService](../../references/services/classes/services.OrderEditService.mdx) to perform the same functionalities in a custom flow.
+The InBzar backend provides the [order edit admin APIs](https://docs.medusajs.com/api/admin#order-edits), but you can also use the [OrderEditService](../../references/services/classes/services.OrderEditService.mdx) to perform the same functionalities in a custom flow.
 
 Order edits are represented by the `OrderEdit` entity. This entity is linked to the order through the `order_id` attribute. You can access an order’s edits by expanding the `edits` relation and accessing `order.edits`. Notice that an order can have multiple edits during its lifecycle, but it can’t have more than one ongoing edit.
 
@@ -174,13 +174,13 @@ For order edits, you can authorize the entire payment collection that holds addi
 
 ## Automating RMA Flows
 
-Medusa provides the necessary infrastructure and tooling that allows automating RMA flows. Entities involved in the RMA flows can include:
+InBzar provides the necessary infrastructure and tooling that allows automating RMA flows. Entities involved in the RMA flows can include:
 
 - Returns: Return an item from the customer to the merchant.
 - Swap: Swap an item with another. This involves returning the original item from the customer and shipping a new item to the customer.
 - Claim: Allow a customer to refund or replace an item in their order if it’s faulty or for other reasons.
 
-The Medusa backend facilitates automating these flows by allowing the customer to submit a [return](https://docs.medusajs.com/api/store#returns_postreturns) or [swap](https://docs.medusajs.com/api/store#swaps_postswaps) requests through the store APIs. The merchant can then review and handle these requests. This eliminates the need for the customer to perform the same action through customer support or other means.
+The InBzar backend facilitates automating these flows by allowing the customer to submit a [return](https://docs.medusajs.com/api/store#returns_postreturns) or [swap](https://docs.medusajs.com/api/store#swaps_postswaps) requests through the store APIs. The merchant can then review and handle these requests. This eliminates the need for the customer to perform the same action through customer support or other means.
 
 You can also integrate these flows within bigger processes that trigger requesting or creating these flows. It can be done through core APIs, [custom API Routes](../../development/api-routes/overview.mdx), or [custom services](../../development/services/overview.mdx). You can also listen to events related to orders such as [Order](../../development/events/events-list.md#order-events) or [Swap](../../development/events/events-list.md#swap-events) events with [subscribers](../../development/events/subscribers.mdx) to perform asynchronous actions.
 

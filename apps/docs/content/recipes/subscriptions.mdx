@@ -5,7 +5,7 @@ import LearningPath from '@site/src/components/LearningPath';
 
 # Build Subscription-based Purchases
 
-This document guides you through the different documentation resources that will help you build subscription-based purchasing in Medusa.
+This document guides you through the different documentation resources that will help you build subscription-based purchasing in InBzar.
 
 ## Overview
 
@@ -15,7 +15,7 @@ For example, a customer can purchase a book subscription box for a period of thr
 
 :::tip
 
-Recommended read: [How Goodchef built subscription-based purchases with Medusa](https://medusajs.com/blog/goodchef-webbers-powering-subscriptions-with-medusas-commerce-modules/).
+Recommended read: [How Goodchef built subscription-based purchases with InBzar](https://medusajs.com/blog/goodchef-webbers-powering-subscriptions-with-medusas-commerce-modules/).
 
 :::
 
@@ -29,7 +29,7 @@ Subscriptions have details related to the subscription interval, subscription pe
 
 Based on the approach you choose to implement the subscription logic (which is discussed in the next section), you might need to store different data in your backend.
 
-If you want to store the subscription details in a new table in the database, you can do that by creating an entity. If you want to extend an existing entity in Medusa's core, such as the `Order` entity, to add details related to the subscription, you can extend an entity.
+If you want to store the subscription details in a new table in the database, you can do that by creating an entity. If you want to extend an existing entity in InBzar's core, such as the `Order` entity, to add details related to the subscription, you can extend an entity.
 
 <DocCardList colSize={6} items={[
   {
@@ -38,7 +38,7 @@ If you want to store the subscription details in a new table in the database, yo
     label: "Create an Entity",
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create an entity in Medusa.',
+      description: 'Learn how to create an entity in InBzar.',
     }
   },
   {
@@ -47,7 +47,7 @@ If you want to store the subscription details in a new table in the database, yo
     label: 'Extend an Entity',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to extend an entity in Medusa.',
+      description: 'Learn how to extend an entity in InBzar.',
     }
   },
 ]} />
@@ -56,7 +56,7 @@ If you want to store the subscription details in a new table in the database, yo
 
 ## Decide on Subscription Approach
 
-There are different ways to implement subscriptions in your Medusa backend. This document discusses two options: using Stripe subscriptions, or implementing subscriptions logic within the backend, independent of a specific payment provider.
+There are different ways to implement subscriptions in your InBzar backend. This document discusses two options: using Stripe subscriptions, or implementing subscriptions logic within the backend, independent of a specific payment provider.
 
 ### Option 1: Using Stripe Subscriptions
 
@@ -64,16 +64,16 @@ Stripe provides a [subscription payments](https://stripe.com/docs/billing/subscr
 
 This approach allows you to delegate the complications of implementing the subscription logic to Stripe, but does not support using other payment providers.
 
-Medusa provides a Stripe plugin, however, it doesn't handle subscriptions. You can either use that plugin to add the subscription feature on top of it, or create a custom Stripe Subscription payment provider.
+InBzar provides a Stripe plugin, however, it doesn't handle subscriptions. You can either use that plugin to add the subscription feature on top of it, or create a custom Stripe Subscription payment provider.
 
 <DocCardList colSize={6} items={[
   {
     type: 'link',
     href: 'https://github.com/medusajs/medusa/tree/v1.x/packages/medusa-payment-stripe',
-    label: "Use Medusa's Stripe Plugin",
+    label: "Use InBzar's Stripe Plugin",
     customProps: {
       icon: Icons['github'],
-      description: "Check out Medusa's stripe plugin to build subscription on top of it.",
+      description: "Check out InBzar's stripe plugin to build subscription on top of it.",
     }
   },
   {
@@ -103,7 +103,7 @@ Implementing the logic depends on your use case, but you'll mainly need to do tw
     label: 'Create a Subscriber',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a subscriber in Medusa.',
+      description: 'Learn how to create a subscriber in InBzar.',
     }
   },
   {
@@ -112,7 +112,7 @@ Implementing the logic depends on your use case, but you'll mainly need to do tw
     label: 'Create a Scheduled Job',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to create a scheduled job in Medusa.',
+      description: 'Learn how to create a scheduled job in InBzar.',
     }
   },
 ]} />
@@ -123,7 +123,7 @@ Implementing the logic depends on your use case, but you'll mainly need to do tw
 
 As you add subscription features to your store, you'll most likely need to customize the admin to provide an interface to manage these features.
 
-Medusa's [admin plugin](../admin/quickstart.mdx) can be extended to add widgets or new blocks to existing pages, add UI routes to add new pages, or add setting pages.
+InBzar's [admin plugin](../admin/quickstart.mdx) can be extended to add widgets or new blocks to existing pages, add UI routes to add new pages, or add setting pages.
 
 <DocCardList colSize={4} items={[
   {
@@ -141,7 +141,7 @@ Medusa's [admin plugin](../admin/quickstart.mdx) can be extended to add widgets 
     label: 'Create Admin UI Routes',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to add new pages to your Medusa Admin.',
+      description: 'Learn how to add new pages to your InBzar Admin.',
     }
   },
   {
@@ -150,7 +150,7 @@ Medusa's [admin plugin](../admin/quickstart.mdx) can be extended to add widgets 
     label: 'Create Admin Setting Page',
     customProps: {
       icon: Icons['academic-cap-solid'],
-      description: 'Learn how to add new page to the Medusa Admin settings.',
+      description: 'Learn how to add new page to the InBzar Admin settings.',
     }
   },
 ]} />
@@ -159,7 +159,7 @@ Medusa's [admin plugin](../admin/quickstart.mdx) can be extended to add widgets 
 
 ## Build a Storefront
 
-Medusa provides a Next.js Starter Template that you can use with Medusa. Since you've customized your Medusa project, you'll need to either customize the existing Next.js Starter Template, or create a custom storefront.
+InBzar provides a Next.js Starter Template that you can use with InBzar. Since you've customized your InBzar project, you'll need to either customize the existing Next.js Starter Template, or create a custom storefront.
 
 <DocCardList colSize={6} items={[
   {
@@ -186,7 +186,7 @@ Medusa provides a Next.js Starter Template that you can use with Medusa. Since y
 
 ## Deploy Backend
 
-Our documentation includes deployment guides for a basic Medusa backend. You should be able to follow it to deploy your customized backend, as well.
+Our documentation includes deployment guides for a basic InBzar backend. You should be able to follow it to deploy your customized backend, as well.
 
 <DocCard item={{
   type: 'link',
@@ -202,4 +202,4 @@ Our documentation includes deployment guides for a basic Medusa backend. You sho
 
 ## Additional Development
 
-You can find other resources for your development in the [Medusa Development section](../development/overview.mdx) of this documentation.
+You can find other resources for your development in the [InBzar Development section](../development/overview.mdx) of this documentation.

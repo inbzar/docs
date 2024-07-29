@@ -1,10 +1,10 @@
 ---
-description: 'Learn what Sales Channels are and how they can be used in Medusa. Sales Channels allow merchants to separate between the different channels products are sold in.'
+description: 'Learn what Sales Channels are and how they can be used in InBzar. Sales Channels allow merchants to separate between the different channels products are sold in.'
 ---
 
 # Sales Channels
 
-In this document, you’ll learn about Sales Channels and how they can be used in Medusa.
+In this document, you’ll learn about Sales Channels and how they can be used in InBzar.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ A sales channel is stored in the database as a [SalesChannel](../../references/e
 
 ### Store
 
-A store has a default sales channel. When you first run your Medusa backend or seed your database, a default sales channel is created, if it doesn’t exist, and associated with the store.
+A store has a default sales channel. When you first run your InBzar backend or seed your database, a default sales channel is created, if it doesn’t exist, and associated with the store.
 
 The relation is implemented in the [Store](../../references/entities/classes/entities.Store.mdx) entity. You can access the default sales channel of a store by expanding the `default_sales_channel` relation and using `store.default_sales_channel`. You can also access the ID of the default sales channel using `store.default_sales_channel_id`.
 

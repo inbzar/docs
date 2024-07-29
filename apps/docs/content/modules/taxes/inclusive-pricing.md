@@ -1,17 +1,17 @@
 ---
-description: 'Learn what tax-inclusive pricing is and how it works in Medusa. Tax-inclusive pricing allows merchants to set the final prices for products and shipping options regardless of what tax rate is applicable for the customer.'
+description: 'Learn what tax-inclusive pricing is and how it works in InBzar. Tax-inclusive pricing allows merchants to set the final prices for products and shipping options regardless of what tax rate is applicable for the customer.'
 ---
 
 # Tax Inclusive Pricing
 
-In this document, you’ll learn how tax-inclusive pricing works in Medusa.
+In this document, you’ll learn how tax-inclusive pricing works in InBzar.
 
 :::note
 
 Tax Inclusive Pricing is currently in beta mode and guarded by a feature flag. To use Tax-Inclusive Pricing either:
 
 1. Enable the `MEDUSA_FF_TAX_INCLUSIVE_PRICING` environment variable;
-2. Or enable the `tax_inclusive_pricing` key in the Medusa backend's settings.
+2. Or enable the `tax_inclusive_pricing` key in the InBzar backend's settings.
 
 You can learn more about enabling it in the [feature flags](../../development/feature-flags/toggle.md) documentation.
 
@@ -19,11 +19,11 @@ You can learn more about enabling it in the [feature flags](../../development/fe
 
 ## Introduction
 
-Tax Inclusive pricing allows you to set the final prices for products and shipping options regardless of the customer's applicable tax rates. When tax-inclusive prices are used, Medusa automatically calculates the tax amount for a given price.
+Tax Inclusive pricing allows you to set the final prices for products and shipping options regardless of the customer's applicable tax rates. When tax-inclusive prices are used, InBzar automatically calculates the tax amount for a given price.
 
 This can be useful when some countries have the same currency but have different tax rates. If you want your prices to be the same across these countries, you have to manage two price lists to account for the tax differences. Using tax-inclusive pricing you only have to specify the price once.
 
-Then, Medusa handles calculating the tax amount using the tax rate and the tax-inclusive price. This is managed in the backend and relayed to accounting and analytics tools.
+Then, InBzar handles calculating the tax amount using the tax rate and the tax-inclusive price. This is managed in the backend and relayed to accounting and analytics tools.
 
 ---
 
@@ -72,7 +72,7 @@ const taxAmount = (taxRate * taxInclusivePrice) / (1 + taxRate)
 
 Where `taxRate` is the tax rate to be applied to the price, and `taxInclusivePrice` is the price entered by the store operator.
 
-For example, if the tax rate is `0.25` and the price of a product is `100`, the resulting tax amount calculated by Medusa will be `0.25 * 100 / 1.25 = 20`.
+For example, if the tax rate is `0.25` and the price of a product is `100`, the resulting tax amount calculated by InBzar will be `0.25 * 100 / 1.25 = 20`.
 
 ---
 
@@ -106,7 +106,7 @@ If tax inclusivity is enabled for the current region or currency (based on wheth
 - `original_price` will include the tax amount by default.
 - `original_price_includes_tax` will be set to `true`.
 - `original_price_incl_tax` will have the same amount as `original_price`.
-- `original_tax` is automatically calculated by Medusa.
+- `original_tax` is automatically calculated by InBzar.
 
 Also, for each of the product variant’s prices in a price list, if tax inclusivity is enabled (either if the price list itself has the `includes_tax` attribute set to `true`, or the variant’s price in the price list uses a currency or region that has the `includes_tax` attribute set to `true`), and the amount of the price is less than the original price of the variant:
 
@@ -158,7 +158,7 @@ Each line item returned in any of the cart’s requests has total fields related
 - `subtotal`: The total of the line item’s price subtracting the amount in `original_tax_total`.
 - `original_total`: The `subtotal` including the `original_tax_total` amount.
 
-If tax inclusivity is enabled for the line item, `unit_price` will include the tax amount. The tax amount, which will also be the value of `tax_total`, is calculated using [Medusa’s formula for tax inclusive pricing](#tax-amount-calculation-formula) based on the line item’s tax rates. The calculation takes into account any discounts applied on the item, which means the discount amount is deducted from the original price.
+If tax inclusivity is enabled for the line item, `unit_price` will include the tax amount. The tax amount, which will also be the value of `tax_total`, is calculated using [InBzar’s formula for tax inclusive pricing](#tax-amount-calculation-formula) based on the line item’s tax rates. The calculation takes into account any discounts applied on the item, which means the discount amount is deducted from the original price.
 
 Then, the `subtotal` is calculated by subtracting the `tax_total` from the total of the line item’s price. `original_total` has the same value as `subtotal`.
 
@@ -180,7 +180,7 @@ Among the returned fields for each shipping option, the following are relevant t
 - `price_incl_tax`: The price of the shipping option with tax included.
 - `tax_amount`: The tax amount applied to the shipping option.
 
-If tax inclusivity is enabled for the shipping option, `amount` and `price_incl_tax` have the same value. Also, the value of `tax_amount` is calculated using [Medusa’s formula for tax inclusive pricing](#tax-amount-calculation-formula).
+If tax inclusivity is enabled for the shipping option, `amount` and `price_incl_tax` have the same value. Also, the value of `tax_amount` is calculated using [InBzar’s formula for tax inclusive pricing](#tax-amount-calculation-formula).
 
 ### Carts and Orders
 

@@ -1,17 +1,17 @@
 ---
 sidebar_position: 1
-description: 'Medusa Admin allows merchants to manage their taxes. Merchants can specify and configure taxes per region.'
+description: 'InBzar Admin allows merchants to manage their taxes. Merchants can specify and configure taxes per region.'
 ---
 
 # Taxes Overview
 
-In this document, you’ll get an overview of taxes in Medusa and learn about their importance in your ecommerce store.
+In this document, you’ll get an overview of taxes in InBzar and learn about their importance in your ecommerce store.
 
 ## Overview
 
-Taxes in Medusas are directly associated with [Regions](../regions/index.md). As regions and countries often have different tax rates and rules, Medusa supports specifying the tax rate for each region.
+Taxes in Medusas are directly associated with [Regions](../regions/index.md). As regions and countries often have different tax rates and rules, InBzar supports specifying the tax rate for each region.
 
-Taxes are calculated for products and shipping methods on checkout. Medusa provides a default tax provider to calculate the taxes, and merchants and developers can also integrate custom tax providers for advanced calculation of taxes.
+Taxes are calculated for products and shipping methods on checkout. InBzar provides a default tax provider to calculate the taxes, and merchants and developers can also integrate custom tax providers for advanced calculation of taxes.
 
 ---
 

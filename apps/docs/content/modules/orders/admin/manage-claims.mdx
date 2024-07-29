@@ -12,7 +12,7 @@ In this document, you’ll learn how to manage claims using the admin REST APIs.
 
 ## Overview
 
-Using Medusa’s claim admin REST APIs, you can manage claims and perform related admin functionalities.
+Using InBzar’s claim admin REST APIs, you can manage claims and perform related admin functionalities.
 
 ### Scenario
 
@@ -32,21 +32,21 @@ You can learn about managing returns part of a claim in the [Manage Returns docu
 
 ## Prerequisites
 
-### Medusa Components
+### InBzar Components
 
-It is assumed that you already have a Medusa backend installed and set up. If not, you can follow our [quickstart guide](../../../development/backend/install.mdx) to get started.
+It is assumed that you already have a InBzar backend installed and set up. If not, you can follow our [quickstart guide](../../../development/backend/install.mdx) to get started.
 
 ### JS Client
 
-This guide includes code snippets to send requests to your Medusa backend using Medusa’s JS Client, among other methods.
+This guide includes code snippets to send requests to your InBzar backend using InBzar’s JS Client, among other methods.
 
-If you follow the JS Client code blocks, it’s assumed you already have [Medusa’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
+If you follow the JS Client code blocks, it’s assumed you already have [InBzar’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
 
-### Medusa React
+### InBzar React
 
-This guide also includes code snippets to send requests to your Medusa backend using Medusa React, among other methods.
+This guide also includes code snippets to send requests to your InBzar backend using InBzar React, among other methods.
 
-If you follow the Medusa React code blocks, it's assumed you already have [Medusa React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
+If you follow the InBzar React code blocks, it's assumed you already have [InBzar React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
 
 ### Authenticated Admin User
 
@@ -61,7 +61,7 @@ You can learn more about [authenticating as an admin user in the API reference](
 To view an order’s claims, you can retrieve the order using the [Get Order API Route](https://docs.medusajs.com/api/admin#orders_getordersorder) and access the order’s claims:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.retrieve(orderId)
@@ -71,7 +71,7 @@ To view an order’s claims, you can retrieve the order using the [Get Order API
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminOrder } from "medusa-react"
@@ -140,7 +140,7 @@ The request returns the order as an object. In that object, you can access an ar
 You can create a claim by sending a request to the [Create Claim API Route](https://docs.medusajs.com/api/admin#orders_postordersorderclaims):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.createClaim(orderId, {
@@ -158,7 +158,7 @@ You can create a claim by sending a request to the [Create Claim API Route](http
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCreateClaim } from "medusa-react"
@@ -266,7 +266,7 @@ The request returns the updated order as an object. You can access the order’s
 You can update a claim by sending a request to the [Update Claim API Route](https://docs.medusajs.com/api/admin#orders_postordersorderclaimsclaim):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.updateClaim(orderId, claimId, {
@@ -278,7 +278,7 @@ You can update a claim by sending a request to the [Update Claim API Route](http
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminUpdateClaim } from "medusa-react"
@@ -366,7 +366,7 @@ Fulfillments are available on a claim object under the `fulfillments` property, 
 You can create a fulfillment for a claim by sending a request to the [Create Claim Fulfillment API Route](https://docs.medusajs.com/api/admin#orders_postordersorderclaimsclaimfulfillments):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.fulfillClaim(orderId, claimId, {
@@ -377,7 +377,7 @@ You can create a fulfillment for a claim by sending a request to the [Create Cla
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminFulfillClaim } from "medusa-react"
@@ -445,7 +445,7 @@ The request returns the updated order as an object. You can access the order’s
 You can create a shipment for a claim by sending a request to the [Create Claim Shipment API Route](https://docs.medusajs.com/api/admin#orders_postordersorderclaimsclaimshipments):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.createClaimShipment(orderId, claimId, {
@@ -457,7 +457,7 @@ You can create a shipment for a claim by sending a request to the [Create Claim 
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCreateClaimShipment } from "medusa-react"
@@ -546,7 +546,7 @@ You can’t cancel a fulfillment that has a shipment
 You can cancel a fulfillment by sending a request to the [Cancel Fulfillment API Route](https://docs.medusajs.com/api/admin#orders_postordersclaimfulfillmentscancel):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.cancelClaimFulfillment(
@@ -560,7 +560,7 @@ You can cancel a fulfillment by sending a request to the [Cancel Fulfillment API
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCancelClaimFulfillment } from "medusa-react"
@@ -639,7 +639,7 @@ You can’t cancel a claim that has been refunded. You must also cancel the clai
 You can cancel a claim by sending a request to the [Cancel Claim API Route](https://docs.medusajs.com/api/admin#orders_postordersclaimcancel):
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.orders.cancelClaim(orderId, claimId)
@@ -649,7 +649,7 @@ You can cancel a claim by sending a request to the [Cancel Claim API Route](http
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCancelClaim } from "medusa-react"

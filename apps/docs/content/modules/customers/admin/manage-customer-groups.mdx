@@ -22,21 +22,21 @@ This guide covers how to use these APIs to perform these tasks.
 
 ## Prerequisites
 
-### Medusa Components
+### InBzar Components
 
-It is assumed that you already have a Medusa backend installed and set up. If not, you can follow our [quickstart guide](../../../development/backend/install.mdx) to get started.
+It is assumed that you already have a InBzar backend installed and set up. If not, you can follow our [quickstart guide](../../../development/backend/install.mdx) to get started.
 
 ### JS Client
 
-This guide includes code snippets to send requests to your Medusa backend using Medusa’s JS Client, among other methods.
+This guide includes code snippets to send requests to your InBzar backend using InBzar’s JS Client, among other methods.
 
-If you follow the JS Client code blocks, it’s assumed you already have [Medusa’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
+If you follow the JS Client code blocks, it’s assumed you already have [InBzar’s JS Client](../../../js-client/overview.mdx) installed and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
 
-### Medusa React
+### InBzar React
 
-This guide also includes code snippets to send requests to your Medusa backend using Medusa React, among other methods.
+This guide also includes code snippets to send requests to your InBzar backend using InBzar React, among other methods.
 
-If you follow the Medusa React code blocks, it's assumed you already have [Medusa React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
+If you follow the InBzar React code blocks, it's assumed you already have [InBzar React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
 
 ### Authenticated Admin User
 
@@ -51,7 +51,7 @@ You can learn more about [authenticating as an admin user in the API reference](
 You can create a customer group by sending a request to the Create Customer Group API Route:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.customerGroups.create({
@@ -63,7 +63,7 @@ You can create a customer group by sending a request to the Create Customer Grou
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCreateCustomerGroup } from "medusa-react"
@@ -128,7 +128,7 @@ This request requires the `name` parameter and optionally accepts the `metadata`
 You can get a list of all customer groups by sending a request to the List Customer Groups API Route:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.customerGroups.list()
@@ -138,7 +138,7 @@ You can get a list of all customer groups by sending a request to the List Custo
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCustomerGroups } from "medusa-react"
@@ -208,7 +208,7 @@ You can also pass filters and other selection query parameters to the request. C
 You can retrieve a single customer group by sending a request to the Get a Customer Group API Route:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.customerGroups.retrieve(customerGroupId)
@@ -218,7 +218,7 @@ You can retrieve a single customer group by sending a request to the Get a Custo
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCustomerGroup } from "medusa-react"
@@ -275,7 +275,7 @@ This request accepts the ID of the customer group to retrieve as a path paramete
 You can update a customer group’s data by sending a request to the Update Customer Group API Route:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.customerGroups.update(customerGroupId, {
@@ -289,7 +289,7 @@ You can update a customer group’s data by sending a request to the Update Cust
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminUpdateCustomerGroup } from "medusa-react"
@@ -367,7 +367,7 @@ This request accepts the ID of the customer group as a path parameter, and optio
 You can delete a customer group by sending a request to the Delete a Customer Group API Route:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.customerGroups.delete(customerGroupId)
@@ -377,7 +377,7 @@ You can delete a customer group by sending a request to the Delete a Customer Gr
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminDeleteCustomerGroup } from "medusa-react"
@@ -441,7 +441,7 @@ This request accepts the ID of the customer group to delete as a path parameter.
 You can add a customer to a group by sending a request to the Customer Group’s Add Customer API Route:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.customerGroups.addCustomers(customerGroupId, {
@@ -457,7 +457,7 @@ You can add a customer to a group by sending a request to the Customer Group’s
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { 
@@ -541,7 +541,7 @@ This request accepts the ID of the customer group as a path parameter. In its bo
 You can retrieve a list of all customers in a customer group using the List Customers API Route:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.customerGroups.listCustomers(customerGroupId)
@@ -551,7 +551,7 @@ You can retrieve a list of all customers in a customer group using the List Cust
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useAdminCustomerGroupCustomers } from "medusa-react"
@@ -627,7 +627,7 @@ Removing customers from a group does not remove them entirely. They’ll still b
 You can remove customers from a customer group by sending a request to the Remove Customers API Route:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.admin.customerGroups.removeCustomers(
@@ -646,7 +646,7 @@ You can remove customers from a customer group by sending a request to the Remov
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { 

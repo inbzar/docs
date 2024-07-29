@@ -48,15 +48,15 @@ const SearchProvider = ({ children }: SearchProviderProps) => {
           {
             title: "Getting started? Try one of the following terms.",
             items: [
-              "Install Medusa with create-medusa-app",
+              "Install InBzar with create-medusa-app",
               "Next.js quickstart",
               "Admin dashboard quickstart",
               "Commerce modules",
-              "Medusa architecture",
+              "InBzar architecture",
             ],
           },
           {
-            title: "Developing with Medusa",
+            title: "Developing with InBzar",
             items: [
               "Recipes",
               "How to create API routes",

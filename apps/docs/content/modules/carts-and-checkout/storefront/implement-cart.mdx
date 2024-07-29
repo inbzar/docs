@@ -14,7 +14,7 @@ This document guides you through how you can add cart-related functionalities to
 
 Carts are necessary for ecommerce platforms to allow customers to buy products. Each customer, whether logged in or as a guest, should have a cart associated with them. The customer can then add products to the cart.
 
-This document helps you understand how to add the cart functionality to your storefront. This is helpful if you’re creating the storefront from scratch, or you want to understand how the process generally works in Medusa’s starter storefronts.
+This document helps you understand how to add the cart functionality to your storefront. This is helpful if you’re creating the storefront from scratch, or you want to understand how the process generally works in InBzar’s starter storefronts.
 
 :::note
 
@@ -26,23 +26,23 @@ This document does not cover implementing the checkout flow. You can refer to [t
 
 ## Prerequisites
 
-### Medusa Components
+### InBzar Components
 
-It's assumed that you already have a Medusa backend installed and set up. If not, you can follow our [quickstart guide](../../../development/backend/install.mdx) to get started.
+It's assumed that you already have a InBzar backend installed and set up. If not, you can follow our [quickstart guide](../../../development/backend/install.mdx) to get started.
 
-It is also assumed you already have a storefront set up. It can be a custom storefront or one of Medusa’s storefronts. If you don’t have a storefront set up, you can install the [Next.js Starter Template](../../../starters/nextjs-medusa-starter.mdx).
+It is also assumed you already have a storefront set up. It can be a custom storefront or one of InBzar’s storefronts. If you don’t have a storefront set up, you can install the [Next.js Starter Template](../../../starters/nextjs-medusa-starter.mdx).
 
 ### JS Client
 
-This guide includes code snippets to send requests to your Medusa backend using Medusa’s JS Client, among other methods.
+This guide includes code snippets to send requests to your InBzar backend using InBzar’s JS Client, among other methods.
 
-If you follow the JS Client code blocks, it’s assumed you already have [Medusa’s JS Client installed](../../../js-client/overview.mdx) and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
+If you follow the JS Client code blocks, it’s assumed you already have [InBzar’s JS Client installed](../../../js-client/overview.mdx) and have [created an instance of the client](../../../js-client/overview.mdx#configuration).
 
-### Medusa React
+### InBzar React
 
-This guide also includes code snippets to send requests to your Medusa backend using Medusa React, among other methods.
+This guide also includes code snippets to send requests to your InBzar backend using InBzar React, among other methods.
 
-If you follow the Medusa React code blocks, it's assumed you already have [Medusa React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
+If you follow the InBzar React code blocks, it's assumed you already have [InBzar React installed](../../../medusa-react/overview.mdx) and have [used MedusaProvider higher in your component tree](../../../medusa-react/overview.mdx#usage).
 
 It's also assumed you already have [used CartProvider higher in your component tree](../../../medusa-react/overview.mdx#cartprovider).
 
@@ -53,7 +53,7 @@ It's also assumed you already have [used CartProvider higher in your component t
 You can create a cart with the following code snippet:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.carts.create()
@@ -65,7 +65,7 @@ You can create a cart with the following code snippet:
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useCart } from "medusa-react"
@@ -116,7 +116,7 @@ The cart by default will have a random region assigned to it. You can specify th
 Otherwise, you can assign it a specific region during creation:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```jsx
     medusa.carts.create({
@@ -130,7 +130,7 @@ Otherwise, you can assign it a specific region during creation:
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useCart } from "medusa-react"
@@ -199,7 +199,7 @@ Notice that in the previous code snippets, you set the cart’s ID in the local 
 You can retrieve the cart at any given point using its ID with the following code snippet:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     const id = localStorage.getItem("cart_id")
@@ -211,7 +211,7 @@ You can retrieve the cart at any given point using its ID with the following cod
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React" default>
+  <TabItem value="medusa-react" label="InBzar React" default>
 
     ```tsx
     import { useCart } from "medusa-react"
@@ -266,7 +266,7 @@ A cart has different data associated with it including the region, email, addres
 You can use the following snippet to update any of the cart’s data:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.carts.update(cartId, {
@@ -276,7 +276,7 @@ You can use the following snippet to update any of the cart’s data:
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useCart } from "medusa-react"
@@ -332,7 +332,7 @@ A customer might add items to their cart, then creates an account or log in. In 
 You can do that using the same update operation:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.carts.update(cartId, {
@@ -342,7 +342,7 @@ You can do that using the same update operation:
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useCart } from "medusa-react"
@@ -394,7 +394,7 @@ In case the customer doesn't want to use their own account, you must at least as
 You can do that using the same update operation:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.carts.update(cartId, {
@@ -404,7 +404,7 @@ You can do that using the same update operation:
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useCart } from "medusa-react"
@@ -454,7 +454,7 @@ You can do that using the same update operation:
 To create a line item of a product and add it to a cart, you can use the following code snippet:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```jsx
     medusa.carts.lineItems.create(cartId, {
@@ -465,7 +465,7 @@ To create a line item of a product and add it to a cart, you can use the followi
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useCreateLineItem } from "medusa-react"
@@ -536,7 +536,7 @@ If you’re using Sales Channels, make sure that the cart and the product belong
 To update a line item's quantity in the cart, you can use the following code snippet:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.carts.lineItems.update(cartId, lineItemId, {
@@ -546,7 +546,7 @@ To update a line item's quantity in the cart, you can use the following code sni
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useUpdateLineItem } from "medusa-react"
@@ -610,7 +610,7 @@ It returns the updated cart.
 To delete a line item from the cart, you can use the following code snippet:
 
 <Tabs groupId="request-type" isCodeTabs={true}>
-  <TabItem value="client" label="Medusa JS Client" default>
+  <TabItem value="client" label="InBzar JS Client" default>
 
     ```ts
     medusa.carts.lineItems.delete(cartId, lineItemId)
@@ -618,7 +618,7 @@ To delete a line item from the cart, you can use the following code snippet:
     ```
 
   </TabItem>
-  <TabItem value="medusa-react" label="Medusa React">
+  <TabItem value="medusa-react" label="InBzar React">
 
     ```tsx
     import { useDeleteLineItem } from "medusa-react"
