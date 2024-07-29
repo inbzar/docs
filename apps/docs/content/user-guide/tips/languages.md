@@ -2,7 +2,7 @@
 
 InBzar Admin comes with multi-language support. This document covers the complete list of available languages.
 
-## Official Languages
+## Available Languages
 
 - English
 - French
