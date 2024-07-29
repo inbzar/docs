@@ -5,7 +5,6 @@ import type { WrapperProps } from "@docusaurus/types"
 import { useDoc } from "@docusaurus/theme-common/internal"
 import { useThemeConfig } from "@docusaurus/theme-common"
 import type { ThemeConfig } from "@medusajs/docs"
-import Feedback from "../../../components/Feedback"
 
 type Props = WrapperProps<typeof FooterType>
 
@@ -16,10 +15,6 @@ export default function FooterWrapper(props: Props): JSX.Element {
     <>
       {!metadata.frontMatter?.hide_footer && (
         <div className="mt-[42px]">
-          <Feedback
-            {...footerFeedback}
-            className="border-0 border-t border-solid border-medusa-border-base"
-          />
           <Footer {...props} />
         </div>
       )}
