@@ -30,7 +30,7 @@ jobs:
         run: yarn install
 
       - name: Build Docusaurus site
-        run: yarn build:docs
+        run: yarn build
 
       - name: Deploy to GitHub Pages
         run: |
