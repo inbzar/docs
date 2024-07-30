@@ -85,6 +85,11 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'features/personal-payment-system',
+          label: 'Personal Payment System',
+        },
+        {
+          type: 'doc',
           id: 'features/regions-and-currencies',
           label: 'Regions and Currencies',
         },
