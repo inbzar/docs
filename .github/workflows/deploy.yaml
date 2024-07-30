@@ -1,4 +1,4 @@
-name: Deploy Docusaurus to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,37 +6,44 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
+    name: Build Docusaurus
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
         with:
-          node-version: '18'
-
-      - name: Cache node modules
-        uses: actions/cache@v3
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
         with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: 18
+          cache: yarn
 
       - name: Install dependencies
-        run: yarn install
-
-      - name: Build Docusaurus site
+        run: yarn install --frozen-lockfile
+      - name: Build website
         run: yarn build
 
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/docs/build
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
-        run: |
-          cd apps/docs
-          yarn deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_USER: ${{ github.actor }}
-          TMPDIR: /tmp
+        id: deployment
+        uses: actions/deploy-pages@v4
