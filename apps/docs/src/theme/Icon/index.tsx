@@ -1,6 +1,7 @@
 import {
   AcademicCapSolid,
   Adjustments,
+  ArrowPath,
   ArrowDownLeftMini,
   ArrowDownTray,
   ArrowUpRightOnBox,
@@ -108,6 +109,7 @@ export default {
   "academic-cap-solid": AcademicCapSolid,
   adjustments: Adjustments,
   alert: ExclamationCircleSolid,
+  "arrow-path": ArrowPath,
   "arrow-down-left-mini": ArrowDownLeftMini,
   "arrow-down-tray": ArrowDownTray,
   "back-arrow": ArrowUturnLeft,

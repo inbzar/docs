@@ -75,6 +75,11 @@ module.exports = {
       items: [
         {
           type: 'doc',
+          id: 'features/subscriptions',
+          label: 'Subscriptions',
+        },
+        {
+          type: 'doc',
           id: 'features/regions-and-currencies',
           label: 'Regions and Currencies',
         },
