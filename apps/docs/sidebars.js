@@ -90,6 +90,31 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'features/marketing',
+          label: 'Marketing',
+        },
+        {
+          type: 'doc',
+          id: 'features/referral',
+          label: 'Referral',
+        },
+        {
+          type: 'doc',
+          id: 'features/chat',
+          label: 'Chat',
+        },
+        {
+          type: 'doc',
+          id: 'features/analytics',
+          label: 'Analytics',
+        },
+        {
+          type: 'doc',
+          id: 'features/web-builder',
+          label: 'Web Builder',
+        },
+        {
+          type: 'doc',
           id: 'features/regions-and-currencies',
           label: 'Regions and Currencies',
         },
