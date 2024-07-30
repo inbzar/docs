@@ -1,2 +1,730 @@
 [2K[1G[1myarn run v1.22.22[22m
 [2K[1G[2m$ docusaurus build[22m
+[31m(node:7603) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)[39m
+[36m[1m[INFO][22m[39m [34m[1m[en][22m[39m Creating an optimized production build...
+[31mDirectory /Users/haider/codeplace/inbzar/documentation/apps/docs/diagrams doesn't exist. Skipping reading diagrams...[39m
+
+[32m●[39m [32mClient[39m [37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m  (0%)  
+ 
+
+[33m◯ Server[39m
+[90m  [39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m setup (7%) [90mcompile[39m 
+ [90mExternalsPlugin[39m
+
+[33m◯ Server[39m
+[90m  [39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m setup (8%)  
+ [90mcompilation[39m
+
+[33m◯ Server[39m
+[90m  [39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m setup (9%) [90mcompilation[39m 
+ [90mExportsInfoApiPlugin[39m
+
+[33m◯ Server[39m
+[90m  [39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (10%) [90m0/1 entries 0/0 dependencies 0/0 modules 0 active[39m 
+ 
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m setup (9%) [90mcompilation[39m 
+ [90mDataUriPlugin[39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (10%) [90m0/1 entries 1/1 dependencies 0/0 modules 0 active[39m 
+ 
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (10%) [90m0/1 entries 0/0 dependencies 0/0 modules 0 active[39m 
+ 
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (10%) [90m0/1 entries 1/1 dependencies 0/0 modules 0 active[39m 
+ 
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 500/580 dependencies 140/186 modules 0 active[39m 
+ 
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 535/620 dependencies 156/221 modules 1 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 500/580 dependencies 140/186 modules 0 active[39m 
+ 
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%)  
+ [90mnode_modules/@docusaurus/core/node_modules/postcss-loader/dist/cjs.js[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 500/580 dependencies 140/186 modules 0 active[39m 
+ 
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 579/633 dependencies 157/240 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 500/580 dependencies 140/186 modules 0 active[39m 
+ 
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 579/633 dependencies 157/240 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 561/598 dependencies 143/239 modules 1 active[39m 
+ [90mswc-loader [34m›[39m[90m src/theme/NotFound/Content/index.tsx[39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 579/633 dependencies 157/240 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 563/598 dependencies 143/241 modules 2 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 678/800 dependencies 163/282 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 563/598 dependencies 143/241 modules 2 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 678/800 dependencies 163/282 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 758/1300 dependencies 174/295 modules 2 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 678/800 dependencies 163/282 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (13%) [90m0/1 entries 1663/2046 dependencies 300/738 modules 1 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 678/800 dependencies 163/282 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (18%) [90m0/1 entries 3200/4130 dependencies 773/1213 modules 1 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 678/800 dependencies 163/282 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (18%) [90m0/1 entries 3574/4135 dependencies 795/1300 modules 1 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 678/800 dependencies 163/282 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (18%) [90m0/1 entries 3799/4135 dependencies 821/1400 modules 1 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 678/800 dependencies 163/282 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (18%) [90m0/1 entries 4112/4135 dependencies 835/1623 modules 0 active[39m 
+ 
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 678/800 dependencies 163/282 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (34%) [90m0/1 entries 8700/11078 dependencies 2294/3631 modules 0 active[39m 
+ 
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 1200/1544 dependencies 186/685 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (34%) [90m0/1 entries 8700/11078 dependencies 2294/3631 modules 0 active[39m 
+ 
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (11%) [90m0/1 entries 1200/1544 dependencies 186/685 modules 2 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (60%) [90m0/1 entries 14575/14723 dependencies 4800/5076 modules 0 active[39m 
+ 
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (60%) [90m0/1 entries 14575/14723 dependencies 4800/5076 modules 0 active[39m 
+ 
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (65%) [90m1/1 entries 15019/15019 dependencies 5207/5207 modules 0 active[39m 
+ 
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (70%) [90mfinish module graph[39m 
+ [90mInnerGraphPlugin[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (70%)  
+ [90mplugins[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (71%) [90mdependencies optimization[39m 
+ [90mFlagDependencyUsagePlugin[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (71%)  
+ [90mdependencies optimization[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (73%)  
+ [90mafter chunk graph[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (78%)  
+ [90mchunk modules optimization[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (84%)  
+ [90mchunk ids[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (87%)  
+ [90mmodule hashing[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (87%)  
+ [90mcode generation[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (88%)  
+ [90mruntime requirements[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m sealing (89%)  
+ [90mafter hashing[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m sealing (92%)  
+ [90masset processing[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (15%) [90m0/1 entries 2017/2052 dependencies 548/814 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m[37m█[39m sealing (92%)  
+ [90masset processing[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (16%) [90m0/1 entries 2299/2540 dependencies 600/917 modules 3 active[39m 
+ [90mmdx-loader [34m›[39m[90m content/homepage.mdx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m emitting (95%)  
+ [90memit[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (17%) [90m0/1 entries 2588/2841 dependencies 700/950 modules 4 active[39m 
+ [90mswc-loader [34m›[39m[90m src/theme/NotFound/Content/index.tsx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[37m█[39m emitting (95%)  
+ [90memit[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (17%) [90m0/1 entries 2588/2841 dependencies 700/950 modules 4 active[39m 
+ [90mswc-loader [34m›[39m[90m src/theme/NotFound/Content/index.tsx[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m emitting (98%)  
+ [90mafter emit[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (17%) [90m0/1 entries 2588/2841 dependencies 700/950 modules 4 active[39m 
+ [90mswc-loader [34m›[39m[90m src/theme/NotFound/Content/index.tsx[39m
+
+[33m✔ Server[39m
+[90m  Compiled successfully in 12.86s[39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (17%) [90m0/1 entries 2900/3628 dependencies 765/1133 modules 3 active[39m 
+ [90mswc-loader [34m›[39m[90m src/theme/NotFound/Content/index.tsx[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (20%) [90m0/1 entries 4199/4301 dependencies 973/1620 modules 1 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (26%) [90m0/1 entries 7700/8004 dependencies 1550/3274 modules 1 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (26%) [90m0/1 entries 7946/8004 dependencies 1550/3500 modules 1 active[39m 
+ [90mcss-loader [34m›[39m[90m postcss-loader [34m›[39m[90m src/css/custom.css[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (26%) [90m0/1 entries 7983/8080 dependencies 1565/3525 modules 0 active[39m 
+ 
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (44%) [90m0/1 entries 11700/12221 dependencies 3332/4739 modules 0 active[39m 
+ 
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m building (65%) [90m1/1 entries 14197/14197 dependencies 5301/5301 modules 0 active[39m 
+ 
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (70%) [90mfinish module graph[39m 
+ [90mFlagDependencyExportsPlugin[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (70%) [90mfinish module graph[39m 
+ [90mInnerGraphPlugin[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (70%)  
+ [90mplugins[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (71%) [90mdependencies optimization[39m 
+ [90mFlagDependencyUsagePlugin[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (71%)  
+ [90mdependencies optimization[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (73%)  
+ [90mafter chunk graph[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (75%) [90mchunk optimization[39m 
+ [90mRemoveEmptyChunksPlugin[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (78%)  
+ [90mchunk modules optimization[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (86%)  
+ [90mrecord modules[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (87%)  
+ [90mmodule hashing[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m[37m█[39m sealing (87%)  
+ [90mcode generation[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m sealing (89%)  
+ [90mhashing[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m sealing (92%)  
+ [90masset processing[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m sealing (92%) [90masset processing[39m 
+ [90mCssMinimizerPlugin[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m sealing (92%) [90masset processing[39m 
+ [90mRealContentHashPlugin[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m[37m█[39m sealing (92%)  
+ [90masset processing[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[37m█[39m emitting (95%)  
+ [90memit[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m emitting (98%)  
+ [90mafter emit[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m✔ Client[39m
+[90m  Compiled successfully in 22.57s[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[31m(node:7603) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.[39m
+[33m[39m
+[33m[1m[33mwarn[39m[22m - The class `lg:duration-[50ms]` is ambiguous and matches multiple utilities.[39m
+[33m[1m[33mwarn[39m[22m - If this is content and not a class, replace it with `lg:duration-&lsqb;50ms&rsqb;` to silence this warning.[39m
+
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m done (99%) [90mplugins[39m 
+ [90mIdleFileCachePlugin[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[33m[33m[1m[WARNING][22m {"moduleIdentifier":"/Users/haider/codeplace/inbzar/documentation/node_modules/swc-loader/src/index.js??ruleSet[1].rules[5].use[0]!/Users/haider/codeplace/inbzar/documentation/apps/docs/src/theme/Icon/index.tsx","moduleName":"./src/theme/Icon/index.tsx","loc":"96:13-20","message":"export 'Sidebar' (imported as 'Sidebar') was not found in '@medusajs/icons' (possible exports: AcademicCap, AcademicCapSolid, Adjustments, Apple, ArchiveBox, ArrowDown, ArrowDownCircle, ArrowDownLeft, ArrowDownLeftMini, ArrowDownMini, ArrowDownRightMini, ArrowDownTray, ArrowLeft, ArrowLeftMini, ArrowLongDown, ArrowLongLeft, ArrowLongRight, ArrowLongUp, ArrowPath, ArrowPathMini, ArrowRightMini, ArrowRightOnRectangle, ArrowUpCircleSolid, ArrowUpDown, ArrowUpMini, ArrowUpRightMini, ArrowUpRightOnBox, ArrowUpTray, ArrowUturnLeft, ArrowsPointingOut, ArrowsPointingOutMini, ArrrowRight, AtSymbol, BackwardSolid, BarsArrowDown, BarsThree, Beaker, BellAlert, BellAlertSolid, Bolt, BoltSolid, BookOpen, Bug, BugAntSolid, BuildingStorefront, BuildingTax, Buildings, BuildingsMini, BuildingsSolid, Calendar, CalendarMini, CalendarSolid, Camera, Cash, CashSolid, Channels, ChannelsSolid, ChartBar, ChartPie, ChatBubble, ChatBubbleLeftRight, ChatBubbleLeftRightSolid, Check, CheckCircleMiniSolid, CheckCircleSolid, CheckMini, ChevronDoubleLeft, ChevronDoubleLeftMiniSolid, ChevronDoubleRight, ChevronDoubleRightMiniSolid, ChevronDown, ChevronDownMini, ChevronLeft, ChevronLeftMini, ChevronRight, ChevronRightMini, ChevronUpDown, ChevronUpMini, CircleDottedLine, CircleFilledSolid, CircleHalfSolid, CircleMiniFilledSolid, CircleMiniSolid, CircleQuarterSolid, CircleSolid, CircleStack, CircleStackSolid, CircleThreeQuartersSolid, Clock, ClockChangedSolidMini, ClockSolid, ClockSolidMini, CloudArrowDown, CloudArrowUp, CogSixTooth, CogSixToothSolid, CommandLine, CommandLineSolid, Component, ComponentSolid, ComputerDesktop, ComputerDesktopSolid, CreditCard, CreditCardSolid, CubeSolid, CurrencyDollar, CurrencyDollarSolid, CursorArrowRays, Discord, DocumentSeries, DocumentText, DocumentTextSolid, DotsSix, Ellipse, EllipseBlueSolid, EllipseGreenSolid, EllipseGreySolid, EllipseMiniSolid, EllipseOrangeSolid, EllipsePurpleSolid, EllipseRedSolid, EllipseSolid, EllipsisHorizontal, EllipsisVertical, Envelope, EnvelopeSolid, ExclamationCircle, ExclamationCircleSolid, Eye, EyeMini, EyeSlash, EyeSlashMini, FaceSmile, Facebook, Figma, FlagMini, FlyingBox, Folder, FolderIllustration, FolderOpen, FolderOpenIllustration, ForwardSolid, Funnel, Gatsby, GatsbyEx, Gift, GiftSolid, Github, GlobeEurope, GlobeEuropeSolid, Google, Hashtag, Heart, InboxSolid, InformationCircle, InformationCircleSolid, Javascript, JavascriptEx, Key, KeySolid, Klarna, KlarnaEx, Klaviyo, Lifebuoy, LightBulb, LightBulbSolid, Link, Linkedin, ListBullet, Loader, LockClosedSolid, LockClosedSolidMini, LockOpenSolid, MagnifyingGlass, MagnifyingGlassMini, Map, MapPin, Mastercard, Medusa, Meta, Minus, MinusMini, Moon, MoonSolid, Newspaper, NextJs, PaperClip, PauseSolid, Pencil, PencilSquare, PencilSquareSolid, Phone, Photo, PhotoSolid, PlayMiniSolid, PlaySolid, Plus, PlusMini, Puzzle, PuzzleSolid, QuestionMark, QuestionMarkCircle, QueueList, ReactJs, ReactJsEx, ReceiptPercent, ReplaySolid, Resize, RocketLaunch, RocketLaunchSolid, Rss, Sanity, Server, ServerSolid, ServerStack, ServerStackSolid, ShoppingBag, ShoppingCart, ShoppingCartSolid, SidebarLeft, SidebarRight, Slack, Snooze, Sparkles, SparklesMini, SparklesMiniSolid, SparklesSolid, Spinner, SquareBlueSolid, SquareGreenSolid, SquareGreySolid, SquareOrangeSolid, SquarePurpleSolid, SquareRedSolid, SquareTwoStack, SquareTwoStackMini, SquareTwoStackSolid, SquaresPlus, SquaresPlusSolid, Star, StarSolid, Stopwatch, Stripe, Sun, SunSolid, Swatch, SwatchSolid, Tag, TagSolid, Tailwind, Text, ThumbDown, ThumbUp, ThumbnailBadge, Tools, ToolsSolid, Trash, TriangleDownMini, TriangleLeftMini, TriangleRightMini, TriangleUpMini, TrianglesMini, Twitter, Typescript, TypescriptEx, User, UserCircleMini, UserGroup, Users, UsersSolid, Vercel, VerifiedBadge, Visa, WandSparkle, Window, X, XCircle, XCircleSolid, XMark, XMarkMini)","compilerPath":"client"}[39m[39m
+[33m[33m[1m[WARNING][22m {"moduleIdentifier":"/Users/haider/codeplace/inbzar/documentation/node_modules/swc-loader/src/index.js??ruleSet[1].rules[5].use[0]!/Users/haider/codeplace/inbzar/documentation/apps/docs/src/theme/Navbar/Content/index.tsx","moduleName":"./src/theme/Navbar/Content/index.tsx","loc":"127:167-174","message":"export 'Sidebar' (imported as 'Sidebar') was not found in '@medusajs/icons' (possible exports: AcademicCap, AcademicCapSolid, Adjustments, Apple, ArchiveBox, ArrowDown, ArrowDownCircle, ArrowDownLeft, ArrowDownLeftMini, ArrowDownMini, ArrowDownRightMini, ArrowDownTray, ArrowLeft, ArrowLeftMini, ArrowLongDown, ArrowLongLeft, ArrowLongRight, ArrowLongUp, ArrowPath, ArrowPathMini, ArrowRightMini, ArrowRightOnRectangle, ArrowUpCircleSolid, ArrowUpDown, ArrowUpMini, ArrowUpRightMini, ArrowUpRightOnBox, ArrowUpTray, ArrowUturnLeft, ArrowsPointingOut, ArrowsPointingOutMini, ArrrowRight, AtSymbol, BackwardSolid, BarsArrowDown, BarsThree, Beaker, BellAlert, BellAlertSolid, Bolt, BoltSolid, BookOpen, Bug, BugAntSolid, BuildingStorefront, BuildingTax, Buildings, BuildingsMini, BuildingsSolid, Calendar, CalendarMini, CalendarSolid, Camera, Cash, CashSolid, Channels, ChannelsSolid, ChartBar, ChartPie, ChatBubble, ChatBubbleLeftRight, ChatBubbleLeftRightSolid, Check, CheckCircleMiniSolid, CheckCircleSolid, CheckMini, ChevronDoubleLeft, ChevronDoubleLeftMiniSolid, ChevronDoubleRight, ChevronDoubleRightMiniSolid, ChevronDown, ChevronDownMini, ChevronLeft, ChevronLeftMini, ChevronRight, ChevronRightMini, ChevronUpDown, ChevronUpMini, CircleDottedLine, CircleFilledSolid, CircleHalfSolid, CircleMiniFilledSolid, CircleMiniSolid, CircleQuarterSolid, CircleSolid, CircleStack, CircleStackSolid, CircleThreeQuartersSolid, Clock, ClockChangedSolidMini, ClockSolid, ClockSolidMini, CloudArrowDown, CloudArrowUp, CogSixTooth, CogSixToothSolid, CommandLine, CommandLineSolid, Component, ComponentSolid, ComputerDesktop, ComputerDesktopSolid, CreditCard, CreditCardSolid, CubeSolid, CurrencyDollar, CurrencyDollarSolid, CursorArrowRays, Discord, DocumentSeries, DocumentText, DocumentTextSolid, DotsSix, Ellipse, EllipseBlueSolid, EllipseGreenSolid, EllipseGreySolid, EllipseMiniSolid, EllipseOrangeSolid, EllipsePurpleSolid, EllipseRedSolid, EllipseSolid, EllipsisHorizontal, EllipsisVertical, Envelope, EnvelopeSolid, ExclamationCircle, ExclamationCircleSolid, Eye, EyeMini, EyeSlash, EyeSlashMini, FaceSmile, Facebook, Figma, FlagMini, FlyingBox, Folder, FolderIllustration, FolderOpen, FolderOpenIllustration, ForwardSolid, Funnel, Gatsby, GatsbyEx, Gift, GiftSolid, Github, GlobeEurope, GlobeEuropeSolid, Google, Hashtag, Heart, InboxSolid, InformationCircle, InformationCircleSolid, Javascript, JavascriptEx, Key, KeySolid, Klarna, KlarnaEx, Klaviyo, Lifebuoy, LightBulb, LightBulbSolid, Link, Linkedin, ListBullet, Loader, LockClosedSolid, LockClosedSolidMini, LockOpenSolid, MagnifyingGlass, MagnifyingGlassMini, Map, MapPin, Mastercard, Medusa, Meta, Minus, MinusMini, Moon, MoonSolid, Newspaper, NextJs, PaperClip, PauseSolid, Pencil, PencilSquare, PencilSquareSolid, Phone, Photo, PhotoSolid, PlayMiniSolid, PlaySolid, Plus, PlusMini, Puzzle, PuzzleSolid, QuestionMark, QuestionMarkCircle, QueueList, ReactJs, ReactJsEx, ReceiptPercent, ReplaySolid, Resize, RocketLaunch, RocketLaunchSolid, Rss, Sanity, Server, ServerSolid, ServerStack, ServerStackSolid, ShoppingBag, ShoppingCart, ShoppingCartSolid, SidebarLeft, SidebarRight, Slack, Snooze, Sparkles, SparklesMini, SparklesMiniSolid, SparklesSolid, Spinner, SquareBlueSolid, SquareGreenSolid, SquareGreySolid, SquareOrangeSolid, SquarePurpleSolid, SquareRedSolid, SquareTwoStack, SquareTwoStackMini, SquareTwoStackSolid, SquaresPlus, SquaresPlusSolid, Star, StarSolid, Stopwatch, Stripe, Sun, SunSolid, Swatch, SwatchSolid, Tag, TagSolid, Tailwind, Text, ThumbDown, ThumbUp, ThumbnailBadge, Tools, ToolsSolid, Trash, TriangleDownMini, TriangleLeftMini, TriangleRightMini, TriangleUpMini, TrianglesMini, Twitter, Typescript, TypescriptEx, User, UserCircleMini, UserGroup, Users, UsersSolid, Vercel, VerifiedBadge, Visa, WandSparkle, Window, X, XCircle, XCircleSolid, XMark, XMarkMini)","compilerPath":"client"}[39m[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m cache (99%)  
+ [90mshutdown[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[33m[33m[1m[WARNING][22m {"moduleIdentifier":"/Users/haider/codeplace/inbzar/documentation/node_modules/swc-loader/src/index.js??ruleSet[1].rules[5].use[0]!/Users/haider/codeplace/inbzar/documentation/apps/docs/src/theme/Icon/index.tsx","moduleName":"./src/theme/Icon/index.tsx","loc":"96:13-20","message":"export 'Sidebar' (imported as 'Sidebar') was not found in '@medusajs/icons' (possible exports: AcademicCap, AcademicCapSolid, Adjustments, Apple, ArchiveBox, ArrowDown, ArrowDownCircle, ArrowDownLeft, ArrowDownLeftMini, ArrowDownMini, ArrowDownRightMini, ArrowDownTray, ArrowLeft, ArrowLeftMini, ArrowLongDown, ArrowLongLeft, ArrowLongRight, ArrowLongUp, ArrowPath, ArrowPathMini, ArrowRightMini, ArrowRightOnRectangle, ArrowUpCircleSolid, ArrowUpDown, ArrowUpMini, ArrowUpRightMini, ArrowUpRightOnBox, ArrowUpTray, ArrowUturnLeft, ArrowsPointingOut, ArrowsPointingOutMini, ArrrowRight, AtSymbol, BackwardSolid, BarsArrowDown, BarsThree, Beaker, BellAlert, BellAlertSolid, Bolt, BoltSolid, BookOpen, Bug, BugAntSolid, BuildingStorefront, BuildingTax, Buildings, BuildingsMini, BuildingsSolid, Calendar, CalendarMini, CalendarSolid, Camera, Cash, CashSolid, Channels, ChannelsSolid, ChartBar, ChartPie, ChatBubble, ChatBubbleLeftRight, ChatBubbleLeftRightSolid, Check, CheckCircleMiniSolid, CheckCircleSolid, CheckMini, ChevronDoubleLeft, ChevronDoubleLeftMiniSolid, ChevronDoubleRight, ChevronDoubleRightMiniSolid, ChevronDown, ChevronDownMini, ChevronLeft, ChevronLeftMini, ChevronRight, ChevronRightMini, ChevronUpDown, ChevronUpMini, CircleDottedLine, CircleFilledSolid, CircleHalfSolid, CircleMiniFilledSolid, CircleMiniSolid, CircleQuarterSolid, CircleSolid, CircleStack, CircleStackSolid, CircleThreeQuartersSolid, Clock, ClockChangedSolidMini, ClockSolid, ClockSolidMini, CloudArrowDown, CloudArrowUp, CogSixTooth, CogSixToothSolid, CommandLine, CommandLineSolid, Component, ComponentSolid, ComputerDesktop, ComputerDesktopSolid, CreditCard, CreditCardSolid, CubeSolid, CurrencyDollar, CurrencyDollarSolid, CursorArrowRays, Discord, DocumentSeries, DocumentText, DocumentTextSolid, DotsSix, Ellipse, EllipseBlueSolid, EllipseGreenSolid, EllipseGreySolid, EllipseMiniSolid, EllipseOrangeSolid, EllipsePurpleSolid, EllipseRedSolid, EllipseSolid, EllipsisHorizontal, EllipsisVertical, Envelope, EnvelopeSolid, ExclamationCircle, ExclamationCircleSolid, Eye, EyeMini, EyeSlash, EyeSlashMini, FaceSmile, Facebook, Figma, FlagMini, FlyingBox, Folder, FolderIllustration, FolderOpen, FolderOpenIllustration, ForwardSolid, Funnel, Gatsby, GatsbyEx, Gift, GiftSolid, Github, GlobeEurope, GlobeEuropeSolid, Google, Hashtag, Heart, InboxSolid, InformationCircle, InformationCircleSolid, Javascript, JavascriptEx, Key, KeySolid, Klarna, KlarnaEx, Klaviyo, Lifebuoy, LightBulb, LightBulbSolid, Link, Linkedin, ListBullet, Loader, LockClosedSolid, LockClosedSolidMini, LockOpenSolid, MagnifyingGlass, MagnifyingGlassMini, Map, MapPin, Mastercard, Medusa, Meta, Minus, MinusMini, Moon, MoonSolid, Newspaper, NextJs, PaperClip, PauseSolid, Pencil, PencilSquare, PencilSquareSolid, Phone, Photo, PhotoSolid, PlayMiniSolid, PlaySolid, Plus, PlusMini, Puzzle, PuzzleSolid, QuestionMark, QuestionMarkCircle, QueueList, ReactJs, ReactJsEx, ReceiptPercent, ReplaySolid, Resize, RocketLaunch, RocketLaunchSolid, Rss, Sanity, Server, ServerSolid, ServerStack, ServerStackSolid, ShoppingBag, ShoppingCart, ShoppingCartSolid, SidebarLeft, SidebarRight, Slack, Snooze, Sparkles, SparklesMini, SparklesMiniSolid, SparklesSolid, Spinner, SquareBlueSolid, SquareGreenSolid, SquareGreySolid, SquareOrangeSolid, SquarePurpleSolid, SquareRedSolid, SquareTwoStack, SquareTwoStackMini, SquareTwoStackSolid, SquaresPlus, SquaresPlusSolid, Star, StarSolid, Stopwatch, Stripe, Sun, SunSolid, Swatch, SwatchSolid, Tag, TagSolid, Tailwind, Text, ThumbDown, ThumbUp, ThumbnailBadge, Tools, ToolsSolid, Trash, TriangleDownMini, TriangleLeftMini, TriangleRightMini, TriangleUpMini, TrianglesMini, Twitter, Typescript, TypescriptEx, User, UserCircleMini, UserGroup, Users, UsersSolid, Vercel, VerifiedBadge, Visa, WandSparkle, Window, X, XCircle, XCircleSolid, XMark, XMarkMini)","compilerPath":"client"}[39m[39m
+[33m[33m[1m[WARNING][22m {"moduleIdentifier":"/Users/haider/codeplace/inbzar/documentation/node_modules/swc-loader/src/index.js??ruleSet[1].rules[5].use[0]!/Users/haider/codeplace/inbzar/documentation/apps/docs/src/theme/Navbar/Content/index.tsx","moduleName":"./src/theme/Navbar/Content/index.tsx","loc":"127:167-174","message":"export 'Sidebar' (imported as 'Sidebar') was not found in '@medusajs/icons' (possible exports: AcademicCap, AcademicCapSolid, Adjustments, Apple, ArchiveBox, ArrowDown, ArrowDownCircle, ArrowDownLeft, ArrowDownLeftMini, ArrowDownMini, ArrowDownRightMini, ArrowDownTray, ArrowLeft, ArrowLeftMini, ArrowLongDown, ArrowLongLeft, ArrowLongRight, ArrowLongUp, ArrowPath, ArrowPathMini, ArrowRightMini, ArrowRightOnRectangle, ArrowUpCircleSolid, ArrowUpDown, ArrowUpMini, ArrowUpRightMini, ArrowUpRightOnBox, ArrowUpTray, ArrowUturnLeft, ArrowsPointingOut, ArrowsPointingOutMini, ArrrowRight, AtSymbol, BackwardSolid, BarsArrowDown, BarsThree, Beaker, BellAlert, BellAlertSolid, Bolt, BoltSolid, BookOpen, Bug, BugAntSolid, BuildingStorefront, BuildingTax, Buildings, BuildingsMini, BuildingsSolid, Calendar, CalendarMini, CalendarSolid, Camera, Cash, CashSolid, Channels, ChannelsSolid, ChartBar, ChartPie, ChatBubble, ChatBubbleLeftRight, ChatBubbleLeftRightSolid, Check, CheckCircleMiniSolid, CheckCircleSolid, CheckMini, ChevronDoubleLeft, ChevronDoubleLeftMiniSolid, ChevronDoubleRight, ChevronDoubleRightMiniSolid, ChevronDown, ChevronDownMini, ChevronLeft, ChevronLeftMini, ChevronRight, ChevronRightMini, ChevronUpDown, ChevronUpMini, CircleDottedLine, CircleFilledSolid, CircleHalfSolid, CircleMiniFilledSolid, CircleMiniSolid, CircleQuarterSolid, CircleSolid, CircleStack, CircleStackSolid, CircleThreeQuartersSolid, Clock, ClockChangedSolidMini, ClockSolid, ClockSolidMini, CloudArrowDown, CloudArrowUp, CogSixTooth, CogSixToothSolid, CommandLine, CommandLineSolid, Component, ComponentSolid, ComputerDesktop, ComputerDesktopSolid, CreditCard, CreditCardSolid, CubeSolid, CurrencyDollar, CurrencyDollarSolid, CursorArrowRays, Discord, DocumentSeries, DocumentText, DocumentTextSolid, DotsSix, Ellipse, EllipseBlueSolid, EllipseGreenSolid, EllipseGreySolid, EllipseMiniSolid, EllipseOrangeSolid, EllipsePurpleSolid, EllipseRedSolid, EllipseSolid, EllipsisHorizontal, EllipsisVertical, Envelope, EnvelopeSolid, ExclamationCircle, ExclamationCircleSolid, Eye, EyeMini, EyeSlash, EyeSlashMini, FaceSmile, Facebook, Figma, FlagMini, FlyingBox, Folder, FolderIllustration, FolderOpen, FolderOpenIllustration, ForwardSolid, Funnel, Gatsby, GatsbyEx, Gift, GiftSolid, Github, GlobeEurope, GlobeEuropeSolid, Google, Hashtag, Heart, InboxSolid, InformationCircle, InformationCircleSolid, Javascript, JavascriptEx, Key, KeySolid, Klarna, KlarnaEx, Klaviyo, Lifebuoy, LightBulb, LightBulbSolid, Link, Linkedin, ListBullet, Loader, LockClosedSolid, LockClosedSolidMini, LockOpenSolid, MagnifyingGlass, MagnifyingGlassMini, Map, MapPin, Mastercard, Medusa, Meta, Minus, MinusMini, Moon, MoonSolid, Newspaper, NextJs, PaperClip, PauseSolid, Pencil, PencilSquare, PencilSquareSolid, Phone, Photo, PhotoSolid, PlayMiniSolid, PlaySolid, Plus, PlusMini, Puzzle, PuzzleSolid, QuestionMark, QuestionMarkCircle, QueueList, ReactJs, ReactJsEx, ReceiptPercent, ReplaySolid, Resize, RocketLaunch, RocketLaunchSolid, Rss, Sanity, Server, ServerSolid, ServerStack, ServerStackSolid, ShoppingBag, ShoppingCart, ShoppingCartSolid, SidebarLeft, SidebarRight, Slack, Snooze, Sparkles, SparklesMini, SparklesMiniSolid, SparklesSolid, Spinner, SquareBlueSolid, SquareGreenSolid, SquareGreySolid, SquareOrangeSolid, SquarePurpleSolid, SquareRedSolid, SquareTwoStack, SquareTwoStackMini, SquareTwoStackSolid, SquaresPlus, SquaresPlusSolid, Star, StarSolid, Stopwatch, Stripe, Sun, SunSolid, Swatch, SwatchSolid, Tag, TagSolid, Tailwind, Text, ThumbDown, ThumbUp, ThumbnailBadge, Tools, ToolsSolid, Trash, TriangleDownMini, TriangleLeftMini, TriangleRightMini, TriangleUpMini, TrianglesMini, Twitter, Typescript, TypescriptEx, User, UserCircleMini, UserGroup, Users, UsersSolid, Vercel, VerifiedBadge, Visa, WandSparkle, Window, X, XCircle, XCircleSolid, XMark, XMarkMini)","compilerPath":"client"}[39m[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m cache (99%) [90mshutdown[39m [90mIdleFileCachePlugin[39m
+ [90mserialize pack[39m
+
+[33m●[39m [33mServer[39m [33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m[33m█[39m cache (99%) [90mshutdown[39m [90mIdleFileCachePlugin[39m
+ [90mstored[39m
+
+[33m[33m[1m[WARNING][22m {"moduleIdentifier":"/Users/haider/codeplace/inbzar/documentation/node_modules/swc-loader/src/index.js??ruleSet[1].rules[5].use[0]!/Users/haider/codeplace/inbzar/documentation/apps/docs/src/theme/Icon/index.tsx","moduleName":"./src/theme/Icon/index.tsx","loc":"96:13-20","message":"export 'Sidebar' (imported as 'Sidebar') was not found in '@medusajs/icons' (possible exports: AcademicCap, AcademicCapSolid, Adjustments, Apple, ArchiveBox, ArrowDown, ArrowDownCircle, ArrowDownLeft, ArrowDownLeftMini, ArrowDownMini, ArrowDownRightMini, ArrowDownTray, ArrowLeft, ArrowLeftMini, ArrowLongDown, ArrowLongLeft, ArrowLongRight, ArrowLongUp, ArrowPath, ArrowPathMini, ArrowRightMini, ArrowRightOnRectangle, ArrowUpCircleSolid, ArrowUpDown, ArrowUpMini, ArrowUpRightMini, ArrowUpRightOnBox, ArrowUpTray, ArrowUturnLeft, ArrowsPointingOut, ArrowsPointingOutMini, ArrrowRight, AtSymbol, BackwardSolid, BarsArrowDown, BarsThree, Beaker, BellAlert, BellAlertSolid, Bolt, BoltSolid, BookOpen, Bug, BugAntSolid, BuildingStorefront, BuildingTax, Buildings, BuildingsMini, BuildingsSolid, Calendar, CalendarMini, CalendarSolid, Camera, Cash, CashSolid, Channels, ChannelsSolid, ChartBar, ChartPie, ChatBubble, ChatBubbleLeftRight, ChatBubbleLeftRightSolid, Check, CheckCircleMiniSolid, CheckCircleSolid, CheckMini, ChevronDoubleLeft, ChevronDoubleLeftMiniSolid, ChevronDoubleRight, ChevronDoubleRightMiniSolid, ChevronDown, ChevronDownMini, ChevronLeft, ChevronLeftMini, ChevronRight, ChevronRightMini, ChevronUpDown, ChevronUpMini, CircleDottedLine, CircleFilledSolid, CircleHalfSolid, CircleMiniFilledSolid, CircleMiniSolid, CircleQuarterSolid, CircleSolid, CircleStack, CircleStackSolid, CircleThreeQuartersSolid, Clock, ClockChangedSolidMini, ClockSolid, ClockSolidMini, CloudArrowDown, CloudArrowUp, CogSixTooth, CogSixToothSolid, CommandLine, CommandLineSolid, Component, ComponentSolid, ComputerDesktop, ComputerDesktopSolid, CreditCard, CreditCardSolid, CubeSolid, CurrencyDollar, CurrencyDollarSolid, CursorArrowRays, Discord, DocumentSeries, DocumentText, DocumentTextSolid, DotsSix, Ellipse, EllipseBlueSolid, EllipseGreenSolid, EllipseGreySolid, EllipseMiniSolid, EllipseOrangeSolid, EllipsePurpleSolid, EllipseRedSolid, EllipseSolid, EllipsisHorizontal, EllipsisVertical, Envelope, EnvelopeSolid, ExclamationCircle, ExclamationCircleSolid, Eye, EyeMini, EyeSlash, EyeSlashMini, FaceSmile, Facebook, Figma, FlagMini, FlyingBox, Folder, FolderIllustration, FolderOpen, FolderOpenIllustration, ForwardSolid, Funnel, Gatsby, GatsbyEx, Gift, GiftSolid, Github, GlobeEurope, GlobeEuropeSolid, Google, Hashtag, Heart, InboxSolid, InformationCircle, InformationCircleSolid, Javascript, JavascriptEx, Key, KeySolid, Klarna, KlarnaEx, Klaviyo, Lifebuoy, LightBulb, LightBulbSolid, Link, Linkedin, ListBullet, Loader, LockClosedSolid, LockClosedSolidMini, LockOpenSolid, MagnifyingGlass, MagnifyingGlassMini, Map, MapPin, Mastercard, Medusa, Meta, Minus, MinusMini, Moon, MoonSolid, Newspaper, NextJs, PaperClip, PauseSolid, Pencil, PencilSquare, PencilSquareSolid, Phone, Photo, PhotoSolid, PlayMiniSolid, PlaySolid, Plus, PlusMini, Puzzle, PuzzleSolid, QuestionMark, QuestionMarkCircle, QueueList, ReactJs, ReactJsEx, ReceiptPercent, ReplaySolid, Resize, RocketLaunch, RocketLaunchSolid, Rss, Sanity, Server, ServerSolid, ServerStack, ServerStackSolid, ShoppingBag, ShoppingCart, ShoppingCartSolid, SidebarLeft, SidebarRight, Slack, Snooze, Sparkles, SparklesMini, SparklesMiniSolid, SparklesSolid, Spinner, SquareBlueSolid, SquareGreenSolid, SquareGreySolid, SquareOrangeSolid, SquarePurpleSolid, SquareRedSolid, SquareTwoStack, SquareTwoStackMini, SquareTwoStackSolid, SquaresPlus, SquaresPlusSolid, Star, StarSolid, Stopwatch, Stripe, Sun, SunSolid, Swatch, SwatchSolid, Tag, TagSolid, Tailwind, Text, ThumbDown, ThumbUp, ThumbnailBadge, Tools, ToolsSolid, Trash, TriangleDownMini, TriangleLeftMini, TriangleRightMini, TriangleUpMini, TrianglesMini, Twitter, Typescript, TypescriptEx, User, UserCircleMini, UserGroup, Users, UsersSolid, Vercel, VerifiedBadge, Visa, WandSparkle, Window, X, XCircle, XCircleSolid, XMark, XMarkMini)","compilerPath":"client"}[39m[39m
+[33m[33m[1m[WARNING][22m {"moduleIdentifier":"/Users/haider/codeplace/inbzar/documentation/node_modules/swc-loader/src/index.js??ruleSet[1].rules[5].use[0]!/Users/haider/codeplace/inbzar/documentation/apps/docs/src/theme/Navbar/Content/index.tsx","moduleName":"./src/theme/Navbar/Content/index.tsx","loc":"127:167-174","message":"export 'Sidebar' (imported as 'Sidebar') was not found in '@medusajs/icons' (possible exports: AcademicCap, AcademicCapSolid, Adjustments, Apple, ArchiveBox, ArrowDown, ArrowDownCircle, ArrowDownLeft, ArrowDownLeftMini, ArrowDownMini, ArrowDownRightMini, ArrowDownTray, ArrowLeft, ArrowLeftMini, ArrowLongDown, ArrowLongLeft, ArrowLongRight, ArrowLongUp, ArrowPath, ArrowPathMini, ArrowRightMini, ArrowRightOnRectangle, ArrowUpCircleSolid, ArrowUpDown, ArrowUpMini, ArrowUpRightMini, ArrowUpRightOnBox, ArrowUpTray, ArrowUturnLeft, ArrowsPointingOut, ArrowsPointingOutMini, ArrrowRight, AtSymbol, BackwardSolid, BarsArrowDown, BarsThree, Beaker, BellAlert, BellAlertSolid, Bolt, BoltSolid, BookOpen, Bug, BugAntSolid, BuildingStorefront, BuildingTax, Buildings, BuildingsMini, BuildingsSolid, Calendar, CalendarMini, CalendarSolid, Camera, Cash, CashSolid, Channels, ChannelsSolid, ChartBar, ChartPie, ChatBubble, ChatBubbleLeftRight, ChatBubbleLeftRightSolid, Check, CheckCircleMiniSolid, CheckCircleSolid, CheckMini, ChevronDoubleLeft, ChevronDoubleLeftMiniSolid, ChevronDoubleRight, ChevronDoubleRightMiniSolid, ChevronDown, ChevronDownMini, ChevronLeft, ChevronLeftMini, ChevronRight, ChevronRightMini, ChevronUpDown, ChevronUpMini, CircleDottedLine, CircleFilledSolid, CircleHalfSolid, CircleMiniFilledSolid, CircleMiniSolid, CircleQuarterSolid, CircleSolid, CircleStack, CircleStackSolid, CircleThreeQuartersSolid, Clock, ClockChangedSolidMini, ClockSolid, ClockSolidMini, CloudArrowDown, CloudArrowUp, CogSixTooth, CogSixToothSolid, CommandLine, CommandLineSolid, Component, ComponentSolid, ComputerDesktop, ComputerDesktopSolid, CreditCard, CreditCardSolid, CubeSolid, CurrencyDollar, CurrencyDollarSolid, CursorArrowRays, Discord, DocumentSeries, DocumentText, DocumentTextSolid, DotsSix, Ellipse, EllipseBlueSolid, EllipseGreenSolid, EllipseGreySolid, EllipseMiniSolid, EllipseOrangeSolid, EllipsePurpleSolid, EllipseRedSolid, EllipseSolid, EllipsisHorizontal, EllipsisVertical, Envelope, EnvelopeSolid, ExclamationCircle, ExclamationCircleSolid, Eye, EyeMini, EyeSlash, EyeSlashMini, FaceSmile, Facebook, Figma, FlagMini, FlyingBox, Folder, FolderIllustration, FolderOpen, FolderOpenIllustration, ForwardSolid, Funnel, Gatsby, GatsbyEx, Gift, GiftSolid, Github, GlobeEurope, GlobeEuropeSolid, Google, Hashtag, Heart, InboxSolid, InformationCircle, InformationCircleSolid, Javascript, JavascriptEx, Key, KeySolid, Klarna, KlarnaEx, Klaviyo, Lifebuoy, LightBulb, LightBulbSolid, Link, Linkedin, ListBullet, Loader, LockClosedSolid, LockClosedSolidMini, LockOpenSolid, MagnifyingGlass, MagnifyingGlassMini, Map, MapPin, Mastercard, Medusa, Meta, Minus, MinusMini, Moon, MoonSolid, Newspaper, NextJs, PaperClip, PauseSolid, Pencil, PencilSquare, PencilSquareSolid, Phone, Photo, PhotoSolid, PlayMiniSolid, PlaySolid, Plus, PlusMini, Puzzle, PuzzleSolid, QuestionMark, QuestionMarkCircle, QueueList, ReactJs, ReactJsEx, ReceiptPercent, ReplaySolid, Resize, RocketLaunch, RocketLaunchSolid, Rss, Sanity, Server, ServerSolid, ServerStack, ServerStackSolid, ShoppingBag, ShoppingCart, ShoppingCartSolid, SidebarLeft, SidebarRight, Slack, Snooze, Sparkles, SparklesMini, SparklesMiniSolid, SparklesSolid, Spinner, SquareBlueSolid, SquareGreenSolid, SquareGreySolid, SquareOrangeSolid, SquarePurpleSolid, SquareRedSolid, SquareTwoStack, SquareTwoStackMini, SquareTwoStackSolid, SquaresPlus, SquaresPlusSolid, Star, StarSolid, Stopwatch, Stripe, Sun, SunSolid, Swatch, SwatchSolid, Tag, TagSolid, Tailwind, Text, ThumbDown, ThumbUp, ThumbnailBadge, Tools, ToolsSolid, Trash, TriangleDownMini, TriangleLeftMini, TriangleRightMini, TriangleUpMini, TrianglesMini, Twitter, Typescript, TypescriptEx, User, UserCircleMini, UserGroup, Users, UsersSolid, Vercel, VerifiedBadge, Visa, WandSparkle, Window, X, XCircle, XCircleSolid, XMark, XMarkMini)","compilerPath":"client"}[39m[39m
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+[32m●[39m [32mClient[39m [32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m[32m█[39m cache (99%) [90mshutdown[39m [90mIdleFileCachePlugin[39m
+ [90mstored[39m
+
+[33m✔ Server[39m
+[90m  [39m
+
+[33m[33m[1m[WARNING][22m {"moduleIdentifier":"/Users/haider/codeplace/inbzar/documentation/node_modules/swc-loader/src/index.js??ruleSet[1].rules[5].use[0]!/Users/haider/codeplace/inbzar/documentation/apps/docs/src/theme/Icon/index.tsx","moduleName":"./src/theme/Icon/index.tsx","loc":"96:13-20","message":"export 'Sidebar' (imported as 'Sidebar') was not found in '@medusajs/icons' (possible exports: AcademicCap, AcademicCapSolid, Adjustments, Apple, ArchiveBox, ArrowDown, ArrowDownCircle, ArrowDownLeft, ArrowDownLeftMini, ArrowDownMini, ArrowDownRightMini, ArrowDownTray, ArrowLeft, ArrowLeftMini, ArrowLongDown, ArrowLongLeft, ArrowLongRight, ArrowLongUp, ArrowPath, ArrowPathMini, ArrowRightMini, ArrowRightOnRectangle, ArrowUpCircleSolid, ArrowUpDown, ArrowUpMini, ArrowUpRightMini, ArrowUpRightOnBox, ArrowUpTray, ArrowUturnLeft, ArrowsPointingOut, ArrowsPointingOutMini, ArrrowRight, AtSymbol, BackwardSolid, BarsArrowDown, BarsThree, Beaker, BellAlert, BellAlertSolid, Bolt, BoltSolid, BookOpen, Bug, BugAntSolid, BuildingStorefront, BuildingTax, Buildings, BuildingsMini, BuildingsSolid, Calendar, CalendarMini, CalendarSolid, Camera, Cash, CashSolid, Channels, ChannelsSolid, ChartBar, ChartPie, ChatBubble, ChatBubbleLeftRight, ChatBubbleLeftRightSolid, Check, CheckCircleMiniSolid, CheckCircleSolid, CheckMini, ChevronDoubleLeft, ChevronDoubleLeftMiniSolid, ChevronDoubleRight, ChevronDoubleRightMiniSolid, ChevronDown, ChevronDownMini, ChevronLeft, ChevronLeftMini, ChevronRight, ChevronRightMini, ChevronUpDown, ChevronUpMini, CircleDottedLine, CircleFilledSolid, CircleHalfSolid, CircleMiniFilledSolid, CircleMiniSolid, CircleQuarterSolid, CircleSolid, CircleStack, CircleStackSolid, CircleThreeQuartersSolid, Clock, ClockChangedSolidMini, ClockSolid, ClockSolidMini, CloudArrowDown, CloudArrowUp, CogSixTooth, CogSixToothSolid, CommandLine, CommandLineSolid, Component, ComponentSolid, ComputerDesktop, ComputerDesktopSolid, CreditCard, CreditCardSolid, CubeSolid, CurrencyDollar, CurrencyDollarSolid, CursorArrowRays, Discord, DocumentSeries, DocumentText, DocumentTextSolid, DotsSix, Ellipse, EllipseBlueSolid, EllipseGreenSolid, EllipseGreySolid, EllipseMiniSolid, EllipseOrangeSolid, EllipsePurpleSolid, EllipseRedSolid, EllipseSolid, EllipsisHorizontal, EllipsisVertical, Envelope, EnvelopeSolid, ExclamationCircle, ExclamationCircleSolid, Eye, EyeMini, EyeSlash, EyeSlashMini, FaceSmile, Facebook, Figma, FlagMini, FlyingBox, Folder, FolderIllustration, FolderOpen, FolderOpenIllustration, ForwardSolid, Funnel, Gatsby, GatsbyEx, Gift, GiftSolid, Github, GlobeEurope, GlobeEuropeSolid, Google, Hashtag, Heart, InboxSolid, InformationCircle, InformationCircleSolid, Javascript, JavascriptEx, Key, KeySolid, Klarna, KlarnaEx, Klaviyo, Lifebuoy, LightBulb, LightBulbSolid, Link, Linkedin, ListBullet, Loader, LockClosedSolid, LockClosedSolidMini, LockOpenSolid, MagnifyingGlass, MagnifyingGlassMini, Map, MapPin, Mastercard, Medusa, Meta, Minus, MinusMini, Moon, MoonSolid, Newspaper, NextJs, PaperClip, PauseSolid, Pencil, PencilSquare, PencilSquareSolid, Phone, Photo, PhotoSolid, PlayMiniSolid, PlaySolid, Plus, PlusMini, Puzzle, PuzzleSolid, QuestionMark, QuestionMarkCircle, QueueList, ReactJs, ReactJsEx, ReceiptPercent, ReplaySolid, Resize, RocketLaunch, RocketLaunchSolid, Rss, Sanity, Server, ServerSolid, ServerStack, ServerStackSolid, ShoppingBag, ShoppingCart, ShoppingCartSolid, SidebarLeft, SidebarRight, Slack, Snooze, Sparkles, SparklesMini, SparklesMiniSolid, SparklesSolid, Spinner, SquareBlueSolid, SquareGreenSolid, SquareGreySolid, SquareOrangeSolid, SquarePurpleSolid, SquareRedSolid, SquareTwoStack, SquareTwoStackMini, SquareTwoStackSolid, SquaresPlus, SquaresPlusSolid, Star, StarSolid, Stopwatch, Stripe, Sun, SunSolid, Swatch, SwatchSolid, Tag, TagSolid, Tailwind, Text, ThumbDown, ThumbUp, ThumbnailBadge, Tools, ToolsSolid, Trash, TriangleDownMini, TriangleLeftMini, TriangleRightMini, TriangleUpMini, TrianglesMini, Twitter, Typescript, TypescriptEx, User, UserCircleMini, UserGroup, Users, UsersSolid, Vercel, VerifiedBadge, Visa, WandSparkle, Window, X, XCircle, XCircleSolid, XMark, XMarkMini)","compilerPath":"client"}[39m[39m
+[33m[33m[1m[WARNING][22m {"moduleIdentifier":"/Users/haider/codeplace/inbzar/documentation/node_modules/swc-loader/src/index.js??ruleSet[1].rules[5].use[0]!/Users/haider/codeplace/inbzar/documentation/apps/docs/src/theme/Navbar/Content/index.tsx","moduleName":"./src/theme/Navbar/Content/index.tsx","loc":"127:167-174","message":"export 'Sidebar' (imported as 'Sidebar') was not found in '@medusajs/icons' (possible exports: AcademicCap, AcademicCapSolid, Adjustments, Apple, ArchiveBox, ArrowDown, ArrowDownCircle, ArrowDownLeft, ArrowDownLeftMini, ArrowDownMini, ArrowDownRightMini, ArrowDownTray, ArrowLeft, ArrowLeftMini, ArrowLongDown, ArrowLongLeft, ArrowLongRight, ArrowLongUp, ArrowPath, ArrowPathMini, ArrowRightMini, ArrowRightOnRectangle, ArrowUpCircleSolid, ArrowUpDown, ArrowUpMini, ArrowUpRightMini, ArrowUpRightOnBox, ArrowUpTray, ArrowUturnLeft, ArrowsPointingOut, ArrowsPointingOutMini, ArrrowRight, AtSymbol, BackwardSolid, BarsArrowDown, BarsThree, Beaker, BellAlert, BellAlertSolid, Bolt, BoltSolid, BookOpen, Bug, BugAntSolid, BuildingStorefront, BuildingTax, Buildings, BuildingsMini, BuildingsSolid, Calendar, CalendarMini, CalendarSolid, Camera, Cash, CashSolid, Channels, ChannelsSolid, ChartBar, ChartPie, ChatBubble, ChatBubbleLeftRight, ChatBubbleLeftRightSolid, Check, CheckCircleMiniSolid, CheckCircleSolid, CheckMini, ChevronDoubleLeft, ChevronDoubleLeftMiniSolid, ChevronDoubleRight, ChevronDoubleRightMiniSolid, ChevronDown, ChevronDownMini, ChevronLeft, ChevronLeftMini, ChevronRight, ChevronRightMini, ChevronUpDown, ChevronUpMini, CircleDottedLine, CircleFilledSolid, CircleHalfSolid, CircleMiniFilledSolid, CircleMiniSolid, CircleQuarterSolid, CircleSolid, CircleStack, CircleStackSolid, CircleThreeQuartersSolid, Clock, ClockChangedSolidMini, ClockSolid, ClockSolidMini, CloudArrowDown, CloudArrowUp, CogSixTooth, CogSixToothSolid, CommandLine, CommandLineSolid, Component, ComponentSolid, ComputerDesktop, ComputerDesktopSolid, CreditCard, CreditCardSolid, CubeSolid, CurrencyDollar, CurrencyDollarSolid, CursorArrowRays, Discord, DocumentSeries, DocumentText, DocumentTextSolid, DotsSix, Ellipse, EllipseBlueSolid, EllipseGreenSolid, EllipseGreySolid, EllipseMiniSolid, EllipseOrangeSolid, EllipsePurpleSolid, EllipseRedSolid, EllipseSolid, EllipsisHorizontal, EllipsisVertical, Envelope, EnvelopeSolid, ExclamationCircle, ExclamationCircleSolid, Eye, EyeMini, EyeSlash, EyeSlashMini, FaceSmile, Facebook, Figma, FlagMini, FlyingBox, Folder, FolderIllustration, FolderOpen, FolderOpenIllustration, ForwardSolid, Funnel, Gatsby, GatsbyEx, Gift, GiftSolid, Github, GlobeEurope, GlobeEuropeSolid, Google, Hashtag, Heart, InboxSolid, InformationCircle, InformationCircleSolid, Javascript, JavascriptEx, Key, KeySolid, Klarna, KlarnaEx, Klaviyo, Lifebuoy, LightBulb, LightBulbSolid, Link, Linkedin, ListBullet, Loader, LockClosedSolid, LockClosedSolidMini, LockOpenSolid, MagnifyingGlass, MagnifyingGlassMini, Map, MapPin, Mastercard, Medusa, Meta, Minus, MinusMini, Moon, MoonSolid, Newspaper, NextJs, PaperClip, PauseSolid, Pencil, PencilSquare, PencilSquareSolid, Phone, Photo, PhotoSolid, PlayMiniSolid, PlaySolid, Plus, PlusMini, Puzzle, PuzzleSolid, QuestionMark, QuestionMarkCircle, QueueList, ReactJs, ReactJsEx, ReceiptPercent, ReplaySolid, Resize, RocketLaunch, RocketLaunchSolid, Rss, Sanity, Server, ServerSolid, ServerStack, ServerStackSolid, ShoppingBag, ShoppingCart, ShoppingCartSolid, SidebarLeft, SidebarRight, Slack, Snooze, Sparkles, SparklesMini, SparklesMiniSolid, SparklesSolid, Spinner, SquareBlueSolid, SquareGreenSolid, SquareGreySolid, SquareOrangeSolid, SquarePurpleSolid, SquareRedSolid, SquareTwoStack, SquareTwoStackMini, SquareTwoStackSolid, SquaresPlus, SquaresPlusSolid, Star, StarSolid, Stopwatch, Stripe, Sun, SunSolid, Swatch, SwatchSolid, Tag, TagSolid, Tailwind, Text, ThumbDown, ThumbUp, ThumbnailBadge, Tools, ToolsSolid, Trash, TriangleDownMini, TriangleLeftMini, TriangleRightMini, TriangleUpMini, TrianglesMini, Twitter, Typescript, TypescriptEx, User, UserCircleMini, UserGroup, Users, UsersSolid, Vercel, VerifiedBadge, Visa, WandSparkle, Window, X, XCircle, XCircleSolid, XMark, XMarkMini)","compilerPath":"client"}[39m[39m
+[33m[33m[1m[WARNING][22m Docusaurus found broken anchors![39m
+[33m[39m
+[33mPlease check the pages of your site in the list below, and make sure you don't reference any anchor that does not exist.[39m
+[33mNote: it's possible to ignore broken anchors with the 'onBrokenAnchors' Docusaurus configuration, and let the build pass.[39m
+[33m[39m
+[33mExhaustive list of all broken anchors found:[39m
+[33m- Broken anchor on source page path = /user-guide/price-lists/manage:[39m
+[33m   -> linking to #step-1-create-a-price-list (resolved as: /user-guide/price-lists/manage#step-1-create-a-price-list)[39m
+[33m- Broken anchor on source page path = /user-guide/taxes/tax-overrides:[39m
+[33m   -> linking to /user-guide/taxes/tax-rates#create-tax-rate[39m
+[33m[39m[39m
+[32m[1m[SUCCESS][22m[39m Generated static files in [36m[4m"build"[24m[39m.
+[36m[1m[INFO][22m[39m Use [36m`npm run serve`[39m command to test your build locally.
+[2K[1G✨  Done in 41.20s.

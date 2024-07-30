@@ -34,42 +34,30 @@ export default function NotFoundContent({ className }: Props): JSX.Element {
           <p>
             If you think this is a mistake, please{" "}
             <Link
-              href="https://github.com/medusajs/medusa/issues/new?assignees=&labels=type%3A+docs&template=docs.yml"
+              href="https://tawk.to/chat/66a4d7d832dca6db2cb67ebc/1i3pum9kb"
               rel="noopener noreferrer"
               target="_blank"
             >
-              report this issue on GitHub
+              let us know
             </Link>
           </p>
           <Heading as="h2">Some popular links</Heading>
           <ul>
             <li>
-              <Link href={useBaseUrl("/create-medusa-app")}>
-                Install InBzar with create-medusa-app
-              </Link>
-            </li>
-            <li>
-              <Link href="https://docs.medusajs.com/api/store">
-                Storefront REST API Reference
-              </Link>
-            </li>
-            <li>
-              <Link href="https://docs.medusajs.com/api/admin">
-                Admin REST API Reference
-              </Link>
-            </li>
-            <li>
-              <Link href={useBaseUrl("/starters/nextjs-medusa-starter")}>
-                Install Next.js Storefront
-              </Link>
-            </li>
-            <li>
-              <Link href={useBaseUrl("/admin/quickstart")}>
-                Install InBzar Admin
+              <Link href={useBaseUrl("/features")}>
+                InBzar Features
               </Link>
             </li>
             <li>
               <Link href={useBaseUrl("/user-guide")}>User Guide</Link>
+            </li>
+            <li>
+              <Link href={useBaseUrl("/recipes")}>Recipes</Link>
+            </li>
+            <li>
+              <Link href="https://inbzar.com">
+                InBzar Platform
+              </Link>
             </li>
           </ul>
         </div>
