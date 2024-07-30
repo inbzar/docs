@@ -97,7 +97,7 @@ const config = {
         },
       },
     },
-    image: "img/docs-meta.jpg",
+    image: "img/docs-meta.png",
     colorMode: {
       defaultMode: "light",
       disableSwitch: false,
@@ -191,6 +191,13 @@ const config = {
           position: "left",
         },
         {
+          href: "https://inbzar.com",
+          label: "InBzar Platform",
+          prependBaseUrlToHref: true,
+          target: "_blank",
+          position: "left",
+        },
+        {
           type: "search",
           position: "right",
         },
@@ -199,7 +206,7 @@ const config = {
     navbarActions: [
       {
         type: "button",
-        label: "Report an Issue",
+        label: "Live Chat",
         className: "max-[1014px]:hidden",
         href: "https://tawk.to/chat/66a4d7d832dca6db2cb67ebc/1i3pum9kb",
       },
