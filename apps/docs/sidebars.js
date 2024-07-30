@@ -80,6 +80,11 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'features/digital-library',
+          label: 'Digital Library',
+        },
+        {
+          type: 'doc',
           id: 'features/regions-and-currencies',
           label: 'Regions and Currencies',
         },
