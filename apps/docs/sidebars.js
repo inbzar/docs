@@ -63,7 +63,6 @@ module.exports = {
     {
       type: 'category',
       label: 'Features',
-      collapsible: false,
       link: {
         type: 'doc',
         id: 'features/index',
