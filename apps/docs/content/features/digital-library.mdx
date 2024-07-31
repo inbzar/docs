@@ -2,9 +2,18 @@
 description: "Digital Library System enables you to attach digital content—such as files, documents, or videos to your products. Learn about the available features and guides."
 ---
 
+import DocCardList from '@theme/DocCardList';
+import Icons from '@theme/Icon';
+
 # Digital Library
 
 Digital Library System enables you to attach digital content—such as files, documents, or videos to your products. You can restrict access to this content based on purchases or set periodic availability. Alternatively, you can make content freely accessible without any purchase requirements, providing versatile options to meet your business needs.
+
+:::note
+
+Looking guide? Check out the [Manage digital library user guide](/user-guide/digital-library).
+
+:::
 
 ## Features
 
@@ -16,6 +25,30 @@ Allow store owners to schedule the delivery of multiple files and various types 
 
 With Library Restriction, you have the flexibility to allow free access to digital content or restrict it based on your specific needs, providing control over how your digital products are distributed.
 
+<DocCardList colSize={6} items={[
+  {
+    type: 'link',
+    href: '/user-guide/digital-library/manage-files#restrict-files',
+    label: 'User Guide: Library File Restriction',
+    customProps: {
+      icon: Icons['users-solid'],
+      description: 'Learn how to manage library file restrictions.'
+    }
+  },
+]} />
+
 ### Periodic Restriction
 
 Library Periodic Restriction allows you to limit access to digital content based on specific time intervals. Customers can only access this content if they purchase the product within the defined period.
+
+<DocCardList colSize={6} items={[
+  {
+    type: 'link',
+    href: '/user-guide/digital-library/manage-files#periodic-restrictions',
+    label: 'User Guide: Periodic Restriction for Files',
+    customProps: {
+      icon: Icons['users-solid'],
+      description: 'Learn how to manage periodic restrications for library files.'
+    }
+  },
+]} />

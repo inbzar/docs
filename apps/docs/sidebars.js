@@ -65,6 +65,30 @@ module.exports = {
             iconName: "cash-solid",
           },
         },
+        {
+          type: 'doc',
+          id: 'recipes/sell-digital-products',
+          label: 'Sell Digital Products',
+          customProps: {
+            iconName: "cash-solid",
+          },
+        },
+        {
+          type: 'doc',
+          id: 'recipes/sell-services',
+          label: 'Sell Services',
+          customProps: {
+            iconName: "cash-solid",
+          },
+        },
+        {
+          type: 'doc',
+          id: 'recipes/subscription-box-with-digital-content',
+          label: 'Subscription Box with Digital Content',
+          customProps: {
+            iconName: "cash-solid",
+          },
+        },
       ],
     },
     {
