@@ -1,1 +1,65 @@
+import DocCardList from '@theme/DocCardList';
+import Icons from '@theme/Icon';
+import Feedback from '@site/src/components/Feedback';
+import LearningPath from '@site/src/components/LearningPath';
+import LearningPathList from '@site/src/components/LearningPath/List';
+import LargeCard from '@site/src/components/LargeCard';
+
 # InBzar Recipes
+
+This document provides you resources for different paths based on what you're building with InBzar.
+
+## Recipe: Setup Subscription Box
+
+Follow this recipe if you want to use InBzar for subscription box business.
+
+<DocCardList colSize={12} items={[
+  {
+    type: 'link',
+    href: '/recpies/create-subscription-box',
+    label: 'Create Subscription Box',
+    customProps: {
+      icon: Icons['cube-solid'],
+      description: "Learn how you can setup subscription box business with InBzar"
+    }
+  },
+]} />
+
+---
+
+## Use-Case Based Recipes
+
+Explore available recipes for different commerce use cases.
+
+<DocCardList colSize={6} />
+
+---
+
+<!-- vale docs.HeadingPunctuation = NO -->
+
+## Can't find your path?
+
+<!-- vale docs.HeadingPunctuation = YES -->
+
+InBzar is a customizable commerce solution that can be used to build any custom use case. If you can't find your use case mentioned above, the following guides give you a general understanding of how InBzar can be used and how you can customize it.
+
+<DocCardList colSize={6} items={[
+  {
+    type: 'link',
+    href: '/features',
+    label: 'Commerce Features',
+    customProps: {
+      icon: Icons['puzzle-solid'],
+      description: "Learn about InBzar's commerce features and how to customize them."
+    }
+  },
+  {
+    type: 'link',
+    href: '/user-guide',
+    label: 'User Guide',
+    customProps: {
+      icon: Icons['user'],
+      description: "Learn how to use InBzar's commerce features."
+    }
+  },
+]} />

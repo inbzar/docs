@@ -1,8 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 description: 'This user guide explains how to manage subscriptions for products on the InBzar Admin. Learn how to create recurring, onetime purchase, and more.'
 addHowToData: true
 ---
+
+import UiIcon from '@site/src/components/UiIcon';
 
 # Manage Subscriptions
 
@@ -10,21 +12,66 @@ In this document, you will learn how to create and manage subscriptions for prod
 
 Customers have two options for subscribing to products:
 
-- On the checkout page, they can choose to purchase the product as a one-time purchase, or they can subscribe for recurring deliveries.
-- Subscribe to Subscription Box
+1. On the checkout page, they can choose to purchase the product as a one-time purchase, or they can subscribe for recurring deliveries.
+2. Subscribe to Subscription Box.
 
 ## Subscribe on Checkout
 
-This is how it look like on standard checkout page, customers have two options Onetime and Subscribe.
+This is how it look like on standard checkout page, customers have two options Onetime and Subscription.
 
-## Create Subscribable Product
+![Purchase Preferences in Checkout](/img/checkout-purchase-prefs.png)
 
-Under General Information Section you will see Subscription section. Here you have to to check the subscription box.
+## Create Subscription Box
 
-![Enable Subscription Box](/img/subscription-box.png)
+On new Product page, under **General Information Section** you will see **Subscription section**. Here you have to to enable the subscription box.
 
-::: Limitation
+![Enable Subscription Box](/img/subscription-section.png)
 
-If subscription is enabled then customer can add only on product in the cart.
+:::note
+
+If subscription is enabled then customer can add only on product in the cart at a time.
 
 :::
+
+### Delivery interval
+
+For delivery intervals, you have two options.
+
+1. **Customer Defined Delivery:** allowing customers to set their own delivery schedule according to their needs.
+2. **Predefined interval:** you can predefine the delivery interval, such as setting the subscription box to be delivered on the 3rd of each month. In this case, customers will not be able to change the delivery schedule.
+
+### Expire Subscription Automatically
+
+In the delivery interval section, you can specify the total number of deliveries for a subscription. Once this limit is reached, the subscription will automatically cancel. If you leave it set to unlimited, the subscription will never expire, and you will need to cancel it manually if needed. This feature provides flexibility in managing subscription durations and customer expectations.
+
+![Subscription Box Delivery Interval setting](/img/delivery-interval.png)
+
+### Orders Opening and Closing
+
+You can set specific opening and closing dates for orders, allowing customers to place orders only within these designated periods.
+
+![Order opening and closing dates setting](/img/orders-opening.png)
+
+#### Cease Orders
+
+By default, the "cease order" option is enabled, preventing customers from placing orders after the closing date or before the opening date. If you disable this option, customers will be informed about the order closing but can still place orders, which will be shown in the upcoming section of your orders for easy management. Check [Order Guide](../orders/#view-list-of-upcoming-orders) to learn more.
+
+![Cease orders setting](/img/cease-orders.png)
+
+## Subscribable and Onetime Purchase Variants
+
+By default, all variants under a subscription box are set to be subscribable. However, if you wish to offer any variant as a one-time purchase only, you can enable the **One time purchase** option. This feature is specific to subscription boxes, allowing flexibility in your sales strategy. Many businesses use different pricing for one-time purchases compared to subscriptions, often charging a lower amount for subscriptions to encourage recurring payments. Learn more about setting up your [subscription box with both onetime and recurring payment options](/recipes/subscription-box-with-onetime-and-recurring-payment).
+
+![Onetime purchase setting for single variant](/img/variant-onetime-purchase.png)
+
+---
+
+## Edit a Product’s Subscription Information
+
+To edit a product’s subscription information:
+
+1. Go to the product’s details page.
+2. Click on the <UiIcon lightIcon="https://res.cloudinary.com/dza7lstvk/image/upload/v1667999308/Medusa%20Docs/UI%20Icons/1ordBC6_ssysel.png" darkIcon="https://res.cloudinary.com/dza7lstvk/image/upload/v1667999326/Medusa%20Docs/UI%20Icons/dSwWYBH_stzgoi.png" alt="three dots" /> at the subscription section.
+3. Click on “Edit Subscription” from the dropdown.
+4. Edit any of the information in the window.
+5. Once done, click on the Save button.

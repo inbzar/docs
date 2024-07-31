@@ -32,6 +32,16 @@ In the list, you can see order details such as ID, the ID of the order the draft
 
 ---
 
+## View List of Upcoming Orders
+
+Upcoming orders are those placed after the closing date, applicable only to subscription box products. These orders are scheduled for future delivery and allow customers to continue purchasing even after the initial order window has closed. Learn more about [managing subscriptions](../products/manage-subscriptions) for your products to ensure smooth and efficient order handling.
+
+You can view the list of upcoming orders on the Orders page by clicking on the upcoming tab next to the Orders filters.
+
+![Upcoming orders filter](/img/upcoming-orders-filter.png)
+
+---
+
 ## Learn More About Orders
 
 - [Manage Order Details](./manage.mdx)

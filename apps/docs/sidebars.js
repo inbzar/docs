@@ -50,13 +50,20 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'recipes/ecommerce',
-          label: 'Ecommerce',
+          id: 'recipes/create-subscription-box',
+          label: 'Create Subscription Box',
+          customProps: {
+            iconName: "cube-solid",
+            exclude_from_doclist: true,
+          },
         },
         {
           type: 'doc',
-          id: 'recipes/marketplace',
-          label: 'Marketplace',
+          id: 'recipes/subscription-box-with-onetime-and-recurring-payment',
+          label: 'Subscription Box with Onetime and Recurring Payment',
+          customProps: {
+            iconName: "cash-solid",
+          },
         },
       ],
     },
