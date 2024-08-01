@@ -1,12 +1,88 @@
 ---
-description: "Learn how to create and sell digital products on InBzar"
+description: "Learn how to create and sell digital products like e-book with free preview and restricted downloadable link"
 addHowToData: true
 ---
 
 # Sell E-Book
+
+In this guide you will learn how to create and sell e-book with free preview and downloadable restricted downloadable link.
 
 ## Overview
 
 ## Get Started
 
 In this example, we will sell an e-book with free preview content accessible to anyone without purchase, and the full e-book available upon purchase. We will also demonstrate how to deliver updated versions of the e-book to customers who have already made a purchase.
+
+### 1. Create Digital Shipping
+
+We need to create a new shipping option for digital products, as they don't require physical shipping. This involves setting up a shipping method with no cost, simply to ensure the checkout process can be completed smoothly.
+
+To add a shipping option:
+
+1. Go to Settings → Regions.
+2. Select the shipping option's region.
+3. Scroll down to the Shipping Options section on the right side.
+4. Click on the Add Option button.
+5. A new window will open with a form:
+    - **Visible in Store:** check this box
+    - **Title (Required):** The name of the shipping option.
+    - **Price Type (Required):** It should be Flat Rate.
+    - **Price:** Set to zero(0), because digital products does not have to ship anything.
+    - **Shipping Profile (Required):** Select "Digital or Service Profile".
+    - **Fulfillment Method (Required):** the fulfillment provider that will handle fulfilling this shipping option.
+6. Once you’re done, click the "Save and close" button.
+
+Want to learn more, Check user guide how to [Manage Shipping Options in a Region](/user-guide/regions/shipping-options).
+
+![Shipping option for digital products](/img/digital-shipping-option.png)
+
+### 2. Create a Product
+
+Creating a new digital product follows the same process as creating any other product. For detailed instructions, check [user guide on managing products](/user-guide/products/manage).
+
+Make sure you enable the **Digital or Service** checkbox.
+
+![Digital or service product setting](/img/digital-or-service-product-setting.png)
+
+### 3. Create a Library
+
+To create a new library:
+
+1. Go to the Libraries page.
+2. Click on the **Create new library** button at the top right.
+
+This opens a new form with different sections. Here you have to enter the Title and Pick Product which we have created in previous step.
+
+Check user guide how to [Manage Library](/user-guide/digital-library/manage) for more information.
+
+### 4. Create a Preview
+
+To create a free Preview:
+
+1. Go to the Libraries page.
+2. Find the library that we created in previous step, click on it.
+3. In library detail page click on the **Create new File** button at the top right.
+
+This opens a new form with different sections. 
+
+4. Here you have to select the file type as **PDF** and upload book preview.
+6. Next you have to disable both restrictions.
+
+### 5. Create Restricted Download Link
+
+Create a restricted downloadable link that is provided exclusively to customers who purchase the product. This link becomes available only after the purchase is completed, ensuring secure access to your digital content.
+
+1. Once again click on the **Create new File** button at the top right.
+2. Select the file type as **PDF** and upload actual book.
+3. This time restrict file by enabling first restriction and disable **Periodic Restriction**.
+
+![Library file restriction setting](/img/file-restriction.png)
+
+### 6. Deliver Future E-Book Updates
+
+To easily provide updates to your e-book by delivering new versions to customers who have previously purchased it. Keep your audience engaged and informed with the latest content while maintaining seamless access to their digital purchases.
+
+[Repeat Step 5](#5-create-restricted-download-link) to upload new version for your e-book.
+
+
+

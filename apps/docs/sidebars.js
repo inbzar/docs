@@ -97,6 +97,14 @@ module.exports = {
             iconName: "cash-solid",
           },
         },
+        {
+          type: 'doc',
+          id: 'recipes/single-variant-product',
+          label: 'Simple Product with One Variant',
+          customProps: {
+            iconName: "cash-solid",
+          },
+        },
       ],
     },
     {
