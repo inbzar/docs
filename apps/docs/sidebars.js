@@ -70,7 +70,15 @@ module.exports = {
           id: 'recipes/sell-digital-products',
           label: 'Sell Digital Products',
           customProps: {
-            iconName: "cash-solid",
+            iconName: "book-open",
+          },
+        },
+        {
+          type: 'doc',
+          id: 'recipes/sell-e-book',
+          label: 'Sell E-Book',
+          customProps: {
+            iconName: "book-open",
           },
         },
         {
