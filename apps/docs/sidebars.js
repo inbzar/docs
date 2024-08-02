@@ -67,6 +67,14 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'recipes/subscription-box-with-digital-content',
+          label: 'Subscription Box with Digital Content',
+          customProps: {
+            iconName: "cash-solid",
+          },
+        },
+        {
+          type: 'doc',
           id: 'recipes/sell-digital-products',
           label: 'Sell Digital Products',
           customProps: {
@@ -91,16 +99,8 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'recipes/subscription-box-with-digital-content',
-          label: 'Subscription Box with Digital Content',
-          customProps: {
-            iconName: "cash-solid",
-          },
-        },
-        {
-          type: 'doc',
-          id: 'recipes/single-variant-product',
-          label: 'Simple Product with One Variant',
+          id: 'recipes/simple-product-without-variant-selection',
+          label: 'Simple Product without Variant Selection',
           customProps: {
             iconName: "cash-solid",
           },
