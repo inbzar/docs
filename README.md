@@ -1,6 +1,6 @@
 # InBzar Documentation
 
 
-## Capture Images
+## Task
 
-- Purchase Type in Checkout page
+- Add theme showcase

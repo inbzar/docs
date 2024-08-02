@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-description: 'Integrate Google Analytics'
+description: 'In this guide you will learn how to integrate Google Analytics for your store front'
 ---
 
-# Config
+# Google Analytics Config
 
 In this document, you’ll get an overview of the Google Analytics and how to configure it for your store front.
 

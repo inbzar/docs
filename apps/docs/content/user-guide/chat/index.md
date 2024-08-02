@@ -3,7 +3,7 @@ sidebar_position: 1
 description: 'Real-Time Customer Chat with Store Owners'
 ---
 
-# Overview
+# Live Chat Overview
 
 The Customer Chat feature enables real-time communication between customers and store owners. Engage in instant conversations to address inquiries, resolve issues, and provide personalized support directly from your store's platform, enhancing the overall customer experience.
 
