@@ -1,7 +1,39 @@
 ---
 sidebar_position: 3
-description: 'This user guide explains how to manage digital libraries on the InBzar Admin. Learn how to view and edit libraries.'
+description: 'In this guide you will learn how to setup your PayPal account with InBzar'
 addHowToData: true
 ---
 
 # Config Stripe
+
+In this guide you will learn how to setup your PayPal account with InBzar.
+
+## 1. Create Account
+
+Go to [Stripe Website](https://stripe.com/) and create account.
+
+## 2. Change Application Status to Live
+
+By default account is on **Test** mode you have to go to **Live** mode to accept payment.
+
+![Stripe Test Mode](/img/stripe-test-mode.png)
+
+## 3. Developer Section
+
+Login into your Stripe account and go to developer section by clicking on **developer** on top bar.
+
+![Stripe Developer](/img/stripe-developer.png)
+
+## 4. Copy Credentials
+
+Go to **API keys** under developer section and copy **Publishable key** and **Secret Key**.
+
+![Stripe copy credentials](/img/stripe-copy-credentials.png)
+
+## 5. Setup on InBzar
+
+1. Go to [InBzar Admin Dashboard](https://admin.inbzar.com)
+2. Go to settings under extensions click on **Stripe Configuration**.
+3. Paste your **Publishable Key** and **Secret Key** here and click on "Save".
+
+![Stripe Config](/img/stripe-config.png)
