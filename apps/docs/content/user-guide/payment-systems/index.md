@@ -3,7 +3,7 @@ sidebar_position: 1
 description: 'In this guide you will learn how to setup your own payment systems such as PayPal, Stripe and Other manual systems'
 ---
 
-# Overview
+# Payment Systems Overview
 
 In this guide you will learn how to setup your own payment systems such as PayPal, Stripe and Other manual systems
 

@@ -1,0 +1,100 @@
+---
+sidebar_position: 2
+description: 'This user guide explains how to create a referral on the InBzar Admin.'
+addHowToData: true
+---
+
+import UiIcon from '@site/src/components/UiIcon';
+
+# Create a Referral
+
+In this document, you’ll learn how to create a referral.
+
+## How to Create a Referral
+
+To create a referral:
+
+1. Go to Referral.
+2. Click on the Add Referral button.
+
+This opens a form with collapsible sections to fill in different information about the referral.
+
+### Referral Type
+
+In this section, you have to select the referral type. There are two types:
+
+1. **Percentage:** referral a specific percentage of the price of each item that complies with the referral conditions.
+2. **Fixed amount:** referral a specific amount either from the cart total or from the price each item that complies with the referral conditions. After choosing this type, a new field Allocation will show where you can choose how the referral should be applied.
+
+Choose the type of the referral and fill in any additional fields if necessary.
+
+### General
+
+In this section, you have to enter general but required information related to the referral:
+
+1. In the “Choose valid regions” field, choose the regions this referral should be applied in. You must select at least one region. For the Fixed Referral type, you can only pick one region. For other types you can select more than one region.
+2. Pick a discount code if you want to offer a discount to customers when they use this referral link.
+3. In the Code field, enter the code this will create a unique referral link with this code. Only uppercase letters and numbers are allowed.
+4. If you chose Percentage for Referral Type earlier, enter the percentage in the Percentage field.
+5. If you chose Fixed Amount for Referral Type earlier, enter the amount in the Amount field.
+6. In the Description field, enter a description for the referral.
+7. Enter the email and password for the person you are giving this referral link to. They can use these credentials to log in to the storefront. Once logged in, they can track how many orders have been placed using their referral link, view their earnings, and see what payments have been made and what is pending.
+
+### Configuration
+
+In this section, you can set configurations that limit the application of the referral:
+
+1. Toggle the Start date field if you want to set the date and time the customers can start using this referral. If you don’t set a start date, the referral can be used once it’s published.
+2. Toggle the “Referral has an expiry date?” field if you want to set the date and time the referral ends. If you don’t set an expiry date, the referral can be used forever while it’s published.
+3. Toggle the “Limit the number of redemptions?” field if you want to limit how many times the referral can be used. This number is used across customers, and not per customer. If you don’t set a limit, the referral can be used unlimitedly.
+
+### Conditions
+
+In this section, you can set the conditions that define when the referral can be applied. When the referral is used on a cart, it will only be applied if the items in the cart and the customer fit the referral’s conditions.
+
+The following condition types can be used:
+
+1. **Product:** specify products that this referral can/can’t be used with.
+2. **Customer groups:** specify customer groups that this referral can/can’t be used with.
+3. **Tag:** specify tags that this referral can/can’t be used with.
+4. **Collection:** specify the collection that this referral can/can’t be used with.
+5. **Type:** specify the product type that this referral can/can’t be used with.
+
+To add a condition to the referral:
+
+1. Click on the Add Condition button.
+2. Click on the condition type.
+3. In the new list that opens:
+    1. Choose at the top either “In” or “Not In,” where “In” indicates that the referral can be applied to the items selected in this list, and “Not In” indicates that the referral can be applied to all items except those selected in this list.
+    2. Select the items from the list.
+4. Once done, click “Save and add more” to add more conditions, or click “Save and close” to close the conditions window.
+
+:::info
+
+You can use a condition type for only one condition. After using a condition type, you will not be able to use it again for another condition. You’ll need to edit the condition you added if you need to make any changes.
+
+:::
+
+To edit a condition you already added to the referral:
+
+1. Click on the <UiIcon lightIcon="https://res.cloudinary.com/dza7lstvk/image/upload/v1667999308/Medusa%20Docs/UI%20Icons/1ordBC6_ssysel.png" darkIcon="https://res.cloudinary.com/dza7lstvk/image/upload/v1667999326/Medusa%20Docs/UI%20Icons/dSwWYBH_stzgoi.png" alt="three dots" /> icon next to the condition.
+2. Click on Edit from the dropdown.
+3. Make changes to the condition in the new window that opens.
+4. Once done, click on the Save button.
+
+To delete a condition you already added to the referral:
+
+1. Click on the <UiIcon lightIcon="https://res.cloudinary.com/dza7lstvk/image/upload/v1667999308/Medusa%20Docs/UI%20Icons/1ordBC6_ssysel.png" darkIcon="https://res.cloudinary.com/dza7lstvk/image/upload/v1667999326/Medusa%20Docs/UI%20Icons/dSwWYBH_stzgoi.png" alt="three dots" /> icon next to the condition.
+2. Click on “Delete condition” from the dropdown.
+
+### Metadata
+
+Under the Metadata section, you can attach custom data to the referral as key-value pairs. This is mostly useful for developers and technical teams.
+
+### Save Referral
+
+After filling out previous sections, you can save the referral by either clicking the “Save as draft” or “Publish referral” buttons.
+
+If you save the referral as a draft, customers will not be able to use it but all of the information, configurations, and conditions will be saved. You can publish it at a later point.
+
+If you publish the referral, customers will be able to use it within the configurations and conditions you’ve set. You can change the status of the referral back to draft later on as well.

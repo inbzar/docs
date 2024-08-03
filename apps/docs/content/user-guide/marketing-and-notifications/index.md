@@ -3,7 +3,7 @@ sidebar_position: 1
 description: 'In this guide you learn how to send marketing campaigns and notifications using SendGrid free service'
 ---
 
-# Overview
+# Marketing and Notification Overview
 
 In this guide you learn how to send marketing campaigns and notifications using SendGrid free service.
 
