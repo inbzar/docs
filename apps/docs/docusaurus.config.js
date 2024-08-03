@@ -12,8 +12,8 @@ const announcementBar = JSON.parse(fs.readFileSync("./announcement.json"))
 const config = {
   title: "InBzar",
   tagline: "Explore and learn how to use InBzar",
-  url: "https://inbzar.github.io",
-  baseUrl: "/docs",
+  url: "https://docs.inbzar.com",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
   favicon: "img/favicon.ico",
