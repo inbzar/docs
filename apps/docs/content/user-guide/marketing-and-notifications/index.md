@@ -1,11 +1,13 @@
 ---
 sidebar_position: 1
-description: 'In this guide you learn how to send marketing campaigns and notifications using SendGrid'
+description: 'In this guide you learn how to send marketing campaigns and notifications using SendGrid free service'
 ---
 
-# Marketing and Notifications
+# Overview
 
-In this guide you learn how to send marketing campaigns and notifications using SendGrid.
+In this guide you learn how to send marketing campaigns and notifications using SendGrid free service.
+
+SendGrid is a cloud-based email delivery service that provides reliable and scalable email infrastructure for businesses. It is designed to help companies send transactional and marketing emails seamlessly.
 
 ---
 
