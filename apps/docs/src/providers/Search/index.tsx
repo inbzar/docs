@@ -48,43 +48,42 @@ const SearchProvider = ({ children }: SearchProviderProps) => {
           {
             title: "Getting started? Try one of the following terms.",
             items: [
-              "Install InBzar with create-medusa-app",
-              "Next.js quickstart",
-              "Admin dashboard quickstart",
-              "Commerce modules",
-              "InBzar architecture",
+              "Setup personal payment systems",
+              "Standard theme showcase",
+              "Marketing and Notifications",
+              "InBzar Features",
+              "Third party live chat",
             ],
           },
           {
             title: "Developing with InBzar",
             items: [
               "Recipes",
-              "How to create API routes",
-              "How to create an entity",
-              "How to create a plugin",
-              "How to create an admin widget",
+              "Create subscription box",
+              "Sell digital products, such as e-book",
+              "Simple Product without variant selection",
             ],
           },
         ],
       }}
-      commands={[
-        aiAssistant && {
-          name: "ai-assistant",
-          icon: <AiAssistantCommandIcon />,
-          component: (
-            <AiAssistantProvider
-              apiUrl={aiAssistant.apiUrl}
-              websiteId={aiAssistant.websiteId}
-              recaptchaSiteKey={aiAssistant.recaptchaSiteKey}
-            />
-          ),
-          title: "AI Assistant",
-          badge: {
-            variant: "purple",
-            children: "Beta",
-          },
-        },
-      ]}
+      // commands={[
+      //   aiAssistant && {
+      //     name: "ai-assistant",
+      //     icon: <AiAssistantCommandIcon />,
+      //     component: (
+      //       <AiAssistantProvider
+      //         apiUrl={aiAssistant.apiUrl}
+      //         websiteId={aiAssistant.websiteId}
+      //         recaptchaSiteKey={aiAssistant.recaptchaSiteKey}
+      //       />
+      //     ),
+      //     title: "AI Assistant",
+      //     badge: {
+      //       variant: "purple",
+      //       children: "Beta",
+      //     },
+      //   },
+      // ]}
       initialDefaultFilters={defaultFilters}
       modalClassName="z-[500]"
     >
