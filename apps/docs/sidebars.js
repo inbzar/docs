@@ -221,6 +221,20 @@ module.exports = {
         },
       ],
     },
+    {
+      type: "html",
+      value: "Storefront Themes",
+      customProps: {
+        sidebar_is_group_divider: true,
+      },
+      className: "homepage-sidebar-item",
+    },
+    {
+      type: "doc",
+      id: "storefront-themes/standard-theme",
+      label: "Standard Theme",
+      className: "homepage-sidebar-item",
+    },
   ],
   userGuideSidebar: [
     {
