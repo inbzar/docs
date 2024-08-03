@@ -7,9 +7,9 @@ description: "Multi-warehouse allows you to define multiple locations that your 
 
 In this document, you’ll get an overview of the multi-warehouse setup and how you can use it in the InBzar Admin.
 
-:::note
+:::warning
 
-Multi-warehouse requires the Inventory and Stock Location modules to be installed. If you’re unsure how to handle that, please contact your technical team for support.
+This feature is currently in beta and may not be available yet. We will notify you once it becomes available.
 
 :::
 

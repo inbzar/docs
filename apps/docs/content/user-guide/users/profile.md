@@ -51,14 +51,3 @@ To change the language:
 1. Go to Settings → Personal Information.
 2. For the Language field, select the language you want from the dropdown.
 3. The language will be saved and changed.
-
----
-
-## Edit Analytics Preferences
-
-To edit your analytics collection preferences:
-
-1. Go to Settings → Personal Information.
-2. Click on the “Edit preferences” button.
-3. In the form that opens, you can edit any of the options.
-4. Once done, click on the “Submit and close” button.
