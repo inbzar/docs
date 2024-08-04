@@ -70,7 +70,7 @@ module.exports = {
           id: 'recipes/subscription-box-with-digital-content',
           label: 'Subscription Box with Digital Content',
           customProps: {
-            iconName: "cash-solid",
+            iconName: "cube-solid",
           },
         },
         {
@@ -78,7 +78,7 @@ module.exports = {
           id: 'recipes/sell-digital-products',
           label: 'Sell Digital Products',
           customProps: {
-            iconName: "book-open",
+            iconName: "cursor-arrow-rays",
           },
         },
         {
@@ -94,7 +94,7 @@ module.exports = {
           id: 'recipes/sell-services',
           label: 'Sell Services',
           customProps: {
-            iconName: "cash-solid",
+            iconName: "tools-solid",
           },
         },
         {
@@ -102,7 +102,7 @@ module.exports = {
           id: 'recipes/simple-product-without-variant-selection',
           label: 'Simple Product without Variant Selection',
           customProps: {
-            iconName: "cash-solid",
+            iconName: "tag-solid",
           },
         },
       ],
