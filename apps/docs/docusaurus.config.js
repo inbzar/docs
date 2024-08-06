@@ -108,7 +108,6 @@ const config = {
       apiKey: process.env.ALGOLIA_API_KEY || "temp",
       indexNames: {
         docs: process.env.DOCS_ALGOLIA_INDEX_NAME,
-        api: process.env.API_ALGOLIA_INDEX_NAME,
       },
       filters: [
         {

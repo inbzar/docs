@@ -99,7 +99,6 @@ const Search = ({ algolia, suggestions, isLoading = false, checkInternalPattern,
             react_1.default.createElement("div", { className: "mx-docs_0.5 md:flex-initial h-[calc(100%-120px)] md:h-[calc(100%-114px)] lg:max-h-[calc(100%-114px)] lg:min-h-[calc(100%-114px)]" },
                 react_1.default.createElement(EmptyQueryBoundary_1.SearchEmptyQueryBoundary, { fallback: react_1.default.createElement(Suggestions_1.SearchSuggestions, { suggestions: suggestions }) },
                     react_1.default.createElement(Hits_1.SearchHitsWrapper, { configureProps: {
-                            filters: formattedFilters,
                             attributesToSnippet: [
                                 "content",
                                 "hierarchy.lvl1",

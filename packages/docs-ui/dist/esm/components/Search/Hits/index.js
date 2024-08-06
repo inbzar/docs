@@ -22,7 +22,6 @@ export const SearchHitsWrapper = (_a) => {
     const { status } = useInstantSearch();
     const [hasNoResults, setHashNoResults] = useState({
         [indices[0]]: false,
-        [indices[1]]: false,
     });
     const showNoResults = useMemo(() => {
         return Object.values(hasNoResults).every((value) => value === true);
@@ -65,15 +64,14 @@ export const SearchHits = ({ indexName, setNoResults, checkInternalPattern, }) =
             item.hierarchy[key] !== item.content) || "");
     };
     const checkIfInternal = (url) => {
-        if (!checkInternalPattern) {
-            return false;
-        }
-        return checkInternalPattern.test(url);
+        const pattern = new RegExp('docs\\.inbzar\\.com');
+        return pattern.test(url);
     };
     return (React.createElement("div", { className: clsx("overflow-auto", "[&_mark]:bg-medusa-bg-highlight", "[&_mark]:text-medusa-fg-interactive") }, Object.keys(grouped).map((groupName, index) => (React.createElement(Fragment, { key: index },
         React.createElement(SearchHitGroupName, { name: groupName }),
         grouped[groupName].map((item, index) => (React.createElement("div", { className: clsx("gap-docs_0.25 relative flex flex-1 flex-col p-docs_0.5", "overflow-x-hidden text-ellipsis whitespace-nowrap break-words", "hover:bg-medusa-bg-base-hover", "focus:bg-medusa-bg-base-hover", "last:mb-docs_1 focus:outline-none"), key: index, tabIndex: index, "data-hit": true, onClick: (e) => {
                 var _a;
+                console.log("Clickedd");
                 const target = e.target;
                 if (target.tagName.toLowerCase() === "div") {
                     (_a = target.querySelector("a")) === null || _a === void 0 ? void 0 : _a.click();
@@ -96,6 +94,7 @@ export const SearchHits = ({ indexName, setNoResults, checkInternalPattern, }) =
                             item.type || getLastAvailableHeirarchy(item),
                         ], hit: item }))),
             React.createElement(LegacyLink, { href: item.url, className: "absolute top-0 left-0 h-full w-full", target: "_self", onClick: (e) => {
+                    console.log("Clicked", checkIfInternal(item.url));
                     if (checkIfInternal(item.url)) {
                         e.preventDefault();
                         window.location.href = item.url;

@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useMemo, useRef, useState } from "react"
-import { InstantSearch, SearchBox } from "react-instantsearch"
+import { InstantSearch, SearchBox, useHits } from "react-instantsearch"
 import clsx from "clsx"
 import { SearchEmptyQueryBoundary } from "./EmptyQueryBoundary"
 import { SearchSuggestions, type SearchSuggestionType } from "./Suggestions"
@@ -137,7 +137,6 @@ export const Search = ({
           >
             <SearchHitsWrapper
               configureProps={{
-                filters: formattedFilters,
                 attributesToSnippet: [
                   "content",
                   "hierarchy.lvl1",

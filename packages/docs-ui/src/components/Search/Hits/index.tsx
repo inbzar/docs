@@ -56,7 +56,6 @@ export const SearchHitsWrapper = ({
   const { status } = useInstantSearch()
   const [hasNoResults, setHashNoResults] = useState<IndexResults>({
     [indices[0]]: false,
-    [indices[1]]: false,
   })
   const showNoResults = useMemo(() => {
     return Object.values(hasNoResults).every((value) => value === true)
@@ -72,6 +71,7 @@ export const SearchHitsWrapper = ({
   return (
     <div className="h-full overflow-auto">
       {status !== "loading" && showNoResults && <SearchNoResult />}
+
       {indices.map((indexName, index) => (
         <Index indexName={indexName} key={index}>
           <SearchHits
@@ -135,10 +135,8 @@ export const SearchHits = ({
   }
 
   const checkIfInternal = (url: string): boolean => {
-    if (!checkInternalPattern) {
-      return false
-    }
-    return checkInternalPattern.test(url)
+    const pattern = new RegExp('docs\\.inbzar\\.com');
+    return pattern.test(url)
   }
 
   return (

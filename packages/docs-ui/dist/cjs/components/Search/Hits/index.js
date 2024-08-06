@@ -51,7 +51,6 @@ const SearchHitsWrapper = (_a) => {
     const { status } = (0, react_instantsearch_1.useInstantSearch)();
     const [hasNoResults, setHashNoResults] = (0, react_1.useState)({
         [indices[0]]: false,
-        [indices[1]]: false,
     });
     const showNoResults = (0, react_1.useMemo)(() => {
         return Object.values(hasNoResults).every((value) => value === true);
@@ -95,15 +94,14 @@ const SearchHits = ({ indexName, setNoResults, checkInternalPattern, }) => {
             item.hierarchy[key] !== item.content) || "");
     };
     const checkIfInternal = (url) => {
-        if (!checkInternalPattern) {
-            return false;
-        }
-        return checkInternalPattern.test(url);
+        const pattern = new RegExp('docs\\.inbzar\\.com');
+        return pattern.test(url);
     };
     return (react_1.default.createElement("div", { className: (0, clsx_1.default)("overflow-auto", "[&_mark]:bg-medusa-bg-highlight", "[&_mark]:text-medusa-fg-interactive") }, Object.keys(grouped).map((groupName, index) => (react_1.default.createElement(react_1.Fragment, { key: index },
         react_1.default.createElement(GroupName_1.SearchHitGroupName, { name: groupName }),
         grouped[groupName].map((item, index) => (react_1.default.createElement("div", { className: (0, clsx_1.default)("gap-docs_0.25 relative flex flex-1 flex-col p-docs_0.5", "overflow-x-hidden text-ellipsis whitespace-nowrap break-words", "hover:bg-medusa-bg-base-hover", "focus:bg-medusa-bg-base-hover", "last:mb-docs_1 focus:outline-none"), key: index, tabIndex: index, "data-hit": true, onClick: (e) => {
                 var _a;
+                console.log("Clickedd");
                 const target = e.target;
                 if (target.tagName.toLowerCase() === "div") {
                     (_a = target.querySelector("a")) === null || _a === void 0 ? void 0 : _a.click();
@@ -126,6 +124,7 @@ const SearchHits = ({ indexName, setNoResults, checkInternalPattern, }) => {
                             item.type || getLastAvailableHeirarchy(item),
                         ], hit: item }))),
             react_1.default.createElement(components_1.LegacyLink, { href: item.url, className: "absolute top-0 left-0 h-full w-full", target: "_self", onClick: (e) => {
+                    console.log("Clicked", checkIfInternal(item.url));
                     if (checkIfInternal(item.url)) {
                         e.preventDefault();
                         window.location.href = item.url;

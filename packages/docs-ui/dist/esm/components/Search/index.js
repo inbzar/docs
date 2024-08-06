@@ -70,7 +70,6 @@ export const Search = ({ algolia, suggestions, isLoading = false, checkInternalP
             React.createElement("div", { className: "mx-docs_0.5 md:flex-initial h-[calc(100%-120px)] md:h-[calc(100%-114px)] lg:max-h-[calc(100%-114px)] lg:min-h-[calc(100%-114px)]" },
                 React.createElement(SearchEmptyQueryBoundary, { fallback: React.createElement(SearchSuggestions, { suggestions: suggestions }) },
                     React.createElement(SearchHitsWrapper, { configureProps: {
-                            filters: formattedFilters,
                             attributesToSnippet: [
                                 "content",
                                 "hierarchy.lvl1",
