@@ -28,6 +28,15 @@ module.exports = {
       className: 'homepage-sidebar-item',
     },
     {
+      type: "doc",
+      id: "get-started",
+      label: "Get Started",
+      customProps: {
+        sidebar_icon: "bolt-solid",
+      },
+      className: "homepage-sidebar-item",
+    },
+    {
       type: "ref",
       id: "user-guide",
       label: "User guide",
